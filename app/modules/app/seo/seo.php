@@ -1,7 +1,7 @@
 <?php
 /**********************
 * Controls the SEO core admin
-* @author David Rugendyke
+* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 * @author_uri http://www.ironcode.com.au
 * @since 1.0.0
 ***********************/
@@ -10,7 +10,7 @@ class SEOController extends AdminController
 {
 	/**********************
 	* Constructor
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	protected function beforeAction() {
@@ -26,7 +26,7 @@ class SEOController extends AdminController
 
 	/**********************
 	* Controller Index
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function actionIndex()
@@ -37,7 +37,7 @@ class SEOController extends AdminController
 	
 	/**********************
 	* Controller Settings Page
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function actionSettings()
@@ -74,7 +74,7 @@ class SEOController extends AdminController
 	
 	/**********************
 	* Controller Settings Page - Save
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function actionSettingsSave()
@@ -94,7 +94,7 @@ class SEOController extends AdminController
 	
 	/**********************
 	* Controller Defaults Page
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function actionDefaults()
@@ -111,7 +111,7 @@ class SEOController extends AdminController
 	
 	/**********************
 	* Controller Defaults Page - Save
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function actionDefaultsSave()

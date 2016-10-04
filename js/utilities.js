@@ -1,6 +1,6 @@
 /**
 * Class name: utilities.js
-* Author: David Rugendyke - david@ironcode.com.au
+* Author: Euphern Technology Pvt. Ltd. & David Rugendyke  - david@ironcode.com.au
 * Platform: Mootools - no conflict mode just incase
 * A set of small utlities for general css needs in Kontrol
 */

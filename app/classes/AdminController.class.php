@@ -3,7 +3,7 @@
 * Controls the initial plugin load and application settings for the admin area in WP
 * @Plugin Name: Kontrol
 * @Plugin URI: http://www.kontrolwp.com
-* @author David Rugendyke
+* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 * @author_uri http://www.ironcode.com.au
 * @since 1.0.0
 ***********************/
@@ -66,7 +66,7 @@ class AdminController extends Lvc_PageController
 	
 	/**********************
 	* After the controller has run its action and finished, display the view and maybe tidy up
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	protected function afterAction()
@@ -81,7 +81,7 @@ class AdminController extends Lvc_PageController
 	
 	/**********************
 	* Admin Options Page Content
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function check_admin_options_page() 
@@ -93,7 +93,7 @@ class AdminController extends Lvc_PageController
 	
 	/**********************
 	* Load CSS for the current module
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public static function load_module_css() 
@@ -114,7 +114,7 @@ class AdminController extends Lvc_PageController
 	
 	/**********************
 	* Load JS for the current module
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public static function load_module_js() 

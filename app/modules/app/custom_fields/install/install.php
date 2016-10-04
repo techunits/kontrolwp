@@ -2,7 +2,7 @@
 
 /**********************
 * Installs, Uninstalls a Kontrol module - Custom Fields
-* @author David Rugendyke
+* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 * @author_uri http://www.ironcode.com.au
 * @since 1.0.0
 ***********************/

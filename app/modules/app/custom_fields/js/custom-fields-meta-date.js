@@ -1,6 +1,6 @@
 /**
 * Class name: custom-fields-meta.js
-* Author: David Rugendyke - david@ironcode.com.au
+* Author: Euphern Technology Pvt. Ltd. & David Rugendyke  - david@ironcode.com.au
 * Platform: Mootools - no conflict mode just incase
 * A special date picker for custom fields with a number of custom fixes/additions
 */

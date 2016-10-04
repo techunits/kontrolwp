@@ -2,7 +2,7 @@
 
 /**********************
 * Config file for the admin menu module
-* @author David Rugendyke
+* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 * @author_uri http://www.ironcode.com.au
 * @since 1.0.0
 ***********************/

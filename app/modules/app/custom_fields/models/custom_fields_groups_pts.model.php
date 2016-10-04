@@ -2,7 +2,7 @@
 
 /**********************
 * Database model for the kontrol_cfs_groups_pts table
-* @author David Rugendyke
+* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 * @author_uri http://www.ironcode.com.au
 * @since 1.0.0
 ***********************/
@@ -35,7 +35,7 @@ class CustomFieldsGroupsPtsModel
 		
 	/**********************
 	* Constructor
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	function __construct($data = NULL) {
@@ -49,7 +49,7 @@ class CustomFieldsGroupsPtsModel
 	
 	/**********************
 	* Returns a list of cpts
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @param type - the type of taxonomy - native or custom
 	* @since 1.0.0
 	***********************/
@@ -105,7 +105,7 @@ class CustomFieldsGroupsPtsModel
 	
 	/**********************
 	* Makes a custom post type group visible/hidden
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function update_visibility() 
@@ -120,7 +120,7 @@ class CustomFieldsGroupsPtsModel
 
 	/**********************
 	* Updates the sort order
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function update_sort_order() {
@@ -134,7 +134,7 @@ class CustomFieldsGroupsPtsModel
 	
 	/**********************
 	* Save/Update a post type / group od
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function save() {
@@ -161,7 +161,7 @@ class CustomFieldsGroupsPtsModel
 
 	/**********************
 	* Deletes a list of taxonomies and cpt combinations
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @param type - the type of taxonomy - native or custom
 	* @since 1.0.0
 	***********************/

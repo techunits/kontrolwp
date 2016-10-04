@@ -2,7 +2,7 @@
 
 /**********************
 * Installs, Uninstalls - Kontrol Plugin
-* @author David Rugendyke
+* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 * @author_uri http://www.ironcode.com.au
 * @since 1.0.0
 ***********************/
@@ -18,7 +18,7 @@ class PluginController extends Lvc_PageController
 	
 	/**********************
 	* Constructor
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	protected function beforeAction() {
@@ -39,7 +39,7 @@ class PluginController extends Lvc_PageController
 	
 	/**********************
 	* Installation
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	protected function actionInstall() {
@@ -69,7 +69,7 @@ class PluginController extends Lvc_PageController
 	
 	/**********************
 	* Performs a index key check on a table to see if it already exists
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	protected function index_key_exists($table, $key_name) {
@@ -87,7 +87,7 @@ class PluginController extends Lvc_PageController
 	
 	/**********************
 	* Performs a foreign key check on a table to see if it already exists
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	protected function foreign_key_exists($table, $column, $f_table, $f_column) {

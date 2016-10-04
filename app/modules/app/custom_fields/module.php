@@ -2,7 +2,7 @@
 
 /**********************
 * Config file for the custom fields module
-* @author David Rugendyke
+* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 * @author_uri http://www.ironcode.com.au
 * @since 1.0.0
 ***********************/

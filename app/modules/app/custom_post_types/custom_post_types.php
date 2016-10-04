@@ -1,7 +1,7 @@
 <?php
 /**********************
 * Controls the custom post type core 
-* @author David Rugendyke
+* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 * @author_uri http://www.ironcode.com.au
 * @since 1.0.0
 ***********************/
@@ -10,7 +10,7 @@ class CustomPostTypesController extends AdminController
 {
 	/**********************
 	* Constructor
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	protected function beforeAction() {
@@ -29,7 +29,7 @@ class CustomPostTypesController extends AdminController
 	
 	/**********************
 	* Controller Index
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function actionIndex()
@@ -50,7 +50,7 @@ class CustomPostTypesController extends AdminController
 	
 	/**********************
 	* Manage custom post types
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function actionManage()
@@ -114,7 +114,7 @@ class CustomPostTypesController extends AdminController
 	
 	/**********************
 	* Add a new custom post type
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function actionAdd()
@@ -139,7 +139,7 @@ class CustomPostTypesController extends AdminController
 	
 	/**********************
 	* Edit a custom post type
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function actionEdit($id)
@@ -185,7 +185,7 @@ class CustomPostTypesController extends AdminController
 	
 	/**********************
 	* Save/Update custom post type
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function actionSave($id = NULL)
@@ -232,7 +232,7 @@ class CustomPostTypesController extends AdminController
 	
 	/**********************
 	* Toggle the visibility
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function actionVisible($id, $flag)
@@ -261,7 +261,7 @@ class CustomPostTypesController extends AdminController
 	
 	/**********************
 	* Delete the CPT
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function actionDelete($id)
@@ -281,7 +281,7 @@ class CustomPostTypesController extends AdminController
 	
 	/**********************
 	* Update the sort order
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function actionUpdateSortOrder($id, $sort)
@@ -323,7 +323,7 @@ class CustomPostTypesController extends AdminController
 	
 	/**********************
 	* Save the columns for a CPT
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.1
 	***********************/
 	public function actionSaveCols($id)
@@ -338,7 +338,7 @@ class CustomPostTypesController extends AdminController
 	
 	/**********************
 	* Counts the amount of pts currently saved
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	private function currentPTCount()
@@ -351,7 +351,7 @@ class CustomPostTypesController extends AdminController
 	
 	/**********************
 	* Checks to see what ver is running
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	private function checkVer()

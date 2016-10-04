@@ -1,6 +1,6 @@
 /**
 * Class name: tool-tips.js
-* Author: David Rugendyke - david@ironcode.com.au
+* Author: Euphern Technology Pvt. Ltd. & David Rugendyke  - david@ironcode.com.au
 * Platform: Mootools - no conflict mode just incase
 * Creates tool tips
 */

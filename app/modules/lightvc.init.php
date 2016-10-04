@@ -2,7 +2,7 @@
 /**********************
 * Initialises the start of the Kontrol WP Framework - only included when the framework is needed
 * Plugin URI: http://www.kontrolwp.com
-* @author David Rugendyke
+* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 * @author_uri http://www.ironcode.com.au
 * @since 1.0.0
 ***********************/

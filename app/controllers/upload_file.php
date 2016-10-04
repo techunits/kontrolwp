@@ -1,7 +1,7 @@
 <?php
 /**********************
 * Handles a ajax file upload and creates a wp attachment out of it
-* @author David Rugendyke
+* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 * @author_uri http://www.ironcode.com.au
 * @since 1.0.0
 ***********************/
@@ -13,7 +13,7 @@ class UploadFileController extends Lvc_PageController
 	
 	/**********************
 	* Constructor
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	protected function beforeAction() {
@@ -35,7 +35,7 @@ class UploadFileController extends Lvc_PageController
 	
 	/**********************
 	* Output an error in JSON
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function returnError($error)
@@ -52,7 +52,7 @@ class UploadFileController extends Lvc_PageController
 	
 	/**********************
 	* Finish the request and output a JSON return string
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function finish($data = NULL)
@@ -73,7 +73,7 @@ class UploadFileController extends Lvc_PageController
 	
 	/**********************
 	* Controller Index
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function actionIndex()
@@ -82,7 +82,7 @@ class UploadFileController extends Lvc_PageController
 	
 	/**********************
 	* Save as an attachment in WP
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function saveAttachment($authorID, $postID = '', $filedata = NULL, $type = 'media', $desc = NULL)
@@ -115,7 +115,7 @@ class UploadFileController extends Lvc_PageController
 	
 	/**********************
 	* Handles receiving an uploaded file via ajax
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function actionFile()
@@ -129,7 +129,7 @@ class UploadFileController extends Lvc_PageController
 	
 	/**********************
 	* Handles receiving an uploaded image file via ajax
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function actionImage()
@@ -235,7 +235,7 @@ class UploadFileController extends Lvc_PageController
 	
 	/**********************
 	* Processes an image by resizing /applying effects etc.
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.3
 	***********************/
 	private function imageProcess($image, $settings = NULL)

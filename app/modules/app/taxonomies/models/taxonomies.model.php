@@ -2,7 +2,7 @@
 
 /**********************
 * Database model for the kontrol_taxonomies table
-* @author David Rugendyke
+* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 * @author_uri http://www.ironcode.com.au
 * @since 1.0.0
 ***********************/
@@ -25,7 +25,7 @@ class TaxonomiesModel
 	
 	/**********************
 	* Constructor
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	function __construct($data = NULL) {
@@ -38,7 +38,7 @@ class TaxonomiesModel
 	
 	/**********************
 	* Returns a list of taxonomies
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @param type - the type of taxonomy - native or custom
 	* @since 1.0.0
 	***********************/
@@ -77,7 +77,7 @@ class TaxonomiesModel
 	
 	/**********************
 	* Makes a custom post type visible/hidden
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function update_visibility() {
@@ -91,7 +91,7 @@ class TaxonomiesModel
 	
 	/**********************
 	* Updates the sort order
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function update_sort_order() {
@@ -106,7 +106,7 @@ class TaxonomiesModel
 	
 	/**********************
 	* Delete a CPT
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function delete() {
@@ -121,7 +121,7 @@ class TaxonomiesModel
 	
 	/**********************
 	* Save/Update a taxonomy
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function save() {

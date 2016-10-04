@@ -1,15 +1,15 @@
 <?php
 /*
-Plugin Name: Kontrol Wordpress Developer Kit
+Plugin Name: KontrolWP - Kontrol Wordpress Developer Kit
 Plugin URI: http://www.kontrolwp.com
-Description: Kontrol is an advanced Wordpress plugin for developers. Create custom CMS sites using advanced custom fields, custom post types, custom taxonomies, admin menu editors, SEO and much more through an easy to use interface. 
-Version: 1.0.4
-Author: David Rugendyke
-Author URI: http://www.ironcode.com.au/
+Description: KontrolWP is an advanced Wordpress plugin for developers. Create custom CMS sites using advanced custom fields, custom post types, custom taxonomies, admin menu editors, SEO and much more through an easy to use interface. 
+Version: 1.0.5
+Author: Euphern Technology Pvt. Ltd. & David Rugendyke 
+Author URI: http://www.kontrolwp.com
 License: GPL v3 http://www.gnu.org/licenses/gpl.html
-Copyright: David Rugendyke
-Requirements: PHP version 5.2.4 or greater, MySQL version 5.0 or greater
+Requirements: PHP version 5.3 or greater, MySQL version 5.1 or greater
 Text Domain: kontrolwp
+Tags: kontrolwp, advanced custom fields, custom post types, custom taxonomies, admin menu editor 
 */
 
 global $wpdb;

@@ -1,6 +1,6 @@
 /**
 * Class name: custom-post-types-columns.js
-* Author: David Rugendyke - david@ironcode.com.au
+* Author: Euphern Technology Pvt. Ltd. & David Rugendyke  - david@ironcode.com.au
 * Platform: Mootools - no conflict mode just incase
 * Allows column sorting on the custom post types
 */

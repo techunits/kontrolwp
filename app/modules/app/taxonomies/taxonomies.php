@@ -1,7 +1,7 @@
 <?php
 /**********************
 * Controls the taxonomies core 
-* @author David Rugendyke
+* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 * @author_uri http://www.ironcode.com.au
 * @since 1.0.0
 ***********************/
@@ -10,7 +10,7 @@ class TaxonomiesController extends AdminController
 {
 	/**********************
 	* Constructor
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	protected function beforeAction() {
@@ -28,7 +28,7 @@ class TaxonomiesController extends AdminController
 			
 	/**********************
 	* Controller Index
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function actionIndex()
@@ -51,7 +51,7 @@ class TaxonomiesController extends AdminController
 	
 	/**********************
 	* Manage taxonomies
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function actionManage()
@@ -105,7 +105,7 @@ class TaxonomiesController extends AdminController
 	
 	/**********************
 	* Add a new taxonomy
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function actionAdd()
@@ -133,7 +133,7 @@ class TaxonomiesController extends AdminController
 	
 	/**********************
 	* Edit a taxonomy
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function actionEdit($id)
@@ -180,7 +180,7 @@ class TaxonomiesController extends AdminController
 	
 	/**********************
 	* Save/Update custom taxonomy
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function actionSave($id = NULL)
@@ -230,7 +230,7 @@ class TaxonomiesController extends AdminController
 	
 	/**********************
 	* Toggle the visibility
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function actionVisible($id, $flag)
@@ -259,7 +259,7 @@ class TaxonomiesController extends AdminController
 	
 	/**********************
 	* Delete the Taxonomy
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function actionDelete($id)
@@ -280,7 +280,7 @@ class TaxonomiesController extends AdminController
 	
 	/**********************
 	* Update the sort order
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function actionUpdateSortOrder($id, $sort)
@@ -323,7 +323,7 @@ class TaxonomiesController extends AdminController
 	
 	/**********************
 	* Counts the amount of taxs currently saved
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	private function currentTaxCount()
@@ -336,7 +336,7 @@ class TaxonomiesController extends AdminController
 	
 	/**********************
 	* Checks to see what ver is running
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	private function checkVer()

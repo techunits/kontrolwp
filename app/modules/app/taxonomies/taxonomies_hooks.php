@@ -1,7 +1,7 @@
 <?php
 /**********************
 * Controls the taxonomies hooks
-* @author David Rugendyke
+* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 * @author_uri http://www.ironcode.com.au
 * @since 1.0.0
 ***********************/
@@ -10,7 +10,7 @@ class TaxonomiesHooksController extends HookController
 {
 	/**********************
 	* Constructor
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	protected function beforeAction() {
@@ -24,7 +24,7 @@ class TaxonomiesHooksController extends HookController
 	
 	/**********************
 	* The controller will add any hooks it needs to here for the WP environment - is called everytime the app runs
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @param: ob - Reference of $this
 	* @since 1.0.0
 	***********************/
@@ -35,7 +35,7 @@ class TaxonomiesHooksController extends HookController
 	
 	/**********************
 	* Sets the custom taxonomies - native ones are set in the custom post types controller as part of the post type
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @param: ob - Reference of $this
 	* @since 1.0.0
 	***********************/

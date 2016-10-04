@@ -1,7 +1,7 @@
 <?php
 /**********************
 * Controls the admin menu type hooks
-* @author David Rugendyke
+* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 * @author_uri http://www.ironcode.com.au
 * @since 1.0.0
 ***********************/
@@ -10,7 +10,7 @@ class AdminMenuHooksController extends HookController
 {
 	/**********************
 	* Constructor
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	protected function beforeAction() {
@@ -22,7 +22,7 @@ class AdminMenuHooksController extends HookController
 		
 	/**********************
 	* The controller will add any hooks it needs to here for the WP environment - is called everytime the app runs
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @param: ob - Reference of $this
 	* @since 1.0.0
 	***********************/
@@ -37,7 +37,7 @@ class AdminMenuHooksController extends HookController
 	
 	/**********************
 	* Edits the admin menu when the hook above runs
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function set_admin_menu()

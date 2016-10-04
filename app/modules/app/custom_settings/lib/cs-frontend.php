@@ -1,7 +1,7 @@
 <?php
 /**********************
 * Creates some easy to use functions for retrieving kontrol custom settings
-* @author David Rugendyke
+* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 * @author_uri http://www.ironcode.com.au
 * @since 1.0.2
 ***********************/
@@ -11,7 +11,7 @@ if(!function_exists('get_setting')) {
 	
 	/**********************
 	* Retrieve a custom setting
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.2
 	***********************/
 	
@@ -40,7 +40,7 @@ if(!function_exists('get_setting')) {
 if(!function_exists('the_setting')) {
 	/**********************
 	* Retrieve a custom setting and echoes it
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.2
 	***********************/
 	function the_setting($field_key = NULL) 

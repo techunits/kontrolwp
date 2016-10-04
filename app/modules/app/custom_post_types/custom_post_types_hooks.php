@@ -1,7 +1,7 @@
 <?php
 /**********************
 * Controls the custom post type hooks
-* @author David Rugendyke
+* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 * @author_uri http://www.ironcode.com.au
 * @since 1.0.0
 ***********************/
@@ -12,7 +12,7 @@ class CustomPostTypesHooksController extends HookController
 	private $post_type;
 	/**********************
 	* Constructor
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	protected function beforeAction() {
@@ -28,7 +28,7 @@ class CustomPostTypesHooksController extends HookController
 		
 	/**********************
 	* The controller will add any hooks it needs to here for the WP environment - is called everytime the app runs
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @param: ob - Reference of $this
 	* @since 1.0.0
 	***********************/
@@ -57,7 +57,7 @@ class CustomPostTypesHooksController extends HookController
 	
 	/**********************
 	* The CSS for the cpt columns
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.1
 	***********************/
 	public function loadCSS()
@@ -69,7 +69,7 @@ class CustomPostTypesHooksController extends HookController
 	
 	/**********************
 	* Sets the custom post type
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @param: ob - Reference of $this
 	* @since 1.0.0
 	***********************/
@@ -123,7 +123,7 @@ class CustomPostTypesHooksController extends HookController
 	
 	/**********************
 	* Sets the custom post type columns
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.1
 	***********************/
 	public function setPostTypesColumns($columns)
@@ -225,7 +225,7 @@ class CustomPostTypesHooksController extends HookController
 	
 	/**********************
 	* Sets the custom post type columns data
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.1
 	***********************/
 	public function setPostTypesColumnsData($column, $post_id)
@@ -386,7 +386,7 @@ class CustomPostTypesHooksController extends HookController
 	
 	/**********************
 	* Formats the data from a Kontrol custom field to showing in a cpt column
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.1
 	***********************/
 	public static function setPostTypesKontrolCF($data, $post_id, $post_link)

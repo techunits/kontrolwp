@@ -1,7 +1,7 @@
 <?php
 /**********************
 * Generates the admin menu
-* @author David Rugendyke
+* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 * @author_uri http://www.ironcode.com.au
 * @since 1.0.0
 ***********************/
@@ -11,7 +11,7 @@ if(!function_exists('kontrol_am_generate_menu')) {
 	
 	/**********************
 	* Generates the menu
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	function kontrol_am_generate_menu($k_menu) 

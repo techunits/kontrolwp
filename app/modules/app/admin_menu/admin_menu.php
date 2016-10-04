@@ -1,7 +1,7 @@
 <?php
 /**********************
 * Controls the admin menu core admin
-* @author David Rugendyke
+* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 * @author_uri http://www.ironcode.com.au
 * @since 1.0.0
 ***********************/
@@ -10,7 +10,7 @@ class AdminMenuController extends AdminController
 {
 	/**********************
 	* Constructor
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	protected function beforeAction() {
@@ -40,7 +40,7 @@ class AdminMenuController extends AdminController
 
 	/**********************
 	* Controller Index
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function actionIndex()
@@ -74,7 +74,7 @@ class AdminMenuController extends AdminController
 	
 	/**********************
 	* Save a menu
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function actionSave()
@@ -106,7 +106,7 @@ class AdminMenuController extends AdminController
 	
 	/**********************
 	* Converts the kontrol form data into the required WP menu array
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function convert_form_to_menus()
@@ -171,7 +171,7 @@ class AdminMenuController extends AdminController
 	
 	/**********************
 	* Checks to see if an index exists in an array, increments it and checks again if it does
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	private function index_check($index, $index_array)
@@ -189,7 +189,7 @@ class AdminMenuController extends AdminController
 		
 	/**********************
 	* Capabilities List
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function get_menu_capabilities_list()
@@ -216,7 +216,7 @@ class AdminMenuController extends AdminController
 	
 	/**********************
 	* Get roles List
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function get_roles_list()

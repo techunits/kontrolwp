@@ -2,7 +2,7 @@
 
 /**********************
 * Database model for the kontrol_cfs_types table
-* @author David Rugendyke
+* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 * @author_uri http://www.ironcode.com.au
 * @since 1.0.0
 ***********************/
@@ -23,7 +23,7 @@ class CustomFieldsTypesModel extends KontrolModel
 	
 	/**********************
 	* Constructor
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	function __construct($data = NULL) {
@@ -37,7 +37,7 @@ class CustomFieldsTypesModel extends KontrolModel
 	
 	/**********************
 	* Returns a list of cf types
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function select() {

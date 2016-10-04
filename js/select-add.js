@@ -1,6 +1,6 @@
 /**
 * Class name: select-add.js
-* Author: David Rugendyke - david@ironcode.com.au
+* Author: Euphern Technology Pvt. Ltd. & David Rugendyke  - david@ironcode.com.au
 * Platform: Mootools - no conflict mode just incase
 * Allows you to select items out of a dropdown list that are then automatically added as a hidden field
 */

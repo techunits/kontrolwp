@@ -1,6 +1,6 @@
 /**
 * Class name: custom-taxonomies.js
-* Author: David Rugendyke - david@ironcode.com.au
+* Author: Euphern Technology Pvt. Ltd. & David Rugendyke  - david@ironcode.com.au
 * Platform: Mootools - no conflict mode just incase
 * Various functions/classes for the taxonomies admin section
 */

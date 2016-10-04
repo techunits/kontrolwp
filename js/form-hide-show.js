@@ -1,6 +1,6 @@
 /**
 * Class name: from-hide-show.js
-* Author: David Rugendyke - david@ironcode.com.au
+* Author: Euphern Technology Pvt. Ltd. & David Rugendyke  - david@ironcode.com.au
 * Platform: Mootools - no conflict mode just incase
 * Hides and shows various form fields depending on a value that is selected/entered in a field
 */

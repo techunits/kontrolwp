@@ -1,7 +1,7 @@
 <?php
 /**********************
 * Generates the rules custom fields
-* @author David Rugendyke
+* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 * @author_uri http://www.ironcode.com.au
 * @since 1.0.0
 ***********************/
@@ -11,7 +11,7 @@ class CF_Rules
 	
 	/**********************
 	* Generate the rules needed
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function generate()

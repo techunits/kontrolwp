@@ -1,6 +1,6 @@
 /**
 * Class name: file-uploads.js
-* Author: David Rugendyke - david@ironcode.com.au
+* Author: Euphern Technology Pvt. Ltd. & David Rugendyke  - david@ironcode.com.au
 * Platform: Mootools - no conflict mode just incase
 * A shell for handling uploads using the Fancyupload script
 */

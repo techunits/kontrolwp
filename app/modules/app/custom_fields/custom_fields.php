@@ -1,7 +1,7 @@
 <?php
 /**********************
 * Controls the custom fields core admin
-* @author David Rugendyke
+* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 * @author_uri http://www.ironcode.com.au
 * @since 1.0.0
 ***********************/
@@ -13,7 +13,7 @@ class CustomFieldsController extends AdminController
 	
 	/**********************
 	* Constructor
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	protected function beforeAction() {
@@ -36,7 +36,7 @@ class CustomFieldsController extends AdminController
 
 	/**********************
 	* Controller Index
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function actionIndex()
@@ -68,7 +68,7 @@ class CustomFieldsController extends AdminController
 	
 	/**********************
 	* Manage CF
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function actionManage()
@@ -127,7 +127,7 @@ class CustomFieldsController extends AdminController
 	
 	/**********************
 	* Add CF
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function actionAdd()
@@ -163,7 +163,7 @@ class CustomFieldsController extends AdminController
 	
 	/**********************
 	* Save/Update a CF group
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function actionSave()
@@ -371,7 +371,7 @@ class CustomFieldsController extends AdminController
 
 	/**********************
 	* Edit a CF group
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function actionEdit($id)
@@ -467,7 +467,7 @@ class CustomFieldsController extends AdminController
 		
 	/**********************
 	* Prepare a Field - unserialize it's data etc
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	private function prepareField($field)
@@ -491,7 +491,7 @@ class CustomFieldsController extends AdminController
 	
 	/**********************
 	* Counts the amount of fields currently saved
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	private function currentFieldCount()
@@ -504,7 +504,7 @@ class CustomFieldsController extends AdminController
 	
 	/**********************
 	* Checks to see what ver is running
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	private function checkVer()
@@ -524,7 +524,7 @@ class CustomFieldsController extends AdminController
 	
 	/**********************
 	* Toggle the visibility of a post type group
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function actionHideGroupPostType()
@@ -540,7 +540,7 @@ class CustomFieldsController extends AdminController
 	
 	/**********************
 	* Remove a group from a post type
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function actionDeleteGroupPostType()
@@ -555,7 +555,7 @@ class CustomFieldsController extends AdminController
 	
 	/**********************
 	* Update the sort order
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function actionUpdateGroupOrder($id, $sort)

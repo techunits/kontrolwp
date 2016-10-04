@@ -1,6 +1,6 @@
 /**
 * Class name: drag-rows.js
-* Author: David Rugendyke - david@ironcode.com.au
+* Author: Euphern Technology Pvt. Ltd. & David Rugendyke  - david@ironcode.com.au
 * Platform: Mootools - no conflict mode just incase
 * Manages the tables in a 'manage' area, allows reordering of rows, rows moved from table to table and destroying rows
 */

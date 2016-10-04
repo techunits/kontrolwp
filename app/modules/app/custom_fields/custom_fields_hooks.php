@@ -1,7 +1,7 @@
 <?php
 /**********************
 * Controls the custom fields hooks and the custom settings hooks
-* @author David Rugendyke
+* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 * @author_uri http://www.ironcode.com.au
 * @since 1.0.0
 ***********************/
@@ -14,7 +14,7 @@ class CustomFieldsHooksController extends HookController
 	
 	/**********************
 	* Constructor
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	protected function beforeAction() {
@@ -36,7 +36,7 @@ class CustomFieldsHooksController extends HookController
 	
 	/**********************
 	* The controller will add any hooks it needs to here for the WP environment - is called everytime the app runs
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function actionSetHooks()
@@ -62,7 +62,7 @@ class CustomFieldsHooksController extends HookController
 	
 	/**********************
 	* Set a hook for the settings page 
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.2
 	***********************/
 	public function customSettingsPageInit()
@@ -89,7 +89,7 @@ class CustomFieldsHooksController extends HookController
 
 	/**********************
 	* The CSS for the meta boxes/fields
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function actionLoadCSS()
@@ -104,7 +104,7 @@ class CustomFieldsHooksController extends HookController
 	
 	/**********************
 	* The JS for the meta boxes/fields
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function actionLoadJS()
@@ -146,7 +146,7 @@ class CustomFieldsHooksController extends HookController
 	
 	/**********************
 	* Sets the custom fields meta boxes
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function setCustomFieldsMetaBoxes()
@@ -196,7 +196,7 @@ class CustomFieldsHooksController extends HookController
 	
 	/**********************
 	* Saves the custom fields meta boxes
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function saveCustomFieldsMetaBoxes($post_id)
@@ -255,7 +255,7 @@ class CustomFieldsHooksController extends HookController
 	
 	/**********************
 	* Sets the custom fields meta boxes
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function setCustomFieldsMetaBoxesContent($post, $args)

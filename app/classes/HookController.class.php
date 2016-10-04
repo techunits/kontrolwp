@@ -3,7 +3,7 @@
 * Controls the hooks for each module
 * @Plugin Name: Kontrol
 * @Plugin URI: http://www.kontrolwp.com
-* @author David Rugendyke
+* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 * @author_uri http://www.ironcode.com.au
 * @since 1.0.0
 ***********************/
@@ -30,7 +30,7 @@ class HookController extends Lvc_PageController
 	
 	/**********************
 	* After the controller has run its action and finished, display the view and maybe tidy up
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	protected function afterAction()

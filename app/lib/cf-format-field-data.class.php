@@ -1,7 +1,7 @@
 <?php
 /**********************
 * Retrieves a custom field and formats its data accordingly - used by custom fields and custom settings
-* @author David Rugendyke
+* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 * @author_uri http://www.ironcode.com.au
 * @since 1.0.2
 ***********************/
@@ -13,7 +13,7 @@ class Kontrol_CF_Format_Field_Data
 	
 	/**********************
 	* Retrieve the field and format the passed data
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.2
 	***********************/
 	public function get_field($field_key, $field_data = NULL)
@@ -104,7 +104,7 @@ class Kontrol_CF_Format_Field_Data
 	
 	/**********************
 	* Format the passed data
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.2
 	***********************/
 	private function format_field_data($field, $field_data)

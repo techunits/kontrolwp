@@ -2,7 +2,7 @@
 
 /**********************
 * Manipulates images and applies certains effects - Based on Simple Image by Simon Jarvis
-* @author David Rugendyke
+* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 * @author_uri http://www.ironcode.com.au
 * @plugin Kontrol
   @plugin_url http://www.kontrolwp.com

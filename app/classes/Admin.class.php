@@ -4,10 +4,10 @@ Plugin Name: Kontrol
 Plugin URI: http://www.kontrolwp.com
 Description: Kontrol is an advanced Wordpress package for managing custom post types, advanced custom fields, admin menu editing and much more through an easy to use interface. 
 Version: 1.0
-Author: David Rugendyke
+Author: Euphern Technology Pvt. Ltd. & David Rugendyke 
 Author URI: http://www.ironcode.com.au/
 License: GPL
-Copyright: David Rugendyke
+Copyright: Euphern Technology Pvt. Ltd. & David Rugendyke 
 Requirements: PHP version 5.2.4 or greater, MySQL version 5.0 or greater
 */
 
@@ -15,7 +15,7 @@ Requirements: PHP version 5.2.4 or greater, MySQL version 5.0 or greater
 /**********************
 * Controls the start of the Kontrol WP Framework
 * Plugin URI: http://www.kontrolwp.com
-* @author David Rugendyke
+* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 * @author_uri http://www.ironcode.com.au
 * @since 1.0.0
 ***********************/
@@ -24,17 +24,17 @@ class KontrolAdmin
 	
 	/**********************
 	* Constructor
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
-	function __construct() 
+	public function __construct() 
 	{
 		
 	}
 
 	/**********************
 	* Load our plugins options page through the admin menu hook
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function set_hooks() 
@@ -50,7 +50,7 @@ class KontrolAdmin
 	
 	/**********************
 	* This admin options page hook is called seperately
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function set_hook_options_page() 
@@ -63,7 +63,7 @@ class KontrolAdmin
 		
 	/**********************
 	* The utility page hook is called when a new seperate page outside of the settings->kontrol menu needs to run
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.2
 	***********************/
 	public function set_hook_utility_page($page_title, $page_title_id, $menu_name, $menu_id, $perm_level, $page_id, $menu_icon) 
@@ -77,7 +77,7 @@ class KontrolAdmin
 	
 	/**********************
 	* The utility page hook is called when a new seperate page outside of the settings->kontrol menu needs to run
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.2
 	***********************/
 	public function set_hook_menu_page($page_title, $page_title_id, $menu_name, $menu_id, $perm_level, $page_id, $menu_icon, $pos) 
@@ -89,7 +89,7 @@ class KontrolAdmin
 	
 	/**********************
 	* Load CSS
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function load_assets_css() 
@@ -106,7 +106,7 @@ class KontrolAdmin
 	
 	/**********************
 	* Load JS
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function load_assets_js() 
@@ -181,7 +181,7 @@ class KontrolAdmin
 	
 	/**********************
 	* Load our options page assets when it's loaded
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function option_page_load_assets() 
@@ -198,7 +198,7 @@ class KontrolAdmin
 	
 	/**********************
 	* Process the request, launch framework - only fired from within the options page for this plugin for optimisation
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function option_page_request() 
@@ -242,7 +242,7 @@ class KontrolAdmin
 	
 	/**********************
 	* Runs when the plugin is activated, use it to setup tables and add data based on modules etc.
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function install_plugin() 
@@ -264,7 +264,7 @@ class KontrolAdmin
 	* But please at least take note that I put a huge amount of time and effort into this and I really think it's worth the small amount i'm charging! Support independant developers please ;D
 	* You can buy it legit at www.kontrolwp.com and get some warm fuzzy feelings for helping me make this a great plugin and continue making it so!
 	* P.S I love you!
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function path_check() 

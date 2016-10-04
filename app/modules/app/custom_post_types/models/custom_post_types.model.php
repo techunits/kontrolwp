@@ -2,7 +2,7 @@
 
 /**********************
 * Database model for the kontrol_cpts table
-* @author David Rugendyke
+* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 * @author_uri http://www.ironcode.com.au
 * @since 1.0.0
 ***********************/
@@ -31,7 +31,7 @@ class CustomPostTypesModel
 	
 	/**********************
 	* Constructor
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	function __construct($data = NULL) {
@@ -45,7 +45,7 @@ class CustomPostTypesModel
 	
 	/**********************
 	* Returns a list of cpts
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @param type - the type of taxonomy - native or custom
 	* @since 1.0.0
 	***********************/
@@ -94,7 +94,7 @@ class CustomPostTypesModel
 	
 	/**********************
 	* Makes a custom post type visible/hidden
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function update_visibility() {
@@ -108,7 +108,7 @@ class CustomPostTypesModel
 	
 	/**********************
 	* Updates the sort order
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function update_sort_order() {
@@ -123,7 +123,7 @@ class CustomPostTypesModel
 	
 	/**********************
 	* Updates the columns 
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function update_columns() {
@@ -138,7 +138,7 @@ class CustomPostTypesModel
 	
 	/**********************
 	* Delete a CPT
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function delete() {
@@ -153,7 +153,7 @@ class CustomPostTypesModel
 	
 	/**********************
 	* Save/Update a custom post type
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function save() {

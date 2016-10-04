@@ -2,7 +2,7 @@
 
 /**********************
 * Database model for the kontrol_cpts_taxs table
-* @author David Rugendyke
+* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 * @author_uri http://www.ironcode.com.au
 * @since 1.0.0
 ***********************/
@@ -40,7 +40,7 @@ class CustomPostTypesTaxonomiesModel
 		
 	/**********************
 	* Constructor
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	function __construct($data = NULL) {
@@ -55,7 +55,7 @@ class CustomPostTypesTaxonomiesModel
 	
 	/**********************
 	* Returns a list of cpts
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @param type - the type of taxonomy - native or custom
 	* @since 1.0.0
 	***********************/
@@ -127,7 +127,7 @@ class CustomPostTypesTaxonomiesModel
 	
 	/**********************
 	* Save/Update a custom post type
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function save() {
@@ -156,7 +156,7 @@ class CustomPostTypesTaxonomiesModel
 
 	/**********************
 	* Deletes a list of taxonomies and cpt combinations
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @param type - the type of taxonomy - native or custom
 	* @since 1.0.0
 	***********************/

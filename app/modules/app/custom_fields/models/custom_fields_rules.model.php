@@ -2,7 +2,7 @@
 
 /**********************
 * Database model for the kontrol_cfs_rules table
-* @author David Rugendyke
+* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 * @author_uri http://www.ironcode.com.au
 * @since 1.0.0
 ***********************/
@@ -25,7 +25,7 @@ class CustomFieldsRulesModel extends KontrolModel
 	
 	/**********************
 	* Constructor
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	function __construct($data = NULL) {
@@ -39,7 +39,7 @@ class CustomFieldsRulesModel extends KontrolModel
 	
 	/**********************
 	* Returns a list of cf types
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function select() {
@@ -71,7 +71,7 @@ class CustomFieldsRulesModel extends KontrolModel
 	
 	/**********************
 	* Delete a rule
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function delete() {
@@ -88,7 +88,7 @@ class CustomFieldsRulesModel extends KontrolModel
 	
 	/**********************
 	* Save/Update a cf rules
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function save($rule_set) {

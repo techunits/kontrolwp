@@ -2,7 +2,7 @@
 
 /**********************
 * Database model for the kontrol_cfs_fields table
-* @author David Rugendyke
+* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 * @author_uri http://www.ironcode.com.au
 * @since 1.0.0
 ***********************/
@@ -31,7 +31,7 @@ class CustomFieldsModel extends KontrolModel
 	
 	/**********************
 	* Constructor
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	function __construct($data = NULL) {
@@ -45,7 +45,7 @@ class CustomFieldsModel extends KontrolModel
 	
 	/**********************
 	* Returns a list of cf types
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function select() {
@@ -100,7 +100,7 @@ class CustomFieldsModel extends KontrolModel
 	
 	/**********************
 	* Makes a field visible/hidden
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function update_visibility() {
@@ -114,7 +114,7 @@ class CustomFieldsModel extends KontrolModel
 	
 	/**********************
 	* Updates the sort order
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function update_sort_order() {
@@ -127,7 +127,7 @@ class CustomFieldsModel extends KontrolModel
 	
 	/**********************
 	* Delete a field
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function delete() {
@@ -154,7 +154,7 @@ class CustomFieldsModel extends KontrolModel
 	
 	/**********************
 	* Save/Update a cf 
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function save() {

@@ -3,16 +3,16 @@
 Plugin Name: Kontrol Developer Kit
 Plugin URI: http://URL.kontrolwp.com
 Description: Kontrol is an advanced Wordpress package for managing custom post types, advanced custom fields, admin menu editing and much more through an easy to use interface. 
-Version: 1.0.4
-Author: David Rugendyke
+Version: 1.0.5
+Author: Euphern Technology Pvt. Ltd. & David Rugendyke 
 Author URI: http://URL.ironcode.com.au/
-Copyright: David Rugendyke
+Copyright: Euphern Technology Pvt. Ltd. & David Rugendyke 
 Requirements: PHP version 5.2.4 or greater, MySQL version 5.0 or greater
 */
 
 define('APP_NAME', 'Kontrol');
 define('APP_ID', 'kontrolwp');
-define('APP_PATH_ID', 'kontrol-developer-kit');
+define('APP_PATH_ID', 'kontrolwp');
 define('APP_VER', '1.0.4');
 define('APP_URL', 'http://www.kontrolwp.com');
 define('APP_PLUGIN_URL', 'http://www.kontrolwp.com/plugin/wordpress-developer-kit');

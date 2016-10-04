@@ -2,7 +2,7 @@
 
 /**********************
 * Database model for the posts table
-* @author David Rugendyke
+* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 * @author_uri http://www.ironcode.com.au
 * @since 1.0.0
 ***********************/
@@ -23,7 +23,7 @@ class PostsModel
 	
 	/**********************
 	* Constructor
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	function __construct($data = NULL) {
@@ -37,7 +37,7 @@ class PostsModel
 		
 	/**********************
 	* Update a set of posts to a new post type ID
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function update_post_type_id($new_post_type_id) {

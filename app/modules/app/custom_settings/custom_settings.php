@@ -1,7 +1,7 @@
 <?php
 /**********************
 * Controls the custom settings core admin, extends custom fields
-* @author David Rugendyke
+* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 * @author_uri http://www.ironcode.com.au
 * @since 1.0.2
 ***********************/
@@ -14,7 +14,7 @@ class CustomSettingsController extends CustomFieldsController
 		
 	/**********************
 	* Constructor
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.2
 	***********************/
 	protected function beforeAction() {
@@ -43,7 +43,7 @@ class CustomSettingsController extends CustomFieldsController
 	
 	/**********************
 	* Save the custom settings
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.2
 	***********************/
 	public function actionSaveSettings()
@@ -81,7 +81,7 @@ class CustomSettingsController extends CustomFieldsController
 	
 	/**********************
 	* Delete a settings group and the fields in them
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.2
 	***********************/
 	public function actionDeleteSettingsGroup()
@@ -109,7 +109,7 @@ class CustomSettingsController extends CustomFieldsController
 	
 	/**********************
 	* Displaying the settings page
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.2
 	***********************/
 	public function actionSettingsPage()
@@ -187,7 +187,7 @@ class CustomSettingsController extends CustomFieldsController
 	
 	/**********************
 	* Save the settings fields as options
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.2
 	***********************/
 	public function settingsPageSaveFields()

@@ -3,7 +3,7 @@
 /**********************
 * Controls the models of the Kontrol WP Framework
 * Plugin URI: http://www.kontrolwp.com
-* @author David Rugendyke
+* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 * @author_uri http://www.ironcode.com.au
 * @since 1.0.0
 ***********************/
@@ -13,7 +13,7 @@ class KontrolModel
 	
 	/**********************
 	* Loads a model, checks in various locations for them
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function load($model, $controller = NULL) 

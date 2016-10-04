@@ -1,7 +1,7 @@
 <? 
 /**********************
 * General tools
-* @author David Rugendyke
+* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 * @author_uri http://www.ironcode.com.au
 * @since 1.0.0
 ***********************/
@@ -12,7 +12,7 @@ class Kontrol_Tools
 	
 	/**********************
 	* Returns the max post size in bytes
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	function return_post_max($type = 'bytes') {
@@ -38,7 +38,7 @@ class Kontrol_Tools
 	
 	/**********************
 	* Converts bytes to a readable format
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	function byte_format($bytes, $unit = "", $decimals = 0) {
@@ -70,7 +70,7 @@ class Kontrol_Tools
 	 
 	/**********************
 	* Converts any urls in text to a link
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.1
 	***********************/
 	 public static function make_clickable_links($text) {
@@ -79,7 +79,7 @@ class Kontrol_Tools
 	
 	/**********************
 	* Converts an WP upload file/image link to an absolute one for the current wp install - handy for when a WP install has moved but still has old links, this converts them automatically for the new install
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.2
 	***********************/
 	 public static function absolute_upload_path($url) {
@@ -93,7 +93,7 @@ class Kontrol_Tools
 	
 	/**********************
 	* Walks an array and converts 'true', 'false', int strings to their boolean, int equivalents
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	function array_convert_types(&$item, $key) {
@@ -113,7 +113,7 @@ class Kontrol_Tools
 	
 	/**********************
 	* Walks an array and converts single quotes into their htmlchar equiv - used to store json arrays in data attribute tags on html elements
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.4
 	***********************/
 	function array_store_as_safe_json(&$item, $key) {
@@ -124,7 +124,7 @@ class Kontrol_Tools
 	
 	/**********************
 	* Creates a nice custom WP pages array that's indented - only works with get_pages default options
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	function page_list_array_indented($pt_filter = 'page') {	
@@ -148,7 +148,7 @@ class Kontrol_Tools
 	
 	/**********************
 	* Creates a nice custom WP post category list that's indented
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	function post_category_list_array_indented($taxonomy = 'category') {	
@@ -168,7 +168,7 @@ class Kontrol_Tools
 	
 	/**********************
 	* Returns a list of the post formats supported by this theme in a nice(r) array
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	function post_formats_list_array() {	
@@ -184,7 +184,7 @@ class Kontrol_Tools
 	
 	/**********************
 	* Returns a list of the user roles in a nice array
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	function user_roles_array() {	
@@ -198,7 +198,7 @@ class Kontrol_Tools
 	
 	/**********************
 	* Cleans all meta data
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function clean_meta_data(&$arr)
@@ -225,7 +225,7 @@ class Kontrol_Tools
 	
 	/**********************
 	* Removes a domain name from a url
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function return_absolute_url_path($url)
@@ -239,7 +239,7 @@ class Kontrol_Tools
 
 /**********************
 * Sets the i18n (internationalization) language
-* @author David Rugendyke
+* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 * @author_uri http://www.ironcode.com.au
 * @since 1.0.3
 ***********************/
@@ -252,7 +252,7 @@ class Kontrol_Init_Language
 
 /**********************
 * Stores a message to display after a redirect, then clears that msg
-* @author David Rugendyke
+* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 * @author_uri http://www.ironcode.com.au
 * @since 1.0.0
 ***********************/
@@ -263,7 +263,7 @@ class Kontrol_Alert
 	
 	/**********************
 	* Sets a msg in the wp_options table
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	function set_message($title, $msg) {
@@ -273,7 +273,7 @@ class Kontrol_Alert
 	
 	/**********************
 	* Checks to see if a msg is in the wp_options table
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	function check_message() {
@@ -295,7 +295,7 @@ class Kontrol_Alert
 
 /**********************
 * Parses template vars and converts them to their WP equivalent
-* @author David Rugendyke
+* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 * @author_uri http://www.ironcode.com.au
 * @since 1.0.0
 ***********************/
@@ -304,7 +304,7 @@ class Kontrol_Parse_Template_Vars
 	
 	/**********************
 	* Parses some set template style tags - check the 'app/views/template-parse-list.php' directory for a list
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	function parse($line) {
@@ -423,7 +423,7 @@ class Kontrol_Parse_Template_Vars
 
 /**********************
 * Contains a list of reasons to upgrade, picks one at random - didn't need to be a class, but what the hell ;)
-* @author David Rugendyke
+* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 * @author_uri http://www.ironcode.com.au
 * @since 1.0.0
 ***********************/
@@ -431,7 +431,7 @@ class Kontrol_Upgrade_Reasons_Print
 {
 	/**********************
 	* Select a reason and return it at random
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	function select() {

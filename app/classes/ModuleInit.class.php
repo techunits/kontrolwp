@@ -4,10 +4,10 @@ Plugin Name: Kontrol
 Plugin URI: http://www.kontrolwp.com
 Description: Kontrol is an advanced Wordpress package for managing custom post types, advanced custom fields, admin menu editing and much more through an easy to use interface. 
 Version: 1.0
-Author: David Rugendyke
+Author: Euphern Technology Pvt. Ltd. & David Rugendyke 
 Author URI: http://www.ironcode.com.au/
 License: GPL
-Copyright: David Rugendyke
+Copyright: Euphern Technology Pvt. Ltd. & David Rugendyke 
 Requirements: PHP version 5.2.4 or greater, MySQL version 5.0 or greater
 */
 
@@ -15,7 +15,7 @@ Requirements: PHP version 5.2.4 or greater, MySQL version 5.0 or greater
 /**********************
 * Initialises any modules hooks and additional functions - required to run everytime
 * Plugin URI: http://www.kontrolwp.com
-* @author David Rugendyke
+* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 * @author_uri http://www.ironcode.com.au
 * @since 1.0.0
 ***********************/
@@ -26,7 +26,7 @@ class KontrolModuleInit
 	
 	/**********************
 	* Constructor
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	function __construct() 
@@ -39,7 +39,7 @@ class KontrolModuleInit
 	
 	/**********************
 	* Load all module configs into an array and return it
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	function module_list() 
@@ -68,7 +68,7 @@ class KontrolModuleInit
 	
 	/**********************
 	* Fire any hooks set in the modules
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	function set_hooks() 

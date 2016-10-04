@@ -1,7 +1,7 @@
 <?php
 /**********************
 * Creates some easy to use functions for retrieving kontrol CFs
-* @author David Rugendyke
+* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 * @author_uri http://www.ironcode.com.au
 * @since 1.0.0
 ***********************/
@@ -10,7 +10,7 @@
 if(!function_exists('get_cf')) {
 	/**********************
 	* Retrieve a custom field
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	
@@ -46,7 +46,7 @@ if(!function_exists('get_cf')) {
 if(!function_exists('the_cf')) {
 	/**********************
 	* Retrieve a custom field and echoes it
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	function the_cf($field_key = NULL, $post_id = NULL) 

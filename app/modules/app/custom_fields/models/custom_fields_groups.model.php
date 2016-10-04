@@ -2,7 +2,7 @@
 
 /**********************
 * Database model for the kontrol_cfs_groups table
-* @author David Rugendyke
+* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 * @author_uri http://www.ironcode.com.au
 * @since 1.0.0
 ***********************/
@@ -25,7 +25,7 @@ class CustomFieldsGroupsModel extends KontrolModel
 	
 	/**********************
 	* Constructor
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	function __construct($data = NULL) {
@@ -40,7 +40,7 @@ class CustomFieldsGroupsModel extends KontrolModel
 	
 	/**********************
 	* Returns a list of cf types
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function select() {
@@ -73,7 +73,7 @@ class CustomFieldsGroupsModel extends KontrolModel
 	
 	/**********************
 	* Returns a list of groups not assigned to post types
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function select_no_post_type() {
@@ -92,7 +92,7 @@ class CustomFieldsGroupsModel extends KontrolModel
 	
 	/**********************
 	* Deletes a group
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function delete() {
@@ -114,7 +114,7 @@ class CustomFieldsGroupsModel extends KontrolModel
 	
 	/**********************
 	* Save/Update a cf group
-	* @author David Rugendyke
+	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
 	public function save() {
