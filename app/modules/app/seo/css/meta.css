@@ -1,0 +1,172 @@
+@charset "utf-8";
+/*** Meta Boxes / Post Editing ******/
+
+.kontrol-seo {
+	position: relative;
+	padding-top: 5px;	
+}
+
+.kontrol-seo .inside {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.kontrol-seo .inside .field {
+	position: relative;
+	margin-top: 15px;
+}
+
+.kontrol-seo .inside .field:first-child {
+	margin-top: 0;
+}
+
+
+.kontrol-seo .seo-default {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+.kontrol-seo .input input, .kontrol-seo .input select, .kontrol-seo .input textarea {
+	position: relative;
+	width: 99.5%;
+	padding: 5px 4px 4px 4px;	
+	font-size: 12px;
+}
+
+.kontrol-seo .details {
+	position: relative;
+	margin-bottom: 4px;
+}
+
+.kontrol-seo .details .title {
+	position: relative;
+	color: #21759B;
+    font-size: 12px;
+    font-weight: bold;
+    padding:  0 0 1px 3px;
+    text-shadow: 0 1px 0 #FFF;	
+	margin-bottom: 1px;
+}
+
+.kontrol-seo .instructions {
+	position: relative;
+	color: #999;
+    font-size: 11px;
+	padding-left: 3px;
+	margin-top: 3px;
+}
+
+.kontrol-seo .seo-preview {
+	position: relative;	
+	padding-left: 3px;
+}
+
+.kontrol-seo .seo-preview .seo-title {
+	position: relative;	
+    color: #1111CC;
+    font-size: 16px !important;
+    text-decoration: underline;
+	margin-bottom: 3px;
+}
+
+.kontrol-seo .seo-preview .seo-link {
+	position: relative;	
+	margin-bottom: 2px;
+	font-size: 13px;
+}
+
+.kontrol-seo .seo-preview .seo-link .g-link {
+	position: relative;	
+    color: #228822;
+}
+
+.kontrol-seo .seo-preview .seo-link .g-cached {
+	position: relative;	
+	color: #4272DB;
+}
+
+.kontrol-seo .seo-preview .seo-desc {
+	position: relative;	
+	color: #000;
+	font-size: 13px;
+}
+
+.kontrol-seo .seo-preview .seo-desc .g-date {
+	position: relative;	
+	color: #666666;
+}
+
+.kontrol-seo .seo-count {
+	position: relative;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px; 	
+	background-color: #fff;
+	border: 1px solid #999;
+	padding: 1px 3px;
+	color: #999;
+	font-weight: bold;
+}
+
+.kontrol-seo textarea {
+	overflow-y: auto;
+}
+
+.kontrol-seo .input .auto-button {
+	position: absolute;
+	top: 27px;
+	right: 12px;
+}
+
+.kontrol-seo .input .auto-button input {
+	position: relative;
+	width: auto !important;
+	border: 0 none !important;
+	padding: 1px !important;
+	cursor: pointer;
+	color: #999;
+	font-size: 11px;
+}
+
+.kontrol-seo .input .auto-button input:hover {
+	color: #000;
+}
+
+.kontrol-seo .validation-advice {
+	color: #e63333;
+	padding: 2px;	
+	font-size: 11px;
+}
+
+.kontrol-seo .red {
+	color: #F00;	
+}
+
+.kontrol-seo .kontrol-tab.in a {
+	color: #B4453B !important;	
+}
+
+
+.kontrol-seo .red {
+	color: #C66;
+}
+
+.kontrol-seo .template-tags table {
+	position: relative;
+	font-size: 11px;
+	margin: 10px 0;
+}
+
+.kontrol-seo .template-tags th {
+	position: relative;
+	color: #C66;
+	text-align: left;
+	padding-right: 10px;
+}
+
+.kontrol-seo .template-tags th.main-title {
+	position: relative;
+	padding-top: 5px;
+	color: #333;
+}

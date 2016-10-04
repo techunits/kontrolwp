@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* Custom Post Types Columns CSS */
+
+.wp-list-table .column-excerpt {
+	width: auto !important;	
+}
+
+.wp-list-table .kontrol-col-field-line {
+	margin-bottom: 4px;
+}
+
+
+.wp-list-table table.kontrol-repeatable th {
+	background: #f4f4f4;	
+	-webkit-border-radius: 6px 6px 0 0;
+	-moz-border-radius: 6px 6px 0 0;
+	border-radius: 6px 6px 0 0;
+	color: #606060;
+}
+
+.wp-list-table table.kontrol-repeatable tr td {
+	padding: 6px;
+}
+
+.wp-list-table table.kontrol-repeatable tr:last-child td {
+	border-bottom: 0 none;
+}

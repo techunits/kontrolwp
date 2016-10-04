@@ -1,0 +1,2 @@
+<textarea name="_kontrol[<?=$field->field_key?>]" class="<?=$field_validation?>" <?=(isset($field->settings['height']) && !empty($field->settings['height'])) ? 'style="height: '.$field->settings['height'].'px;"':''; ?> ><?=!empty($field_value) ? $field_value : $field->settings['default_value'];?></textarea>
+  

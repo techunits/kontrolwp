@@ -1,0 +1,75 @@
+@charset "utf-8";
+/*** Custom Taxonomies ****************/
+
+#kontrol .content .main-col .inside .row.hidden-tax {
+	position: relative;
+	zoom: 1;
+	filter: alpha(opacity=50);
+	opacity: 0.5;	
+}
+
+#kontrol .content .main-col .section .inside .row .pt-attached {
+	position: relative;
+	font-size: 11px;
+	line-height: 140%;
+	margin-top: 2px;
+}
+
+#kontrol .content .main-col .section .inside .row .pt-attached .pt-list .list {
+	position: relative;
+	padding-left: 20px;
+	color: #111;
+}
+
+#kontrol .content .main-col .section .inside .row .pt-attached .show {
+	position: relative;
+	cursor: pointer;
+}
+
+#kontrol .content .main-col .section .inside .row .pt-attached .list {
+	position: relative;
+	display: none;
+	padding-left: 10px;
+	margin: 2px 0 10px 0;
+}
+
+#kontrol .content .main-col .inside .row-data-col {
+	position: relative;
+	padding-top: 5px;	
+}
+
+#kontrol .content .main-col .inside  .row-pts {
+	position: relative;
+	margin: 0 40px 12px 40px;	
+	color: #9e9e9e;
+}
+
+#kontrol .content .main-col .inside  .pt-name {
+	position: relative;
+	font-size: 11px;
+	margin-right: 10px;
+}
+
+#kontrol .content .main-col .inside  .pt-name.native {
+	color: #bd7400;
+	background: url('../../../../../images/icon-bullet-orange.png') no-repeat 0 0;
+	padding-left: 16px;
+	left: -4px;
+}
+
+#kontrol .content .main-col .inside  .pt-name.custom {
+	color: #197abd;
+	background: url('../../../../../images/icon-bullet-green.png') no-repeat 0 0;
+	padding-left: 16px;
+	left: -4px;
+}
+
+#kontrol .content .main-col .section .inside .row .pts-attached {
+	position: relative;
+	font-size: 11px;
+	line-height: 140%;
+	margin-top: 2px;
+}
+
+
+

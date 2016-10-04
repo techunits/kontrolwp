@@ -1,0 +1,294 @@
+@charset "utf-8";
+/*** Meta Boxes / Post Editing ******/
+
+.postbox[id*="kontrol-group"] {
+   display: none; 
+}
+
+.kontrol-metabox[id*="kontrol-group-nobox"]  .kontrol-field  {
+   border: 0 none !important; 
+}
+
+.kontrol-metabox {
+	position: relative;
+	display: block;	
+}
+
+.kontrol-metabox .hide {
+	display: none;
+}
+
+
+.kontrol-metabox .inside {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.kontrol-metabox .kontrol-field {
+	position: relative;
+	border-top: 1px solid #FFF;	
+	border-bottom: 1px solid #E9E9E9;
+    padding: 10px;
+}
+
+.kontrol-metabox .kontrol-field .inner {
+	position: relative;
+}
+
+.kontrol-metabox .inline {
+	display: -moz-inline-stack;
+	display: inline-block;
+	vertical-align: top;
+	zoom: 1;
+	*display: inline;	
+}
+
+.kontrol-metabox .details {
+	position: relative;
+	margin-bottom: 6px;
+}
+
+.kontrol-metabox .details .title {
+	position: relative;
+	color: #21759B;
+    font-size: 12px;
+    font-weight: bold;
+    padding:  0 0 2px 3px;
+    text-shadow: 0 1px 0 #FFF;	
+}
+
+.kontrol-metabox .req-ast {
+	position: relative;
+	font-size: 10px;
+	color: #F00 !important;	
+}
+
+.kontrol-metabox .instructions {
+	position: relative;
+	color: #999;
+    font-size: 11px;
+	padding-left: 3px;
+}
+
+.kontrol-metabox .input {
+	position: relative;
+	width: 100%;
+}
+
+
+.kontrol-metabox .input input, .kontrol-metabox .input select, .kontrol-metabox .input textarea {
+	position: relative;
+	width: 99.5%;
+	padding: 5px 4px 4px 4px;	
+	font-size: 12px;
+}
+
+.kontrol-metabox .input select {
+	padding: 4px 2px 2px 4px;	
+	height: auto !important;
+}
+
+.kontrol-metabox .input select.boolean {
+	width: 60px !important;
+}
+
+.kontrol-metabox .input select[multiple=multiple] {
+	height: 172px !important;
+}
+
+.kontrol-metabox .input select option.hide-option-ie {
+	color: #fff !important;	
+}
+
+.kontrol-metabox .options-storage {
+	display: none;
+}
+
+
+.kontrol-metabox .input input[type=checkbox], .kontrol-metabox .input input[type=radio] {
+	width: auto !important;
+	margin: 0 4px 1px 4px;
+	padding: 0;
+}
+
+.kontrol-metabox .input input[type=radio] {
+	margin-bottom: 1px;
+}
+
+.kontrol-metabox .input .checkbox-div, .kontrol-metabox .input .radio-div {
+	position: relative;
+	margin-bottom: 6px;
+}
+
+.kontrol-metabox .select-search-box {
+	position: relative;
+}
+
+.kontrol-metabox .select-search-box input {
+	color: #555;
+}
+
+.kontrol-metabox div.select-search-box-label {
+	position: absolute;
+	top: 7px;
+	left: 6px;
+	color: #777;
+}
+
+.kontrol-metabox .input select option {
+	padding-top: 2px;
+}
+
+.kontrol-metabox .input textarea {
+	height: 100px;	
+}
+
+.kontrol-metabox .kontrol-wysiwyg iframe {
+	background-color: #fff !important;
+}
+
+.kontrol-metabox .upload-el {
+	text-align: left;	
+}
+
+.kontrol-file-upload .upload-list {
+	width: 99% !important;	
+}
+
+
+.kontrol-metabox .validation-advice {
+	color: #e63333;
+	padding: 2px;	
+	font-size: 11px;
+}
+
+/*** Colour Picker ****************/
+
+.kontrol-metabox .colour-box {
+	position: absolute;
+	left: 8px;
+	top: 7px;
+	height: 12px;
+	width: 12px;
+	background-color: #fff;
+	border: 1px solid black;
+	z-index: 99;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.kontrol-metabox .kontrol-colour-picker-field {
+	padding-left: 25px !important;	
+}
+
+.kontrol-metabox .kontrol-repeatable .colour-box {
+	left: 6%;
+}
+
+.kontrol-metabox .kontrol-repeatable .kontrol-colour-picker-field {
+	padding-left: 30px !important;	
+}
+
+
+
+
+
+/*** Repeatable ********************/
+
+.kontrol-metabox .kontrol-repeatable {
+	position: relative;
+}
+
+
+
+.kontrol-metabox .kontrol-repeatable .section .inside .title {
+    background: -moz-linear-gradient(-45deg, #F5F5F5 0%, #F9F9F9 100%) repeat scroll 0 0 transparent;
+    border-bottom: 1px solid #EAEAEA;
+    color: #B4453B;
+    padding: 6px 0;
+    position: relative;
+}
+
+.kontrol-metabox .kontrol-repeatable .section .inside .title > div {
+    position: relative;
+	left: 40px;
+}
+
+
+.kontrol-metabox .kontrol-repeatable .section .inside .title .field-name {
+    position: relative;
+	padding-left: 4px;
+	border-bottom: 0 none;
+}
+
+
+.kontrol-metabox .kontrol-repeatable .section .inside .rows .row .field {
+    position: relative;
+	white-space: normal;
+}
+
+.kontrol-metabox .kontrol-repeatable .section .inside .pad-left {
+    position: relative;
+	padding-left: 15px;
+}
+
+
+
+.kontrol-metabox .kontrol-repeatable .add-row {
+	position: relative;	
+	background: -moz-linear-gradient(-45deg, #F5F5F5 0%, #F9F9F9 100%) repeat scroll 0 0 transparent;
+    border-bottom: 1px solid #EAEAEA;
+    color: #B4453B;
+    padding: 12px 10px;
+	cursor: pointer;
+	text-align: right;
+}
+
+
+.kontrol-metabox .kontrol-repeatable .row .field.vertical {
+	padding-left: 38px !important;	
+	margin-bottom: 16px;
+	top: -10px;
+}
+
+.kontrol-metabox .kontrol-repeatable .row .details {
+	position: relative;
+	padding-left: 35px;
+	top: -10px;
+}
+
+.kontrol-metabox .kontrol-repeatable .row .details .title {
+	position: relative;
+	border-bottom: 0 none;
+	background-color: #FCFCFC;
+	margin-bottom: 2px;
+}
+
+
+.kontrol-metabox .kontrol-repeatable .row .details > div {
+	position: relative;
+	padding-left: 8px !important;
+}
+
+/*** Google Maps ***********/
+
+.kontrol-metabox .kontrol-gmap {
+	position: relative;
+	border: 1px solid #999;	
+}
+
+.kontrol-metabox .kontrol-gmap-info .kontrol-gmap-title {
+	position: relative;
+	font-size: 13px;
+	color: #21759B;
+	font-weight: bold;
+	margin-bottom: 6px;
+	padding: 4px 6px;
+	background-color: #F7F7F7;
+}
+
+.kontrol-metabox .kontrol-gmap-info .kontrol-gmap-content {
+	position: relative;
+	padding: 2px;
+}

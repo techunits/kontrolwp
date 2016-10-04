@@ -1,0 +1,3775 @@
+# Copyright (C) 2013 
+# This file is distributed under the same license as the  package.
+msgid ""
+msgstr ""
+"Project-Id-Version:  \n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/kontrol-developer-kit\n"
+"POT-Creation-Date: 2013-03-24 01:06:11+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2013-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: app/classes/Admin.class.php:59
+msgid "Kontrol Panel"
+msgstr ""
+
+#: app/classes/Admin.class.php:128
+#: app/modules/app/custom_fields/views/cf-field.php:8
+msgid "Required"
+msgstr ""
+
+#: app/classes/Admin.class.php:129
+#: app/modules/app/custom_fields/views/cf-field.php:8
+msgid "Optional"
+msgstr ""
+
+#: app/classes/Admin.class.php:130
+#: app/modules/app/custom_post_types/views/cpt-manage.php:18
+#: app/modules/app/taxonomies/views/tax-manage.php:10
+msgid "Delete this item?"
+msgstr ""
+
+#: app/classes/Admin.class.php:131
+msgid "Delete group from this post type?"
+msgstr ""
+
+#: app/classes/Admin.class.php:132
+msgid ""
+"A group must belong to at least one post type. To delete this group "
+"entirely, edit it and and hit the \"Delete\" button."
+msgstr ""
+
+#: app/classes/Admin.class.php:133
+msgid "Delete this group permanently?"
+msgstr ""
+
+#: app/classes/Admin.class.php:134
+msgid ""
+"You have not saved this custom field group. Are you sure you wish to leave "
+"the page?"
+msgstr ""
+
+#: app/classes/Admin.class.php:135
+msgid "Are you sure?"
+msgstr ""
+
+#: app/classes/Admin.class.php:136
+msgid "Remove this upload?"
+msgstr ""
+
+#: app/classes/Admin.class.php:137 app/views/enter-key.php:23
+msgid "Error occured contacting the server"
+msgstr ""
+
+#: app/classes/Admin.class.php:138
+msgid "This file upload is required"
+msgstr ""
+
+#: app/classes/Admin.class.php:139
+msgid "You are allowed to select a maximum of"
+msgstr ""
+
+#: app/classes/Admin.class.php:140
+msgid ""
+"Apologies! This version of Kontrol only allows you %d custom fields. Please "
+"upgrade at %s to create unlimited custom fields.\n"
+"\n"
+"It's super cheap and as a bonus, you'll be supporting us and you'll receive "
+"all upgrades and future modules for Kontrol for free!"
+msgstr ""
+
+#: app/classes/Admin.class.php:141
+msgid ""
+"Do you want to replace the current SEO title with this auto generated one?"
+msgstr ""
+
+#: app/classes/AdminController.class.php:90
+msgid ""
+"You do not have sufficient permissions to access this page. Administrator "
+"access only."
+msgstr ""
+
+#: app/controllers/upload_file.php:109
+msgid "Error uploading as Wordpress attachment."
+msgstr ""
+
+#: app/controllers/upload_file.php:153
+msgid "Please upload only images, no other files are supported."
+msgstr ""
+
+#: app/controllers/upload_file.php:161
+msgid "Image must be %d px wide and %d px high."
+msgstr ""
+
+#: app/controllers/upload_file.php:168
+msgid "Image must be %d px wide."
+msgstr ""
+
+#: app/controllers/upload_file.php:175
+msgid "Image must be %d px high."
+msgstr ""
+
+#: app/modules/app/admin_menu/admin_menu.php:88
+msgid "Reset Complete"
+msgstr ""
+
+#: app/modules/app/admin_menu/admin_menu.php:88
+msgid "Admin Menu Reset To Defaults."
+msgstr ""
+
+#: app/modules/app/admin_menu/admin_menu.php:100
+#: app/modules/app/custom_fields/custom_fields.php:365
+#: app/modules/app/custom_post_types/custom_post_types.php:228
+#: app/modules/app/seo/seo.php:89 app/modules/app/seo/seo.php:126
+#: app/modules/app/taxonomies/taxonomies.php:224
+msgid "Save Complete"
+msgstr ""
+
+#: app/modules/app/admin_menu/admin_menu.php:100
+msgid "Admin Menu Successfully Updated."
+msgstr ""
+
+#: app/modules/app/admin_menu/views/am-manage.php:45
+#: app/modules/app/admin_menu/views/am-manage.php:80
+#: app/modules/app/admin_menu/views/am-row.php:47
+msgid "Admin Menu"
+msgstr ""
+
+#: app/modules/app/admin_menu/views/am-manage.php:47
+msgid "Insert New Seperator"
+msgstr ""
+
+#: app/modules/app/admin_menu/views/am-manage.php:47
+#: app/modules/app/admin_menu/views/am-row.php:101
+msgid "Insert New Row"
+msgstr ""
+
+#: app/modules/app/admin_menu/views/am-manage.php:80
+#: app/modules/app/custom_fields/views/cf-add-side-col.php:4
+#: app/modules/app/custom_fields/views/cf-edit-side-col.php:4
+#: app/modules/app/custom_post_types/views/cpt-add-side-col.php:4
+#: app/modules/app/custom_post_types/views/cpt-edit-side-col.php:3
+#: app/modules/app/seo/views/seo-side-col.php:11
+#: app/modules/app/taxonomies/views/tax-add-side-col.php:4
+#: app/modules/app/taxonomies/views/tax-edit-side-col.php:4
+msgid "Save"
+msgstr ""
+
+#: app/modules/app/admin_menu/views/am-manage.php:88
+msgid "Menu Tools"
+msgstr ""
+
+#: app/modules/app/admin_menu/views/am-manage.php:90
+msgid "Reset menu to defaults"
+msgstr ""
+
+#: app/modules/app/admin_menu/views/am-manage.php:91
+msgid "Will reset the menu to the default WP menu"
+msgstr ""
+
+#: app/modules/app/admin_menu/views/am-row-seperator.php:3
+#: app/modules/app/custom_fields/views/cf-edit-side-col.php:13
+#: app/modules/app/custom_fields/views/cf-field.php:13
+#: app/modules/app/custom_fields/views/cf-manage.php:51
+#: app/modules/app/custom_post_types/views/cpt-manage.php:71
+#: app/modules/app/taxonomies/views/tax-manage.php:54
+msgid "Delete"
+msgstr ""
+
+#: app/modules/app/admin_menu/views/am-row.php:26
+msgid "Menu Title"
+msgstr ""
+
+#: app/modules/app/admin_menu/views/am-row.php:27
+msgid "New Menu Item"
+msgstr ""
+
+#: app/modules/app/admin_menu/views/am-row.php:30
+#: app/modules/app/custom_fields/views/fields/settings/page-link.php:95
+msgid "URL"
+msgstr ""
+
+#: app/modules/app/admin_menu/views/am-row.php:34
+msgid "Window Title"
+msgstr ""
+
+#: app/modules/app/admin_menu/views/am-row.php:39
+msgid "CSS Classes"
+msgstr ""
+
+#: app/modules/app/admin_menu/views/am-row.php:43
+msgid "Hook Name"
+msgstr ""
+
+#: app/modules/app/admin_menu/views/am-row.php:47
+msgid "Icon"
+msgstr ""
+
+#: app/modules/app/admin_menu/views/am-row.php:51
+#: app/modules/app/custom_fields/views/fields/meta/image.php:41
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:339
+#: app/modules/app/custom_settings/views/cs-manage.php:129
+msgid "Upload Image"
+msgstr ""
+
+#: app/modules/app/admin_menu/views/am-row.php:61
+msgid "Upload a custom menu icon. Size must be 16x16"
+msgstr ""
+
+#: app/modules/app/admin_menu/views/am-row.php:69
+msgid "Required Permissions"
+msgstr ""
+
+#: app/modules/app/admin_menu/views/am-row.php:99
+msgid "Sub Menu"
+msgstr ""
+
+#: app/modules/app/admin_menu/views/am-section-tutorials.php:3
+#: app/modules/app/custom_fields/views/cf-side-col.php:13
+#: app/modules/app/custom_post_types/views/cpt-section-tutorials.php:3
+#: app/modules/app/custom_settings/views/cs-side-col.php:13
+#: app/modules/app/seo/views/seo-section-tutorials.php:3
+#: app/modules/app/taxonomies/views/tax-section-tutorials.php:3
+msgid "Code and Tutorials"
+msgstr ""
+
+#: app/modules/app/admin_menu/views/am-section-tutorials.php:5
+#: app/modules/app/seo/views/seo-section-tutorials.php:5
+msgid "Documentation"
+msgstr ""
+
+#: app/modules/app/admin_menu/views/am-section-tutorials.php:6
+msgid ""
+"View documentation on this module and also grab some code snippets for using "
+"this module in the frontend"
+msgstr ""
+
+#: app/modules/app/admin_menu/views/am-section-tutorials.php:14
+msgid "Upgrade to Awesome"
+msgstr ""
+
+#: app/modules/app/custom_fields/custom_fields.php:365
+msgid "Custom Field Group Successfully Updated."
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-add-edit-form.php:55
+msgid "Group Details"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-add-edit-form.php:61
+#: app/modules/app/custom_fields/views/cf-manage.php:42
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:350
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:351
+msgid "Name"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-add-edit-form.php:63
+msgid "A name for this set of custom fields"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-add-edit-form.php:74
+msgid "Group Rules"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-add-edit-form.php:81
+msgid "Show group in these post types"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-add-edit-form.php:103
+msgid ""
+"Select which post types this custom field group will be active on. You can "
+"create very flexible and powerful groups by setting the groups post types "
+"here, then changing the fields rules individually"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-add-edit-form.php:108
+msgid "Custom fields default rules"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-add-edit-form.php:111
+msgid "Basic"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-add-edit-form.php:112
+#: app/modules/app/custom_fields/views/cf-add-edit-form.php:199
+#: app/modules/app/seo/views/meta/seo-box.php:27
+msgid "Advanced"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-add-edit-form.php:115
+msgid ""
+"Select the 'basic' option if you just want to show the group depending on "
+"just the post type. For more control over the default rules of each field in "
+"this group, select the 'advanced' option"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-add-edit-form.php:120
+#: app/modules/app/custom_fields/views/cf-add-edit-form.php:135
+msgid "Custom field group default rules"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-add-edit-form.php:135
+msgid ""
+"These rules determine when a groups fields will appear in the selected post "
+"types above. Setting rules for individual fields will override these group "
+"defaults"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-add-edit-form.php:135
+msgid ""
+"If you wish to hide or show certain groups or fields depending on the value "
+"of another custom field, you can do this by selecing the \"Custom Field\" "
+"option under the rules select box. Once you do this, enter the key for the "
+"custom field and select the operator you require (equals, does not equal, "
+"contains, begins with etc.) and then enter the value. You can create some "
+"amazing custom fields configurations using these custom fields rules."
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-add-edit-form.php:147
+msgid "Group Settings Categories"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-add-edit-form.php:154
+msgid "Show group in this settings category"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-add-edit-form.php:171
+msgid ""
+"This custom field group will appear in the selected category on the custom "
+"settings page"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-add-edit-form.php:182
+msgid "Group Custom Fields"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-add-edit-form.php:189
+msgid "Group Options"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-add-edit-form.php:195
+#: app/modules/app/custom_fields/views/cf-manage.php:46
+msgid "Position"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-add-edit-form.php:198
+msgid "Standard"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-add-edit-form.php:200
+msgid "Side"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-add-edit-form.php:205
+#: app/modules/app/custom_fields/views/fields/settings/checkbox.php:32
+#: app/modules/app/custom_fields/views/fields/settings/radio.php:32
+msgid "Style"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-add-edit-form.php:208
+#: app/modules/app/seo/views/seo-settings.php:159
+msgid "In a Metabox"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-add-edit-form.php:209
+#: app/modules/app/custom_fields/views/cf-manage.php:47
+#: app/modules/app/seo/views/seo-settings.php:160
+msgid "No Metabox"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-add-side-col.php:6
+msgid "Save New CF Group"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-edit-side-col.php:6
+msgid "Edit CF Group"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-edit-side-col.php:15
+msgid "Delete CF Group"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-edit-side-col.php:24
+msgid "Field Group"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-edit-side-col.php:26
+#: app/modules/app/custom_fields/views/cf-manage.php:82
+#: app/modules/app/custom_settings/views/cs-manage.php:216
+msgid "Add new field group"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-edit-side-col.php:27
+msgid "Create a new field group"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-field.php:4
+msgid "New Field"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-field.php:6
+msgid "new-field"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-field.php:7
+#: app/modules/app/custom_fields/views/cf-field.php:85
+msgid "Text"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-field.php:10
+#: app/modules/app/custom_fields/views/cf-manage.php:49
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:492
+#: app/modules/app/custom_post_types/views/cpt-manage.php:69
+#: app/modules/app/custom_settings/views/cs-manage.php:60
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:340
+#: app/modules/app/taxonomies/views/tax-manage.php:52
+msgid "Edit"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-field.php:11
+msgid "Clone Field"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-field.php:12
+#: app/modules/app/custom_fields/views/cf-manage.php:50
+#: app/modules/app/custom_post_types/views/cpt-manage.php:70
+#: app/modules/app/custom_settings/views/cs-manage.php:61
+#: app/modules/app/taxonomies/views/tax-manage.php:53
+msgid "Hide"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-field.php:12
+msgid "Hide this custom field"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-field.php:27
+msgid "Field Name"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-field.php:29
+msgid "The name for your custom field. It was also appear as the label"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-field.php:33
+msgid "Field Key"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-field.php:35
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:63
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:60
+msgid "Max. 20 characters, cannot contain capital letters or spaces"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-field.php:39
+msgid "Field Required"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-field.php:42
+#: app/modules/app/custom_fields/views/cf-field.php:119
+#: app/modules/app/custom_fields/views/cf-image-effects.php:90
+#: app/modules/app/custom_fields/views/cf-image-effects.php:105
+#: app/modules/app/custom_fields/views/cf-image-effects.php:117
+#: app/modules/app/custom_fields/views/cf-image-effects.php:127
+#: app/modules/app/custom_fields/views/cf-image-effects.php:138
+#: app/modules/app/custom_fields/views/cf-image-effects.php:149
+#: app/modules/app/custom_fields/views/cf-image-effects.php:160
+#: app/modules/app/custom_fields/views/cf-image-effects.php:171
+#: app/modules/app/custom_fields/views/cf-image-effects.php:182
+#: app/modules/app/custom_fields/views/fields/meta/boolean.php:7
+#: app/modules/app/custom_fields/views/fields/settings/date.php:6
+#: app/modules/app/custom_fields/views/fields/settings/date.php:40
+#: app/modules/app/custom_fields/views/fields/settings/date.php:67
+#: app/modules/app/custom_fields/views/fields/settings/image.php:56
+#: app/modules/app/custom_fields/views/fields/settings/page-link.php:65
+#: app/modules/app/custom_fields/views/fields/settings/page-link.php:76
+#: app/modules/app/custom_fields/views/fields/settings/select.php:27
+#: app/modules/app/custom_fields/views/fields/settings/text-area.php:6
+#: app/modules/app/custom_fields/views/fields/settings/text-area.php:17
+#: app/modules/app/custom_fields/views/fields/settings/text.php:6
+#: app/modules/app/custom_fields/views/fields/settings/wysiwyg.php:6
+#: app/modules/app/custom_post_types/custom_post_types_hooks.php:347
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:195
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:205
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:221
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:231
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:241
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:251
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:262
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:287
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:297
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:307
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:361
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:399
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:512
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:517
+#: app/modules/app/custom_settings/views/cs-manage.php:109
+#: app/modules/app/seo/views/meta/seo-box.php:176
+#: app/modules/app/seo/views/meta/seo-box.php:177
+#: app/modules/app/seo/views/meta/seo-box.php:178
+#: app/modules/app/seo/views/meta/seo-box.php:179
+#: app/modules/app/seo/views/seo-settings.php:62
+#: app/modules/app/seo/views/seo-settings.php:87
+#: app/modules/app/seo/views/seo-settings.php:97
+#: app/modules/app/seo/views/seo-settings.php:108
+#: app/modules/app/seo/views/seo-settings.php:118
+#: app/modules/app/seo/views/seo-settings.php:128
+#: app/modules/app/seo/views/seo-settings.php:138
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:152
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:167
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:176
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:186
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:213
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:224
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:235
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:246
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:272
+msgid "No"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-field.php:43
+#: app/modules/app/custom_fields/views/cf-field.php:120
+#: app/modules/app/custom_fields/views/cf-image-effects.php:106
+#: app/modules/app/custom_fields/views/cf-image-effects.php:128
+#: app/modules/app/custom_fields/views/fields/meta/boolean.php:6
+#: app/modules/app/custom_fields/views/fields/settings/date.php:7
+#: app/modules/app/custom_fields/views/fields/settings/date.php:68
+#: app/modules/app/custom_fields/views/fields/settings/image.php:57
+#: app/modules/app/custom_fields/views/fields/settings/page-link.php:66
+#: app/modules/app/custom_fields/views/fields/settings/page-link.php:77
+#: app/modules/app/custom_fields/views/fields/settings/select.php:28
+#: app/modules/app/custom_fields/views/fields/settings/text-area.php:7
+#: app/modules/app/custom_fields/views/fields/settings/text-area.php:16
+#: app/modules/app/custom_fields/views/fields/settings/text.php:7
+#: app/modules/app/custom_fields/views/fields/settings/wysiwyg.php:7
+#: app/modules/app/custom_post_types/custom_post_types_hooks.php:347
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:194
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:204
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:220
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:230
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:240
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:261
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:286
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:296
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:306
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:360
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:400
+#: app/modules/app/custom_settings/views/cs-manage.php:110
+#: app/modules/app/seo/views/seo-settings.php:63
+#: app/modules/app/seo/views/seo-settings.php:88
+#: app/modules/app/seo/views/seo-settings.php:98
+#: app/modules/app/seo/views/seo-settings.php:109
+#: app/modules/app/seo/views/seo-settings.php:119
+#: app/modules/app/seo/views/seo-settings.php:129
+#: app/modules/app/seo/views/seo-settings.php:139
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:151
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:166
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:175
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:212
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:223
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:234
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:245
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:273
+msgid "Yes"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-field.php:46
+msgid ""
+"If this field is required, select 'Yes' and the user will be required to "
+"complete it"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-field.php:50
+msgid "Field Validation"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-field.php:61
+msgid ""
+"Add multiple types of validation to your field if required. Use the plus "
+"sign at the end of the dropdown to add more"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-field.php:65
+msgid "Field Type"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-field.php:76
+msgid "Checkbox"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-field.php:77
+msgid "Colour Picker"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-field.php:78
+msgid "Date Picker"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-field.php:79
+msgid "File"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-field.php:80
+msgid "Image"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-field.php:81
+msgid "Page Link / Object"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-field.php:82
+msgid "Radio Button"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-field.php:83
+msgid "Repeatable"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-field.php:84
+#: app/modules/app/custom_fields/views/fields/meta/page-link.php:46
+#: app/modules/app/custom_fields/views/fields/meta/select.php:30
+#: app/modules/app/seo/views/meta/seo-box.php:91
+msgid "Select"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-field.php:86
+msgid "Text Area"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-field.php:87
+msgid "True / False"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-field.php:88
+msgid "Wysiwyg Editor"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-field.php:94
+msgid ""
+"The type of field that will be shown. Some fields have special properties "
+"that can be customised when selected from the dropdown"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-field.php:108
+msgid "Instructions"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-field.php:112
+msgid ""
+"Enter some instructions on how to use the field. Instructions will appear "
+"below the field like this one"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-field.php:116
+msgid "Tool Tip"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-field.php:124
+msgid ""
+"Add a tool tip for your field if you need to include more detailed "
+"instructions, examples or more general information"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-field.php:128
+msgid "Tip Title"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-field.php:132
+msgid "Add a title for the tool tip that will appear next to this field"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-field.php:135
+msgid "Tip Max Width"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-field.php:139
+msgid ""
+"Enter in a number for the maximum width of this tool tip in pixels. Default "
+"is 400"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-field.php:142
+msgid "Tip Text"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-field.php:146
+msgid "Enter in the main text for this tool tip"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-field.php:153
+msgid "Rules"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-field.php:156
+msgid "Use Groups Rules"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-field.php:157
+msgid "Custom Rules"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-field.php:165
+msgid ""
+"You can set individual rules for fields or just use the default which is the "
+"groups rules. These rules determine when the field will appear"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-field.php:170
+msgid "Save Custom Field"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-fields.php:21
+msgid "Add New Field"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-copy.php:7
+msgid "Image Copy Key"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-copy.php:10
+msgid ""
+"Enter in a unique key here for your image copy. Eg. <strong>thumbnail</"
+"strong>"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-copy.php:13
+msgid "Enter a key for this image copy"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-effects.php:4
+msgid "Image Dimensions"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-effects.php:7
+msgid "Natural"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-effects.php:8
+msgid "Resize"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-effects.php:9
+msgid "Crop"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-effects.php:11
+msgid "Enforce"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-effects.php:14
+msgid ""
+"<b>Natural</b> - leaves the image dimensions as they are.<p><b>Resize Image</"
+"b> - will resize the image when uploaded.</p><p><b>Crop</b> - will cut / "
+"resize / zoom the image to fit.</p><p><b>Enforce</b> - requires the user to "
+"upload an image already at a specific width and height.</p>"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-effects.php:16
+msgid ""
+"Select how you want the image demensions changed when the image is uploaded "
+"by the user"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-effects.php:21
+msgid "Image Width"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-effects.php:25
+msgid ""
+"Select the width of the image. When enforcing, set to 0 to ignore this "
+"dimension"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-effects.php:28
+msgid "Image Height"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-effects.php:32
+msgid ""
+"Select the height of the image. When enforcing, set to 0 to ignore this "
+"dimension"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-effects.php:35
+msgid "Resize Type"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-effects.php:38
+msgid "To Width"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-effects.php:39
+msgid "To Height"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-effects.php:40
+msgid "Width &amp; Height"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-effects.php:41
+msgid "Scale (keep aspect ratio)"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-effects.php:44
+msgid ""
+"Resizing using 'To Height' 'To Width' or 'Scale' will maintain the image "
+"aspect ratio."
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-effects.php:50
+msgid "Crop Type"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-effects.php:53
+msgid "Resize + Zoom Crop (recommended)"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-effects.php:54
+msgid "Cropped + Borders"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-effects.php:55
+msgid "Cropped - Borders"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-effects.php:58
+msgid "Crop the image to fit your specified dimensions"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-effects.php:58
+msgid "Examples shown here"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-effects.php:62
+msgid "Crop Position"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-effects.php:65
+msgid "Centre"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-effects.php:66
+msgid "Top Left"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-effects.php:67
+msgid "Top Right"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-effects.php:68
+msgid "Bottom Left"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-effects.php:69
+msgid "Bottom Right"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-effects.php:72
+msgid ""
+"Select the area of the image which should be cropped. Select centre if unsure"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-effects.php:76
+msgid "Crop Border Colour"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-effects.php:80
+msgid "Enter the hexidecimal colour for the crop borders eg. #FFFFFF = White"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-effects.php:86
+msgid "Sharpen Resized / Cropped Image"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-effects.php:91
+msgid "Resized Image Sharpened"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-effects.php:91
+#: app/modules/app/custom_fields/views/cf-image-effects.php:118
+msgid ""
+"Enter the amount to sharpen the image (lower = sharper): eg. 20 = medium "
+"sharpening"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-effects.php:94
+msgid ""
+"Default is 20 which is a medium sharp effect. The lower the number, the "
+"sharper the resized/cropped image"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-effects.php:102
+msgid "Image Effects"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-effects.php:109
+msgid "Apply certain effects to the image if needed"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-effects.php:113
+msgid "Sharpen"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-effects.php:118
+msgid "Sharpened"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-effects.php:121
+msgid ""
+"Default is 20 which is a medium sharp effect. The lower the number, the "
+"sharper the image"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-effects.php:124
+msgid "Grayscale"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-effects.php:131
+msgid "Converts the image into grayscale"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-effects.php:134
+#: app/modules/app/custom_fields/views/cf-image-effects.php:139
+msgid "Brightness"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-effects.php:139
+msgid "Enter the amount to brighten the image (lower = brighter): eg. 20"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-effects.php:142
+msgid "Changes the brightness of the image"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-effects.php:145
+msgid "Blur"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-effects.php:150
+#: app/modules/app/custom_fields/views/cf-image-effects.php:161
+msgid "Blur Level"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-effects.php:150
+#: app/modules/app/custom_fields/views/cf-image-effects.php:161
+msgid "Enter the amount to blur the image (higher = more): eg. 5"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-effects.php:153
+msgid "Blurs the image"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-effects.php:156
+msgid "Gaussian Blur"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-effects.php:164
+msgid "Blurs the image using the Gaussian Blur effect"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-effects.php:167
+msgid "Smooth"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-effects.php:172
+msgid "Smooth Level"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-effects.php:172
+#: app/modules/app/custom_fields/views/cf-image-effects.php:183
+msgid "Enter the amount to smooth the image (higher = more): eg. 5"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-effects.php:175
+msgid "Makes the image smoother"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-effects.php:178
+msgid "Pixelate"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-effects.php:183
+msgid "Pixelate Level"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-image-effects.php:186
+msgid "Applies pixelation effect to the image. <b>Requires PHP 5.3</b>"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-manage.php:27
+msgid "Custom Fields Groups"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-manage.php:45
+msgid "Field Count"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-manage.php:45
+#: app/modules/app/custom_settings/views/cs-manage.php:57
+msgid "Fields"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-manage.php:47
+msgid "Meta Box Type"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-manage.php:47
+msgid "Metabox"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-manage.php:48
+#: app/modules/app/custom_post_types/views/cpt-manage.php:68
+#: app/modules/app/custom_post_types/views/cpt-manage.php:150
+#: app/modules/app/taxonomies/views/tax-manage.php:51
+#: app/modules/app/taxonomies/views/tax-manage.php:120
+msgid "Options"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-manage.php:76
+#: app/modules/app/custom_settings/views/cs-manage.php:210
+msgid "Field Groups"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-manage.php:79
+#: app/modules/app/custom_post_types/views/cpt-manage.php:207
+#: app/modules/app/custom_settings/views/cs-manage.php:213
+#: app/modules/app/taxonomies/views/tax-manage.php:161
+msgid "Upgrade to the full edition!"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-manage.php:80
+#: app/modules/app/custom_settings/views/cs-manage.php:214
+msgid ""
+"Well this is awkward. We're super sorry, but the limited edition of Kontrol "
+"only allows you %d advanced custom fields. The full version gives you "
+"unlimited + free upgrades to Kontrol and all future modules for the cost of "
+"less than your lunch. Bargain!"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-rules-option.php:54
+msgid "equals"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-rules-option.php:55
+msgid "does not equal"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-rules-option.php:56
+msgid "contains"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-rules-option.php:57
+msgid "begins with"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-rules-option.php:58
+msgid "ends with"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-rules-option.php:104
+msgid "Enter field value"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-rules.php:16
+msgid "Match ALL of the above rules"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-rules.php:17
+msgid "Match ANY of the above rules"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-side-col.php:3
+msgid "Manage Custom Fields Groups"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-side-col.php:5
+msgid "Manage custom fields"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-side-col.php:6
+msgid "View and manage all your custom fields"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-side-col.php:15
+#: app/modules/app/custom_post_types/views/cpt-section-tutorials.php:5
+#: app/modules/app/custom_settings/views/cs-side-col.php:15
+#: app/modules/app/taxonomies/views/tax-section-tutorials.php:5
+msgid "Code Snippets / Documentation"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-side-col.php:16
+msgid ""
+"Grab some code snippets for using these advanced custom fields in the "
+"frontend"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-side-col.php:25
+#: app/modules/app/custom_post_types/views/cpt-section-tutorials.php:14
+#: app/modules/app/custom_settings/views/cs-side-col.php:25
+#: app/modules/app/seo/views/seo-section-tutorials.php:14
+#: app/modules/app/taxonomies/views/tax-section-tutorials.php:15
+msgid "Upgrade to Awesome!"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-side-col.php:28
+#: app/modules/app/custom_settings/views/cs-side-col.php:28
+msgid "This limited edition allows you %d custom fields"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-side-col.php:29
+#: app/modules/app/custom_post_types/views/cpt-section-tutorials.php:18
+#: app/modules/app/custom_settings/views/cs-side-col.php:29
+#: app/modules/app/taxonomies/views/tax-section-tutorials.php:19
+msgid "You currently have"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-side-col.php:29
+#: app/modules/app/custom_settings/views/cs-side-col.php:29
+msgid ""
+"fields left. If you upgrade to the full version, you get unlimited advanced "
+"custom fields and all upgrades to Kontrol for free!"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-validation.php:3
+msgid "None"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-validation.php:4
+msgid "Email Address"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-validation.php:5
+msgid "Date"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-validation.php:5
+msgid "Enter the format of the date"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-validation.php:6
+msgid "Numeric"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-validation.php:7
+msgid "Integer"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-validation.php:8
+msgid "Digits (contains spaces, numbers eg. a phone number)"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-validation.php:9
+msgid "Alpha (contains only letters)"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-validation.php:10
+msgid "Alphanumeric (contains only letters and numbers)"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-validation.php:11
+msgid "URL (url address"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-validation.php:12
+msgid "Length"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-validation.php:12
+#: app/modules/app/custom_fields/views/cf-validation.php:13
+#: app/modules/app/custom_fields/views/cf-validation.php:14
+msgid "characters"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-validation.php:12
+msgid "Enter the character length required for this field: eg. 40"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-validation.php:13
+msgid "Min Length"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-validation.php:13
+msgid "Enter the minimum character length for this field: eg. 40"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-validation.php:14
+msgid "Max Length"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-validation.php:14
+msgid "Enter the maximum character length for this field: eg. 40"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-validation.php:15
+msgid "Currency (dollar format)"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/cf-validation.php:16
+msgid "One Required (eg. radio buttons)"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/meta/checkbox.php:20
+msgid "Please select at least one checkbox."
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/meta/file.php:24
+msgid "Upload File"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/meta/page-link.php:40
+msgid "Filter"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/meta/repeatable.php:75
+#: app/modules/app/custom_fields/views/fields/meta/repeatable.php:110
+#: app/modules/app/custom_fields/views/fields/meta/select.php:50
+#: app/modules/app/custom_fields/views/fields/meta/select.php:61
+msgid "Delete Row"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/meta/repeatable.php:121
+msgid "Add Row"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/boolean.php:3
+msgid "Default Option"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/boolean.php:10
+msgid "Select the default option"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/boolean.php:13
+msgid "Message"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/boolean.php:17
+msgid ""
+"Enter an optional message/question to appear beside the true/false select box"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/checkbox.php:3
+msgid "Checkbox Options"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/checkbox.php:20
+msgid "Checkboxes"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/checkbox.php:20
+#: app/modules/app/custom_fields/views/fields/settings/radio.php:20
+#: app/modules/app/custom_fields/views/fields/settings/select.php:20
+msgid ""
+"are entered in the following format - <b>value : label</b>. You can leave "
+"out specifying a value by just entering text into the box. The text will "
+"become the value and label in this case"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/checkbox.php:24
+msgid "Maximum Selected Checkboxes Allowed"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/checkbox.php:28
+msgid ""
+"Enter a number to limit the number of checkboxes from this group that the "
+"user is allowed to check"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/checkbox.php:35
+#: app/modules/app/custom_fields/views/fields/settings/radio.php:35
+#: app/modules/app/custom_fields/views/fields/settings/repeatable.php:22
+msgid "Horizontal"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/checkbox.php:36
+#: app/modules/app/custom_fields/views/fields/settings/radio.php:36
+#: app/modules/app/custom_fields/views/fields/settings/repeatable.php:23
+msgid "Vertical"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/checkbox.php:39
+msgid "Select the style for this group of checkboxes"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:3
+msgid "Include Time Picker?"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:10
+msgid ""
+"After the user has selected a date, you can give them the option of "
+"selecting a time"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:13
+msgid "Pick Only"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:16
+msgid "Normal"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:17
+msgid "Time"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:18
+msgid "Days"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:19
+msgid "Months"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:20
+msgid "Years"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:23
+msgid "You can limit the type of dates to be picked if needed"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:26
+#: app/modules/app/custom_fields/views/fields/settings/date.php:31
+msgid "Date Range"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:29
+msgid "Disabled"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:30
+msgid "Enabled"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:31
+msgid ""
+"The values (start date &amp; end date) for this field will be returned as an "
+"array using the <b>get_cf()</b> command if you enable this."
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:33
+msgid "You can allow the user to select a date range (start &amp; end date)"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:37
+msgid "Restrict Dates Available"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:41
+msgid "Min Date &amp; Max Dates"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:42
+#: app/modules/app/custom_fields/views/fields/settings/date.php:57
+msgid "Specific Dates"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:45
+msgid ""
+"You can limit the dates available to the user buy selecting a min &amp; max "
+"range or a set of specific dates they can pick from."
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:49
+msgid "Limit Date Selection Between"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:51
+msgid "Min Date"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:52
+msgid "Max Date"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:54
+msgid "Select the min and max dates available to the user for picking dates"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:61
+msgid ""
+"When only a few dates should be selectable. Enter a javascript object like"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:61
+msgid "with all the dates <b>year -> months -> days</b>"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:64
+msgid "Invert Specific Dates"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:71
+msgid ""
+"If you invert your specific dates, only dates which you have not entered "
+"will be available to pick from"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:75
+msgid "Date Label Format"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:79
+msgid ""
+"The date shown can be formatted in a variety of ways. Default is %d/%m/%Y "
+"eg. 31/12/2012."
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:79
+msgid "Click here to view all formatting options"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:82
+msgid "short day (\"Mon\", \"Tue\")"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:83
+msgid "full day (\"Monday\")"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:84
+msgid "short month (\"Jan\", \"Feb\")"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:85
+msgid "full month (\"January\")"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:86
+msgid "the full date to string (\"Mon Dec 10 14:35:42 2007\";"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:87
+msgid "the date to two digits (01, 05, etc)"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:88
+msgid "the date as one digit (1, 5, 12, etc)"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:89
+msgid "the hour to two digits in military time (24 hr mode) (00, 11, 14, etc)"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:90
+msgid "the hour as a decimal number using a 12-hour clock (range 01 to 12)"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:91
+msgid "the day of the year to three digits (001 to 366, is Jan 1st)"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:92
+msgid ""
+"the hour (24-hour clock) as a digit (range 0 to 23). Single digits are "
+"preceded by a blank space"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:93
+msgid ""
+"the hour (12-hour clock) as a digit (range 1 to 12). Single digits are "
+"preceded by a blank space"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:94
+msgid "the time in milliseconds (three digits; \"081\")"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:95
+msgid "the numerical month to two digits (01 is Jan, 12 is Dec)"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:96
+msgid "the minutes to two digits (01, 40, 59)"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:97
+msgid ""
+"the ordinal of the day of the month in the current language (\"st\" for the "
+"1st, \"nd\" for the 2nd, etc.)"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:98
+msgid "the current language equivalent of either AM or PM"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:99
+msgid "the Unix Epoch Time timestamp"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:100
+msgid "the seconds to two digits (01, 40, 59)"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:101
+msgid "the time as"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:102
+msgid ""
+"the week to two digits (01 is the week of Jan 1, 52 is the week of Dec 31)"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:103
+msgid "the numerical day of the week, one digit (0 is Sunday, 1 is Monday)"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:104
+msgid ""
+"the date in the current language preferred format. en-US: %m/%d/%Y "
+"(12/10/2007)"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:105
+msgid ""
+"the time in the current language preferred format. en-US: %I:%M%p (02:45PM)"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:106
+msgid "the short year (two digits; \"07\")"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:107
+msgid "the full year (four digits; \"2007\")"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:108
+msgid "the GMT offset (\"-0800\")"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:109
+msgid "the time zone (\"GMT\")"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:110
+msgid "returns"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:110
+msgid "example"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:113
+msgid "Shortcuts -  These shortcuts are NOT preceded by the percent sign"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:129
+msgid "Date Value Format"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:131
+msgid ""
+"You can show the user the <b>%d/%m/%Y</b> format as a label above, but have "
+"the selected date stored as a <b>Unix timestamp</b> by entering <b>%s</b> "
+"here."
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/date.php:133
+msgid ""
+"The date value refers to the date format that is stored, not the one shown "
+"to the user"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/file.php:3
+#: app/modules/app/custom_fields/views/fields/settings/file.php:10
+#: app/modules/app/custom_fields/views/fields/settings/image.php:3
+#: app/modules/app/custom_fields/views/fields/settings/page-link.php:92
+msgid "Return Type"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/file.php:6
+#: app/modules/app/custom_fields/views/fields/settings/image.php:6
+msgid "Adaptable URL"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/file.php:7
+#: app/modules/app/custom_fields/views/fields/settings/image.php:7
+msgid "Static URL"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/file.php:8
+#: app/modules/app/custom_fields/views/fields/settings/image.php:8
+msgid "Attachment Object"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/file.php:10
+#: app/modules/app/custom_fields/views/fields/settings/image.php:10
+msgid ""
+"<b>Adaptable URL</b> will return a URL based on the sites current location "
+"(helps when you move a WP site - recommended).<p><b>Static URL</b> will "
+"return the default URL.</p><p><b>Attachment object</b> will return an object "
+"and all its information for the file.</p>"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/file.php:12
+#: app/modules/app/custom_fields/views/fields/settings/image.php:12
+msgid ""
+"Select what information you would like returned when using the get_cf() "
+"command to retrieve this file on the frontend"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/file.php:16
+#: app/modules/app/custom_fields/views/fields/settings/file.php:23
+msgid "File Types Allowed"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/file.php:16
+#: app/modules/app/custom_fields/views/fields/settings/image.php:32
+msgid "Label"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/file.php:18
+msgid "Files"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/file.php:20
+msgid ""
+"When the user browses for an file, this will be label shown for the types of "
+"files they can browse"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/file.php:27
+msgid ""
+"When the user browses for an file, they will be limited to these file types "
+"only. Keep file types seperated by a"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/file.php:30
+#: app/modules/app/custom_fields/views/fields/settings/image.php:46
+msgid "Max File Size Allowed"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/file.php:30
+#: app/modules/app/custom_fields/views/fields/settings/image.php:46
+msgid "kilobytes"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/file.php:34
+#: app/modules/app/custom_fields/views/fields/settings/image.php:50
+msgid "Limit the maximum file size allowed in kilobytes"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/file.php:34
+#: app/modules/app/custom_fields/views/fields/settings/image.php:50
+msgid "is the max supported by your server"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/image.php:15
+msgid "Preview Size"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/image.php:18
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:141
+msgid "Thumbnail"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/image.php:19
+msgid "Medium"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/image.php:20
+msgid "Large"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/image.php:21
+msgid "Full"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/image.php:24
+msgid ""
+"When an image is uploaded, this is the size of the preview that will be "
+"displayed"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/image.php:32
+#: app/modules/app/custom_fields/views/fields/settings/image.php:39
+msgid "Image Types Allowed"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/image.php:34
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:338
+#: app/modules/app/custom_settings/views/cs-manage.php:128
+msgid "Images"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/image.php:36
+msgid ""
+"When the user browses for an image, this will be the label shown for the "
+"types of images they can browse"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/image.php:43
+msgid ""
+"When the user browses for an image, they will be limited to these file types "
+"only. Keep image types seperated by a"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/image.php:53
+#: app/modules/app/custom_fields/views/fields/settings/image.php:59
+msgid "Generate Image Copies?"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/image.php:59
+msgid ""
+"A common use is to generate a thumbnail copy of the image.<p>If you generate "
+"copies, these copies will be returned as an array when using the "
+"<strong>get_cf()</strong> command when retrieving the main image. The image "
+"array returned will contain two index keys, one called %s and one called %s "
+"that contains an array of copies"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/image.php:60
+msgid "Example"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/image.php:60
+msgid ""
+"Using <b>get_cf('your-main-image-key')</b> on an image field with copies, "
+"will return an array similar to this"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/image.php:72
+msgid ""
+"You can automatically generate copies of the uploaded image at different "
+"sizes with different effects + more"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/page-link.php:19
+msgid "Post Type Filter"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/page-link.php:33
+msgid ""
+"Filter the page links by selected post types. If none are selected it will "
+"show for all"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/page-link.php:37
+msgid "Taxonomy Filter"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/page-link.php:58
+msgid ""
+"Filter the page links by selected taxonomies and terms. If none are selected "
+"it will show for all. Note that the post type filter is applied before the "
+"taxonomy filter"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/page-link.php:62
+msgid "Include Search Box"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/page-link.php:69
+msgid ""
+"Enabling this will allow your users to search this select field. This is "
+"handy on multi selects that have a lot of options"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/page-link.php:73
+#: app/modules/app/custom_fields/views/fields/settings/select.php:24
+msgid "Allow Null Value?"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/page-link.php:80
+#: app/modules/app/custom_fields/views/fields/settings/select.php:31
+msgid ""
+"You can allow the user to select a null value as the first option if you "
+"enable this"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/page-link.php:84
+#: app/modules/app/custom_fields/views/fields/settings/select.php:35
+msgid "Maximum Selected Values Allowed"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/page-link.php:88
+#: app/modules/app/custom_fields/views/fields/settings/select.php:39
+msgid ""
+"If set to 1, a standard select list will appear. If set > 1 a multiple "
+"select box will appear and the user will be limited to the number of values "
+"they can select according to the number entered here"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/page-link.php:96
+msgid "Post Object"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/page-link.php:99
+msgid ""
+"You can select to just return the URL of the pages/posts that the user "
+"selects or the post object which includes more information"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/radio.php:3
+msgid "Radio Buttons"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/radio.php:20
+msgid "Radio buttons"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/radio.php:24
+#: app/modules/app/custom_fields/views/fields/settings/text-area.php:23
+#: app/modules/app/custom_fields/views/fields/settings/text.php:13
+#: app/modules/app/custom_fields/views/fields/settings/wysiwyg.php:13
+msgid "Default Value"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/radio.php:28
+msgid ""
+"Enter the default value for this set of radio buttons. It will be selected "
+"by default"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/radio.php:39
+msgid "Select the style for this group of radio buttons"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/repeatable.php:12
+msgid "Row Limit"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/repeatable.php:16
+msgid ""
+"Enter a number here to limit the possible number of rows the user can create"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/repeatable.php:19
+msgid "Row Style"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/repeatable.php:26
+msgid ""
+"Horizontal will set the fields in a row to appear besides each other. "
+"Vertical will make them appear below each other"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/select.php:3
+msgid "Select Options"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/select.php:20
+msgid "Selectable options"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/text-area.php:3
+#: app/modules/app/custom_fields/views/fields/settings/text.php:3
+msgid "Allow HTML"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/text-area.php:10
+#: app/modules/app/custom_fields/views/fields/settings/text-area.php:20
+msgid "Allow HTML tags to be entered in this text area?"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/text-area.php:27
+msgid "Enter the default value for this text area"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/text-area.php:30
+msgid "Textarea Height"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/text-area.php:34
+msgid ""
+"Enter the height of the textarea in pixels. Leave blank for the default "
+"height"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/text.php:10
+msgid "Allow HTML tags to be entered in this text field?"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/text.php:17
+msgid "Enter the default value for this text field"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/wysiwyg.php:3
+msgid "Allow Media Buttons?"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/wysiwyg.php:10
+msgid "Media buttons such as insert/upload button can be turned off"
+msgstr ""
+
+#: app/modules/app/custom_fields/views/fields/settings/wysiwyg.php:17
+msgid "Enter the default value for this wysiwyg text area"
+msgstr ""
+
+#: app/modules/app/custom_post_types/custom_post_types.php:228
+msgid "Post Type Successfully Updated."
+msgstr ""
+
+#: app/modules/app/custom_post_types/custom_post_types.php:249
+#: app/modules/app/taxonomies/taxonomies.php:247
+msgid "Active"
+msgstr ""
+
+#: app/modules/app/custom_post_types/custom_post_types.php:251
+#: app/modules/app/taxonomies/taxonomies.php:249
+msgid "Hidden"
+msgstr ""
+
+#: app/modules/app/custom_post_types/custom_post_types.php:257
+#: app/modules/app/custom_post_types/custom_post_types.php:277
+#: app/modules/app/taxonomies/taxonomies.php:254
+#: app/modules/app/taxonomies/taxonomies.php:275
+msgid "Updated"
+msgstr ""
+
+#: app/modules/app/custom_post_types/custom_post_types.php:257
+#: app/modules/app/custom_post_types/custom_post_types.php:277
+#: app/modules/app/custom_post_types/views/cpt-column-select.php:24
+#: app/modules/app/seo/views/seo-defaults.php:146
+msgid "Post Type"
+msgstr ""
+
+#: app/modules/app/custom_post_types/custom_post_types.php:257
+#: app/modules/app/taxonomies/taxonomies.php:254
+msgid "Made"
+msgstr ""
+
+#: app/modules/app/custom_post_types/custom_post_types.php:277
+#: app/modules/app/taxonomies/taxonomies.php:275
+msgid "Deleted"
+msgstr ""
+
+#: app/modules/app/custom_post_types/custom_post_types_hooks.php:181
+msgid "Kontrol Field Key Not Found"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:53
+#: app/modules/app/custom_settings/views/cs-settings.php:76
+#: app/modules/app/seo/views/seo-settings.php:77
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:50
+msgid "Settings"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:53
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:50
+msgid "start here to automatically populate the form"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:60
+msgid "Post Type ID"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:61
+msgid "This post type ID already exists, please enter another"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:67
+msgid "Update current posts attached to post type?"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:68
+msgid ""
+"If this post type already has posts attached to it and you change the post "
+"type ID they will be lost, check the box above to make sure those posts get "
+"updated to match the new ID"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:72
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:69
+msgid "Name (plural)"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:74
+msgid "General name for the post type, usually plural - eg. Movies"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:77
+msgid "Description"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:79
+msgid "A short descriptive summary of what the post type is"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:89
+msgid "Supported Taxonomies &amp; Features"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:97
+msgid "Add Taxonomies"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:100
+#: app/modules/app/seo/views/seo-settings.php:187
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:92
+msgid "Native"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:106
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:206
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:252
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:308
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:329
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:389
+#: app/modules/app/seo/views/seo-settings.php:193
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:98
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:153
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:187
+msgid "Custom"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:113
+msgid "No custom taxonomies found"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:131
+msgid "Add Features"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:134
+msgid "Choose"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:136
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:158
+#: app/modules/app/custom_settings/views/cs-manage.php:153
+msgid "Title"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:137
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:159
+msgid "Editor"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:138
+msgid "Page Attributes"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:139
+msgid "Excerpt"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:140
+msgid "Author"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:142
+msgid "Trackbacks"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:143
+#: app/views/layouts/default.php:64
+msgid "Custom Fields"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:144
+msgid "Comments"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:145
+msgid "Revisions"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:146
+msgid "Post Formats"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:174
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:130
+msgid "Advanced Settings"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:181
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:137
+msgid "Hierarchical"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:184
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:140
+msgid "True (similar to a page)"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:185
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:141
+msgid "False (similar to a post)"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:188
+msgid "Whether the post type is hierarchical. Allows Parent to be specified"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:191
+msgid "Has Archive"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:198
+msgid "Enables post type archives. Will use string as archive slug"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:201
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:148
+msgid "Rewrite"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:209
+msgid ""
+"Rewrite permalinks with this format. Select custom for your own rewrite var, "
+"true for the default or false to prevent rewrite"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:212
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:159
+msgid "Custom Rewrite - Slug"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:214
+msgid "A unique string to use before the post title in the permalink"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:217
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:164
+msgid "Custom Rewrite - With Front"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:224
+msgid ""
+"Allows permalinks to be prepended with front base (example: if your "
+"permalink structure is /blog/, then your links will be: false->/news/, true-"
+">/blog/news/)"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:227
+msgid "Custom Rewrite - Feeds"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:234
+msgid "Whether the post type should have feeds for it's posts"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:237
+msgid "Custom Rewrite - Pages"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:244
+msgid ""
+"Whether post type archive pages should be paginated. This is only useful if "
+"archives are enabled for this post type"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:247
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:182
+msgid "Query Variable"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:250
+msgid "Use Post Type"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:252
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:187
+msgid "Please enter custom query variable"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:255
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:190
+msgid ""
+"False prevents queries or provide a custom string value to use for this post "
+"type"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:258
+msgid "Can Export"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:265
+msgid "Can this post_type be exported using the export/import feature?"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:276
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:202
+msgid "Visibility"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:283
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:209
+msgid "Public"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:290
+msgid "Determines if post_type queries can be performed from the front end"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:293
+msgid "Show Admin UI"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:300
+msgid "Whether to generate a default UI for managing this post type"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:303
+msgid "Show In Admin Menu"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:308
+msgid "Please enter custom value"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:311
+msgid ""
+"If custom, must be a top level page like 'tools.php' or 'edit.php?"
+"post_type=page'"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:314
+msgid "Admin Menu Position"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:318
+msgid "below second separator"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:319
+msgid "below Posts"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:320
+msgid "below Media"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:321
+msgid "below Links"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:322
+msgid "below Pages"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:323
+msgid "below comments"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:324
+msgid "below first separator"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:325
+msgid "below Plugins"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:326
+msgid "below Users"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:327
+msgid "below Tools"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:328
+msgid "below Settings"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:329
+msgid "Please enter custom order value, must be a number"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:332
+msgid "The position in the menu order the post type should appear"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:335
+#: app/modules/app/custom_settings/views/cs-manage.php:125
+msgid "Admin Menu Icon"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:354
+msgid ""
+"Upload a custom menu icon. Size must be 16x16. Defaults to the posts menu "
+"icon"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:357
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:219
+msgid "Show in Nav Menus"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:364
+msgid ""
+"Whether this post type is available for selection in the Appearance -> Menus "
+"admin screen"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:376
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:261
+msgid "Capabilities"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:383
+msgid "Capability Type"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:386
+msgid "Post"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:387
+#: app/modules/app/seo/views/seo-defaults.php:106
+msgid "Page"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:389
+msgid "Please enter custom capability type"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:393
+msgid ""
+"Allows you to define a custom set of capabilities, which are permissions to "
+"edit, create, and read your custom post type. If you are unsure, leave this "
+"set to 'post'"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:396
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:269
+msgid "Advanced Capabilities"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:403
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:276
+msgid ""
+"Use the default capabilities, or take full control over specific capability "
+"names"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:406
+msgid "Edit Post Capability"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:410
+msgid "Whether someone can create and edit a specific post of this post type"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:413
+msgid "Edit Posts Capability"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:417
+msgid "Capability that allows editing posts of this post type"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:420
+msgid "Edit Other Posts Capability"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:424
+msgid "Capability that allows editing of others posts"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:427
+msgid "Publish Posts Capability"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:431
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:304
+msgid "Capability to grant publishing of these types of posts"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:434
+msgid "Read Post Capability"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:438
+msgid "Capability that controls reading of a specific post of this post type"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:441
+msgid "Read Private Posts Capability"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:445
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:452
+msgid "Capability to allow reading of private posts"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:448
+msgid "Delete Post Capability"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:464
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:317
+msgid "Labels"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:464
+msgid "various labels for the post type (all required)"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:471
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:324
+msgid "Name (singular)"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:473
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:326
+msgid "Singular version of the name"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:473
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:488
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:493
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:498
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:503
+msgid "Movie"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:476
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:329
+msgid "Menu Name"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:478
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:331
+msgid "The menu name text"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:478
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:508
+msgid "Movies"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:481
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:482
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:487
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:335
+msgid "Add New"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:483
+msgid "The add new text label - eg. Add New"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:486
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:334
+msgid "Add New Item"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:488
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:336
+msgid "The add new item text - eg. Add New"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:491
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:339
+msgid "Edit Item"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:493
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:341
+msgid "The edit item text - eg. Edit"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:496
+msgid "New Item"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:497
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:350
+msgid "New"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:498
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:351
+msgid "The new item text - eg. New"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:501
+msgid "View Item"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:502
+msgid "View"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:503
+msgid "The view item text - eg. View"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:506
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:359
+msgid "Search Items"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:507
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:360
+msgid "Search"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:508
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:361
+msgid "Searching for an item text - eg. Search"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:511
+msgid "Not Found"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:512
+msgid "found"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:513
+msgid "Not found text - eg. No movies found"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:516
+msgid "Not Found In Trash"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:517
+msgid "found in trash"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:518
+msgid "Not found in trash text - eg. No movies found in trash"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:521
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:369
+msgid "Parent Item"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:522
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:370
+msgid "Parent"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-edit-form.php:523
+msgid "How the parent item is referred to - eg. Parent movie:"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-side-col.php:6
+msgid "Save New Post Type"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-side-col.php:12
+#: app/modules/app/custom_post_types/views/cpt-edit-side-col.php:11
+#: app/modules/app/custom_post_types/views/cpt-manage.php:37
+#: app/modules/app/custom_post_types/views/cpt-manage.php:204
+#: app/views/layouts/default.php:70
+msgid "Custom Post Types"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-side-col.php:14
+#: app/modules/app/custom_post_types/views/cpt-edit-side-col.php:17
+msgid "Manage post types"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-add-side-col.php:15
+#: app/modules/app/custom_post_types/views/cpt-edit-side-col.php:18
+msgid "View and manage all your current post types"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-column-select.php:6
+msgid "Default Columns"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-column-select.php:8
+msgid "Kontrol Custom Field"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-column-select.php:8
+msgid ""
+"Enter the Kontrol custom field key for the field you want shown in this "
+"column"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-column-select.php:8
+msgid "Custom Field"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-column-select.php:13
+#: app/modules/app/taxonomies/taxonomies.php:254
+#: app/modules/app/taxonomies/taxonomies.php:275
+msgid "Taxonomy"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-column-select.php:17
+msgid "Post Permalink"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-column-select.php:18
+msgid "Post Author"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-column-select.php:19
+msgid "Post Title"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-column-select.php:20
+msgid "Post Date"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-column-select.php:21
+msgid "Post Date Formatted"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-column-select.php:21
+msgid "Enter the PHP date format to display the post date as"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-column-select.php:22
+msgid "Post Modified Formatted"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-column-select.php:22
+msgid "Enter the PHP date format to display the post modified date as"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-column-select.php:22
+msgid "Leave blank for the default"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-column-select.php:23
+msgid "Post Excerpt"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-column-select.php:25
+msgid "Post Status"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-column-select.php:26
+msgid "Post Category"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-column-select.php:27
+msgid "Post Tag"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-column-select.php:28
+msgid "Post Name"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-column-select.php:29
+msgid "Post Parent"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-column-select.php:30
+msgid "Post Menu Order"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-column-select.php:31
+msgid "Ping Status"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-column-select.php:32
+msgid "Comment Status"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-column-select.php:33
+msgid "Comment Count"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-edit-side-col.php:5
+msgid "Edit Post Type"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-edit-side-col.php:13
+msgid "Add post types"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-edit-side-col.php:14
+msgid "Create a new custom post type"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-manage.php:66
+#: app/modules/app/custom_post_types/views/cpt-manage.php:148
+#: app/modules/app/taxonomies/views/tax-manage.php:49
+#: app/modules/app/taxonomies/views/tax-manage.php:118
+msgid "Key"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-manage.php:67
+#: app/modules/app/custom_post_types/views/cpt-manage.php:149
+#: app/modules/app/custom_settings/views/cs-settings.php:81
+#: app/modules/app/taxonomies/views/tax-manage.php:50
+#: app/modules/app/taxonomies/views/tax-manage.php:119
+msgid "Last Updated"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-manage.php:78
+#: app/modules/app/custom_post_types/views/cpt-manage.php:156
+msgid "Taxonomies Attached"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-manage.php:94
+#: app/modules/app/custom_post_types/views/cpt-manage.php:172
+msgid "Post List Display Columns"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-manage.php:95
+#: app/modules/app/custom_post_types/views/cpt-manage.php:173
+msgid "Save Display Columns"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-manage.php:118
+msgid "Native Post Types"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-manage.php:158
+msgid "Categories"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-manage.php:159
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:331
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:356
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:361
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:366
+msgid "Tags"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-manage.php:160
+msgid "Format"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-manage.php:208
+msgid ""
+"Well this is awkward. We're super sorry, but the limited edition of Kontrol "
+"only allows you %d custom post types. The full version gives you unlimited + "
+"free upgrades to Kontrol and all future modules for the cost of less than "
+"your lunch. Bargain!"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-manage.php:210
+msgid "Add new custom post type"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-section-tutorials.php:6
+msgid "Grab some code snippets for using custom post types in the frontend"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-section-tutorials.php:17
+msgid "This limited edition allows you %d custom post types"
+msgstr ""
+
+#: app/modules/app/custom_post_types/views/cpt-section-tutorials.php:18
+msgid ""
+"post types left. If you upgrade to the full version, you get unlimited "
+"custom post types and all upgrades to Kontrol for free!"
+msgstr ""
+
+#: app/modules/app/custom_settings/views/cs-manage.php:34
+msgid "Custom Settings Groups"
+msgstr ""
+
+#: app/modules/app/custom_settings/views/cs-manage.php:77
+msgid "Getting Started"
+msgstr ""
+
+#: app/modules/app/custom_settings/views/cs-manage.php:81
+msgid ""
+"Custom settings allow you to use the power of our custom fields module to "
+"create your own sets of custom options for your CMS. These are highly useful "
+"for creating and storing information / images / files that don't need to be "
+"tied to any post."
+msgstr ""
+
+#: app/modules/app/custom_settings/views/cs-manage.php:83
+msgid ""
+"As an example, say you need to display a company logo image across several "
+"different sections of your clients CMS. Instead of hard coding that image "
+"into several places, you can create a custom setting image field, upload the "
+"image there, then display that image anywhere across the site by simply "
+"retrieving that setting using the Kontrol <b>get_setting('insert-your-field-"
+"key')</b> function. Then to update the logo, just change the image in the "
+"custom settings page and the new logo is automatically shown across the "
+"whole site without the need to touch any HTML or code."
+msgstr ""
+
+#: app/modules/app/custom_settings/views/cs-manage.php:86
+msgid ""
+"These custom settings allow you to create a very complete and flexible CMS "
+"solution for your clients."
+msgstr ""
+
+#: app/modules/app/custom_settings/views/cs-manage.php:101
+msgid "Custom Settings Config"
+msgstr ""
+
+#: app/modules/app/custom_settings/views/cs-manage.php:106
+msgid "Admin Menu Enabled"
+msgstr ""
+
+#: app/modules/app/custom_settings/views/cs-manage.php:113
+msgid "Enable access to the settings page via the admin menu"
+msgstr ""
+
+#: app/modules/app/custom_settings/views/cs-manage.php:118
+msgid "Admin Menu Name"
+msgstr ""
+
+#: app/modules/app/custom_settings/views/cs-manage.php:120
+msgid "The label for the settings admin menu entry"
+msgstr ""
+
+#: app/modules/app/custom_settings/views/cs-manage.php:141
+msgid "menu icon"
+msgstr ""
+
+#: app/modules/app/custom_settings/views/cs-manage.php:145
+msgid "Settings Categories"
+msgstr ""
+
+#: app/modules/app/custom_settings/views/cs-manage.php:154
+msgid "Category name and its submenu name"
+msgstr ""
+
+#: app/modules/app/custom_settings/views/cs-manage.php:157
+msgid "Description / Instructions"
+msgstr ""
+
+#: app/modules/app/custom_settings/views/cs-manage.php:158
+msgid ""
+"Provide instructions or just a description of what these settings are used "
+"for on the site"
+msgstr ""
+
+#: app/modules/app/custom_settings/views/cs-manage.php:181
+msgid "Add Category"
+msgstr ""
+
+#: app/modules/app/custom_settings/views/cs-manage.php:187
+#: app/modules/app/custom_settings/views/cs-settings.php:87
+#: app/modules/app/seo/views/seo-side-col.php:13
+msgid "Save Settings"
+msgstr ""
+
+#: app/modules/app/custom_settings/views/cs-settings.php:81
+msgid "Never"
+msgstr ""
+
+#: app/modules/app/custom_settings/views/cs-side-col.php:3
+msgid "Manage Settings Groups"
+msgstr ""
+
+#: app/modules/app/custom_settings/views/cs-side-col.php:5
+msgid "Manage custom settings"
+msgstr ""
+
+#: app/modules/app/custom_settings/views/cs-side-col.php:6
+msgid "View and manage all your custom settings and fields"
+msgstr ""
+
+#: app/modules/app/custom_settings/views/cs-side-col.php:16
+msgid "Grab some code snippets for using these custom settings in the frontend"
+msgstr ""
+
+#: app/modules/app/seo/seo.php:89
+msgid "Settings Successfully Updated"
+msgstr ""
+
+#: app/modules/app/seo/seo.php:126
+msgid "Meta Defaults Successfully Updated"
+msgstr ""
+
+#: app/modules/app/seo/seo_hooks.php:293 app/views/layouts/default.php:76
+msgid "SEO"
+msgstr ""
+
+#: app/modules/app/seo/views/meta/seo-box.php:23
+msgid "General"
+msgstr ""
+
+#: app/modules/app/seo/views/meta/seo-box.php:24
+msgid "Redirect"
+msgstr ""
+
+#: app/modules/app/seo/views/meta/seo-box.php:25
+#: app/modules/app/seo/views/meta/seo-box.php:136
+msgid "Canonical URL"
+msgstr ""
+
+#: app/modules/app/seo/views/meta/seo-box.php:26
+msgid "Template Tags"
+msgstr ""
+
+#: app/modules/app/seo/views/meta/seo-box.php:45
+msgid "SEO Title"
+msgstr ""
+
+#: app/modules/app/seo/views/meta/seo-box.php:51
+#: app/modules/app/seo/views/meta/seo-box.php:61
+msgid ""
+"characters left - search engines will typically allow a maximum of %d "
+"characters to be displayed"
+msgstr ""
+
+#: app/modules/app/seo/views/meta/seo-box.php:51
+#: app/modules/app/seo/views/meta/seo-box.php:61
+msgid ""
+"Insert template tags to dynamically add information such as your sites name, "
+"click the tab at the top for more details"
+msgstr ""
+
+#: app/modules/app/seo/views/meta/seo-box.php:55
+msgid "Meta Description"
+msgstr ""
+
+#: app/modules/app/seo/views/meta/seo-box.php:66
+msgid "Meta Keywords"
+msgstr ""
+
+#: app/modules/app/seo/views/meta/seo-box.php:71
+msgid "Enter your meta keywords above"
+msgstr ""
+
+#: app/modules/app/seo/views/meta/seo-box.php:77
+msgid "Use SEO Defaults"
+msgstr ""
+
+#: app/modules/app/seo/views/meta/seo-box.php:78
+msgid "Use custom SEO for this post"
+msgstr ""
+
+#: app/modules/app/seo/views/meta/seo-box.php:87
+msgid "Redirect - Interal"
+msgstr ""
+
+#: app/modules/app/seo/views/meta/seo-box.php:121
+msgid "Redirect this page to an interal post or page"
+msgstr ""
+
+#: app/modules/app/seo/views/meta/seo-box.php:125
+msgid "Redirect - Exteral"
+msgstr ""
+
+#: app/modules/app/seo/views/meta/seo-box.php:130
+msgid ""
+"Redirect this page to an an external URL. Any URL entered here will override "
+"any internal redirect set above"
+msgstr ""
+
+#: app/modules/app/seo/views/meta/seo-box.php:141
+msgid ""
+"Enter a specific canonical URL for this post to use. If empty, the permalink "
+"%s will be used. For more information on canonical URLs"
+msgstr ""
+
+#: app/modules/app/seo/views/meta/seo-box.php:141
+#: app/modules/app/seo/views/seo-settings.php:122
+msgid "read this article"
+msgstr ""
+
+#: app/modules/app/seo/views/meta/seo-box.php:147
+msgid "Meta Robot Index"
+msgstr ""
+
+#: app/modules/app/seo/views/meta/seo-box.php:151
+msgid "Index"
+msgstr ""
+
+#: app/modules/app/seo/views/meta/seo-box.php:152
+msgid "No Index"
+msgstr ""
+
+#: app/modules/app/seo/views/meta/seo-box.php:155
+msgid ""
+"Select 'Index' if you wish this page to appear in search engines. Select 'No "
+"Index' if you do not"
+msgstr ""
+
+#: app/modules/app/seo/views/meta/seo-box.php:160
+msgid "Meta Robot Follow"
+msgstr ""
+
+#: app/modules/app/seo/views/meta/seo-box.php:164
+msgid "Follow"
+msgstr ""
+
+#: app/modules/app/seo/views/meta/seo-box.php:165
+msgid "No Follow"
+msgstr ""
+
+#: app/modules/app/seo/views/meta/seo-box.php:168
+msgid ""
+"Selecting 'No Follow' will prevent search engines from scanning links on "
+"this page to index"
+msgstr ""
+
+#: app/modules/app/seo/views/meta/seo-box.php:172
+msgid "Meta Robot Options"
+msgstr ""
+
+#: app/modules/app/seo/views/meta/seo-box.php:178
+msgid "Archive"
+msgstr ""
+
+#: app/modules/app/seo/views/meta/seo-box.php:179
+msgid "Snippet"
+msgstr ""
+
+#: app/modules/app/seo/views/meta/seo-box.php:182
+msgid "Advanced meta robot options"
+msgstr ""
+
+#: app/modules/app/seo/views/meta/seo-box.php:188
+msgid ""
+"Template tags are used as a way of entering dynamic information in the Title "
+"and Description fields. These tags will be replaced when viewed in the "
+"frontend with their equivalent information. Eg: Entering <b>[[sitename]]</b> "
+"in either the Title or Description field here will produce \"<b>%s</b>\" "
+"when viewed in the frontend"
+msgstr ""
+
+#: app/modules/app/seo/views/seo-defaults.php:40
+msgid "Header"
+msgstr ""
+
+#: app/modules/app/seo/views/seo-defaults.php:40
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:326
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:336
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:341
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:346
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:351
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:371
+msgid "Tag"
+msgstr ""
+
+#: app/modules/app/seo/views/seo-defaults.php:46
+msgid ""
+"We strongly recommend having %s as your title tag in your header file for "
+"SEO to work effectively. The header file is typically header.php in your "
+"themes directory"
+msgstr ""
+
+#: app/modules/app/seo/views/seo-defaults.php:56
+msgid "Dynamic Variables"
+msgstr ""
+
+#: app/modules/app/seo/views/seo-defaults.php:56
+msgid ""
+"use these variables in the defaults below to add that information dynamically"
+msgstr ""
+
+#: app/modules/app/seo/views/seo-defaults.php:74
+msgid "Title &amp; Meta Data Defaults"
+msgstr ""
+
+#: app/modules/app/seo/views/seo-defaults.php:74
+msgid ""
+"set defaults for each title/meta type here - you can add dynamic variables "
+"into the data easily"
+msgstr ""
+
+#: app/modules/app/seo/views/seo-defaults.php:80
+msgid "Examples"
+msgstr ""
+
+#: app/modules/app/seo/views/seo-defaults.php:82
+msgid "Homepage Title"
+msgstr ""
+
+#: app/modules/app/seo/views/seo-defaults.php:82
+#: app/modules/app/seo/views/seo-defaults.php:83
+msgid "Adding"
+msgstr ""
+
+#: app/modules/app/seo/views/seo-defaults.php:82
+#: app/modules/app/seo/views/seo-defaults.php:83
+msgid "would produce"
+msgstr ""
+
+#: app/modules/app/seo/views/seo-defaults.php:83
+msgid "Post Type Title"
+msgstr ""
+
+#: app/modules/app/seo/views/seo-defaults.php:83
+msgid "My Page Title"
+msgstr ""
+
+#: app/modules/app/seo/views/seo-defaults.php:92
+msgid "Homepage"
+msgstr ""
+
+#: app/modules/app/seo/views/seo-defaults.php:99
+msgid ""
+"Note: Adding homepage SEO information here will override any SEO information "
+"set on an individual post/page that has been set as the homepage"
+msgstr ""
+
+#: app/modules/app/seo/views/seo-defaults.php:119
+msgid "Search Page"
+msgstr ""
+
+#: app/modules/app/seo/views/seo-defaults.php:132
+msgid "Archive Page"
+msgstr ""
+
+#: app/modules/app/seo/views/seo-section-tutorials.php:6
+msgid "View documentation on the SEO module here"
+msgstr ""
+
+#: app/modules/app/seo/views/seo-settings.php:33
+msgid "Warnings"
+msgstr ""
+
+#: app/modules/app/seo/views/seo-settings.php:33
+msgid "few things we've noticed that when corrected will help your SEO benefit"
+msgstr ""
+
+#: app/modules/app/seo/views/seo-settings.php:40
+msgid "Permalink Structure"
+msgstr ""
+
+#: app/modules/app/seo/views/seo-settings.php:40
+msgid "click to change"
+msgstr ""
+
+#: app/modules/app/seo/views/seo-settings.php:41
+msgid ""
+"It is highly recommended that your page and post URLs contain the postname "
+"and/or the category name. We recommend changing your permalink settings to "
+"custom and adding this"
+msgstr ""
+
+#: app/modules/app/seo/views/seo-settings.php:54
+msgid "SEO Enabled"
+msgstr ""
+
+#: app/modules/app/seo/views/seo-settings.php:66
+msgid ""
+"Enable the Simple SEO module for easy to use, quick and smart SEO. Prefer "
+"not to fill out over 9000 options when configuring something? No problem, "
+"this is as easy to use as they come"
+msgstr ""
+
+#: app/modules/app/seo/views/seo-settings.php:77
+msgid "general SEO settings / information"
+msgstr ""
+
+#: app/modules/app/seo/views/seo-settings.php:84
+msgid "Enable Keywords"
+msgstr ""
+
+#: app/modules/app/seo/views/seo-settings.php:91
+msgid ""
+"In ancient times, meta keywords were great for SEO. Now days, not so much, "
+"only Bing generally uses them and that's to help detect spam. We recommend "
+"against enabling Keywords for SEO"
+msgstr ""
+
+#: app/modules/app/seo/views/seo-settings.php:94
+msgid "Disable snippet preview on posts?"
+msgstr ""
+
+#: app/modules/app/seo/views/seo-settings.php:101
+msgid ""
+"Disable this to prevent the snippet preview appearing when adding/editing a "
+"post"
+msgstr ""
+
+#: app/modules/app/seo/views/seo-settings.php:105
+msgid "Disable redirect option on SEO box?"
+msgstr ""
+
+#: app/modules/app/seo/views/seo-settings.php:112
+msgid ""
+"Disable the ability for the user to add permanent 303 redirects on posts"
+msgstr ""
+
+#: app/modules/app/seo/views/seo-settings.php:115
+msgid "Disable Canonical URL option on SEO box?"
+msgstr ""
+
+#: app/modules/app/seo/views/seo-settings.php:122
+msgid ""
+"Disable the ability for the user to add a canonical URL on a post. For more "
+"information on these"
+msgstr ""
+
+#: app/modules/app/seo/views/seo-settings.php:125
+msgid "Disable advanced option on SEO box?"
+msgstr ""
+
+#: app/modules/app/seo/views/seo-settings.php:132
+msgid "The advanced option might need to be disabled for less advanced users"
+msgstr ""
+
+#: app/modules/app/seo/views/seo-settings.php:135
+msgid "Disable template tag option on SEO box?"
+msgstr ""
+
+#: app/modules/app/seo/views/seo-settings.php:142
+msgid ""
+"Shows a list of the template tags that can be used in the SEO Title and Meta "
+"description"
+msgstr ""
+
+#: app/modules/app/seo/views/seo-settings.php:145
+msgid "SEO Box Position"
+msgstr ""
+
+#: app/modules/app/seo/views/seo-settings.php:148
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:222
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:233
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:244
+msgid "Default"
+msgstr ""
+
+#: app/modules/app/seo/views/seo-settings.php:149
+msgid "High"
+msgstr ""
+
+#: app/modules/app/seo/views/seo-settings.php:150
+msgid "Low"
+msgstr ""
+
+#: app/modules/app/seo/views/seo-settings.php:153
+msgid ""
+"This setting will determine where the SEO box will appear on the post add/"
+"edit screen"
+msgstr ""
+
+#: app/modules/app/seo/views/seo-settings.php:156
+msgid "SEO Box Style"
+msgstr ""
+
+#: app/modules/app/seo/views/seo-settings.php:163
+msgid "The style of the SEO Box"
+msgstr ""
+
+#: app/modules/app/seo/views/seo-settings.php:174
+msgid "Post Types"
+msgstr ""
+
+#: app/modules/app/seo/views/seo-settings.php:181
+msgid "Disable SEO for these Post Types"
+msgstr ""
+
+#: app/modules/app/seo/views/seo-settings.php:200
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:105
+msgid "No custom post types found"
+msgstr ""
+
+#: app/modules/app/seo/views/seo-settings.php:217
+msgid "Select which post types you do not want SEO enabled on"
+msgstr ""
+
+#: app/modules/app/seo/views/seo-side-col.php:19
+msgid "Menu"
+msgstr ""
+
+#: app/modules/app/seo/views/seo-side-col.php:21
+msgid "Main SEO Settings"
+msgstr ""
+
+#: app/modules/app/seo/views/seo-side-col.php:22
+msgid "Configure the main SEO module settings"
+msgstr ""
+
+#: app/modules/app/seo/views/seo-side-col.php:25
+msgid "Title and Meta Data Defaults"
+msgstr ""
+
+#: app/modules/app/seo/views/seo-side-col.php:26
+msgid "Set default SEO for the homepage or certain post types"
+msgstr ""
+
+#: app/modules/app/taxonomies/taxonomies.php:224
+msgid "Taxonomy Successfully Updated."
+msgstr ""
+
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:57
+msgid "Taxonomy ID"
+msgstr ""
+
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:58
+msgid "This taxonomy ID already exists, please enter another"
+msgstr ""
+
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:64
+msgid "Update attached posts and terms to match new taxonomy ID?"
+msgstr ""
+
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:65
+msgid ""
+"If this taxonomy already terms and posts attached to it and you change the "
+"taxonomy ID, those terms and related post information will be lost. Check "
+"the box above to make sure that terms and posts attached to the taxonomy get "
+"updated to match the new ID"
+msgstr ""
+
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:71
+msgid "General name for the taxonomy, usually plural - eg. Tags"
+msgstr ""
+
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:81
+msgid "Post Types &amp; Features"
+msgstr ""
+
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:89
+msgid "Add Taxonomy to Selected Post Types"
+msgstr ""
+
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:144
+msgid "Whether the taxonomy is hierarchical. Allows Parent to be specified"
+msgstr ""
+
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:156
+msgid ""
+"Set to false to prevent automatic URL rewriting a.k.a. \"pretty permalinks\""
+msgstr ""
+
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:161
+msgid ""
+"Used as pretty permalink text (i.e. /tag/) - defaults to taxonomy's name"
+msgstr ""
+
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:170
+msgid "Allowing permalinks to be prepended with front base - defaults to true"
+msgstr ""
+
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:173
+msgid "Custom Rewrite - Hierarchical"
+msgstr ""
+
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:179
+msgid "Allow hierarchical urls"
+msgstr ""
+
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:185
+msgid "Use Taxonomy Name"
+msgstr ""
+
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:216
+msgid "Should this taxonomy be exposed in the admin UI"
+msgstr ""
+
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:227
+msgid ""
+"True makes this taxonomy available for selection in navigation menus. If set "
+"to default, will use the value of <b>public</b> argument"
+msgstr ""
+
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:230
+msgid "Show UI"
+msgstr ""
+
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:238
+msgid ""
+"Whether to generate a default UI for managing this taxonomy. If set to "
+"default, will use the value of <b>public</b> argument"
+msgstr ""
+
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:241
+msgid "Show Tag Cloud"
+msgstr ""
+
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:249
+msgid "If set to default, will use the value of show_ui argument"
+msgstr ""
+
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:279
+msgid "Manage Terms Capability"
+msgstr ""
+
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:286
+msgid "Edit Terms Capability"
+msgstr ""
+
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:293
+msgid "Delete Terms Capability"
+msgstr ""
+
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:300
+msgid "Assign Terms Capability"
+msgstr ""
+
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:317
+msgid "various labels for the taxonomy (all required)"
+msgstr ""
+
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:344
+msgid "Update Item"
+msgstr ""
+
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:345
+msgid "Update"
+msgstr ""
+
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:346
+msgid "The update item text - eg. Update"
+msgstr ""
+
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:349
+msgid "New Item Name"
+msgstr ""
+
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:354
+msgid "All Items"
+msgstr ""
+
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:355
+msgid "All"
+msgstr ""
+
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:356
+msgid "Listing all items - eg. All"
+msgstr ""
+
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:364
+msgid "Popular Items"
+msgstr ""
+
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:365
+msgid "Popular"
+msgstr ""
+
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:366
+msgid "The popular items text - eg. Popular"
+msgstr ""
+
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:371
+msgid "How the parent item is referred to - eg. Parent"
+msgstr ""
+
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:374
+msgid "Separate Items With Commas"
+msgstr ""
+
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:375
+msgid "Separate"
+msgstr ""
+
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:375
+msgid "with commas"
+msgstr ""
+
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:376
+msgid ""
+"The separate item with commas text used in the taxonomy meta box. This "
+"string isn't used on hierarchical taxonomies - eg. Separate tags with commas"
+msgstr ""
+
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:379
+msgid "Add or Remove Items"
+msgstr ""
+
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:380
+msgid "Add or remove"
+msgstr ""
+
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:381
+msgid ""
+"The add or remove items text and used in the meta box when JavaScript is "
+"disabled. This string isn't used on hierarchical taxonomies - eg Add or "
+"remove tags"
+msgstr ""
+
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:384
+msgid "Choose From Most Used"
+msgstr ""
+
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:385
+msgid "Choose from the most used"
+msgstr ""
+
+#: app/modules/app/taxonomies/views/tax-add-edit-form.php:386
+msgid ""
+"The choose from most used text used in the taxonomy meta box. This string "
+"isn't used on hierarchical taxonomies - eg Choose from the most used tags"
+msgstr ""
+
+#: app/modules/app/taxonomies/views/tax-add-side-col.php:6
+msgid "Save New Taxonomy"
+msgstr ""
+
+#: app/modules/app/taxonomies/views/tax-add-side-col.php:12
+#: app/modules/app/taxonomies/views/tax-edit-side-col.php:12
+#: app/modules/app/taxonomies/views/tax-manage.php:28
+#: app/modules/app/taxonomies/views/tax-manage.php:158
+#: app/views/layouts/default.php:73
+msgid "Custom Taxonomies"
+msgstr ""
+
+#: app/modules/app/taxonomies/views/tax-add-side-col.php:14
+#: app/modules/app/taxonomies/views/tax-edit-side-col.php:18
+msgid "Manage taxonomies"
+msgstr ""
+
+#: app/modules/app/taxonomies/views/tax-add-side-col.php:15
+#: app/modules/app/taxonomies/views/tax-edit-side-col.php:19
+msgid "View and manage all your current taxonomies"
+msgstr ""
+
+#: app/modules/app/taxonomies/views/tax-edit-side-col.php:6
+msgid "Edit Taxonomy"
+msgstr ""
+
+#: app/modules/app/taxonomies/views/tax-edit-side-col.php:14
+msgid "Add new taxonomy"
+msgstr ""
+
+#: app/modules/app/taxonomies/views/tax-edit-side-col.php:15
+msgid "Create a new custom taxonomy"
+msgstr ""
+
+#: app/modules/app/taxonomies/views/tax-manage.php:60
+#: app/modules/app/taxonomies/views/tax-manage.php:125
+msgid "Post Types Attached"
+msgstr ""
+
+#: app/modules/app/taxonomies/views/tax-manage.php:83
+msgid "Native Taxonomies"
+msgstr ""
+
+#: app/modules/app/taxonomies/views/tax-manage.php:162
+msgid ""
+"Well this is awkward. We're super sorry, but the limited edition of Kontrol "
+"only allows you %d custom taxonomies. The full version gives you unlimited + "
+"free upgrades to Kontrol and all future modules for the cost of less than "
+"your lunch. Bargain!"
+msgstr ""
+
+#: app/modules/app/taxonomies/views/tax-manage.php:164
+msgid "Add new custom taxonomy"
+msgstr ""
+
+#: app/modules/app/taxonomies/views/tax-section-tutorials.php:6
+msgid "Grab some code snippets for using custom taxonomies in the frontend"
+msgstr ""
+
+#: app/modules/app/taxonomies/views/tax-section-tutorials.php:18
+msgid "This limited edition allows you %d custom taxonomies"
+msgstr ""
+
+#: app/modules/app/taxonomies/views/tax-section-tutorials.php:19
+msgid ""
+"taxonomies left. If you upgrade to the full version, you get unlimited "
+"taxonomies and all upgrades to Kontrol for free!"
+msgstr ""
+
+#: app/views/enter-key.php:51
+msgid "Register"
+msgstr ""
+
+#: app/views/enter-key.php:51
+msgid "upgrade Kontrol to the full version"
+msgstr ""
+
+#: app/views/enter-key.php:58
+msgid "License Key"
+msgstr ""
+
+#: app/views/enter-key.php:61
+msgid ""
+"Enter your license key here to upgrade. An Internet connection is required. "
+"If you don't have a license key, <a href=\"%s\" target=\"_blank\">grab one "
+"from here</a>, it's super cheap and quick!"
+msgstr ""
+
+#: app/views/enter-key.php:64
+msgid "Register Now"
+msgstr ""
+
+#: app/views/enter-key.php:66
+msgid ""
+"Error: You don't appear to have the CURL module in your PHP installation - "
+"You'll need that to register Kontrol. Contact your server administrator to "
+"get the module installed."
+msgstr ""
+
+#: app/views/enter-key.php:70
+msgid "You've already registered"
+msgstr ""
+
+#: app/views/error/404.php:1
+msgid "Page Not Found"
+msgstr ""
+
+#: app/views/layouts/default.php:67
+msgid "Custom Settings"
+msgstr ""
+
+#: app/views/layouts/default.php:79
+msgid "Admin Menu Editor"
+msgstr ""
+
+#: app/views/layouts/default.php:87
+msgid "Enter Upgrade Key"
+msgstr ""
+
+#: app/views/layouts/default.php:89
+msgid "Guide"
+msgstr ""
+
+#: app/views/side-col-trial.php:4
+msgid ""
+"This plugin was created with a huge amount of love and against all the rules "
+"of science, it actually loves you back!"
+msgstr ""
+
+#: app/views/side-col-trial.php:5
+msgid ""
+"Picture the biggest set of 'puppy dog' eyes you've ever seen, that's how our "
+"plugin is looking at you now."
+msgstr ""
+
+#: app/views/side-col-trial.php:6
+msgid ""
+"Upgrading to the full version today will probably cost less than your lunch, "
+"it's a total bargain, just take a look!"
+msgstr ""
+
+#: app/views/side-col-trial.php:7
+msgid "I just want to say, I love you with all my HTML heart."
+msgstr ""
+
+#: app/views/side-col-trial.php:8
+msgid ""
+"In a recent survey of Kontrol users who upgraded, it was found 100% were "
+"classy, intelligent and just generally awesome people. We see you'll fit "
+"right in!"
+msgstr ""
+
+#: app/views/side-col-trial.php:9
+msgid "Some people don't actually like Icecream, how weird is that!"
+msgstr ""
+
+#: app/views/side-col-trial.php:10
+msgid "Hey, you're pretty cool."
+msgstr ""
+
+#: app/views/side-col-trial.php:11
+msgid ""
+"Kontrol is developed by people just like you! We really hope you like and "
+"enjoy the plugin. Go team!"
+msgstr ""
+
+#: app/views/side-col-trial.php:12
+msgid ""
+"Hope you're day is going well and if it isn't, I'm sure it'll get better. "
+"Chin up tiger!"
+msgstr ""
+
+#: app/views/side-col-trial.php:13
+msgid ""
+"The full version of Kontrol has a huge amount of features and once you pay "
+"for it, you get all future upgrades and new modules in it for free, wow!"
+msgstr ""
+
+#: app/views/side-col-trial.php:14
+msgid "I wonder if M&Ms are any relation to B&Bs?"
+msgstr ""
+
+#: app/views/side-col-trial.php:15
+msgid ""
+"Upgrading to the full version of Kontrol is super quick, easy and cheap. "
+"Think how much time it's already saved you! Go on, you won't regret it :)"
+msgstr ""
+
+#: app/views/side-col-trial.php:16
+msgid "Beep beep boop beep"
+msgstr ""
+
+#: app/views/side-col-trial.php:24
+msgid "Get the full version now"
+msgstr ""
+
+#: app/views/side-col-trial.php:25
+msgid "Click above to upgrade today and get the most out of Kontrol"
+msgstr ""
+
+#: app/views/template-parse-list.php:4
+msgid "Site Information"
+msgstr ""
+
+#: app/views/template-parse-list.php:8
+msgid "The site's name"
+msgstr ""
+
+#: app/views/template-parse-list.php:12
+msgid "The site's tagline / description"
+msgstr ""
+
+#: app/views/template-parse-list.php:15
+msgid "Post Information"
+msgstr ""
+
+#: app/views/template-parse-list.php:19
+msgid ""
+"Replaced with the date of the post/page - change the <b>d/m/Y</b> to the <a "
+"href=\"%s\" target=\"_blank\">format</a> you wish the date to appear in."
+msgstr ""
+
+#: app/views/template-parse-list.php:23
+msgid "Replaced with the title of the post/page"
+msgstr ""
+
+#: app/views/template-parse-list.php:27
+msgid ""
+"Replaced with the post/page excerpt (auto-generated if it does not exist)"
+msgstr ""
+
+#: app/views/template-parse-list.php:31
+msgid "Replaced with the post/page excerpt (without auto-generation)"
+msgstr ""
+
+#: app/views/template-parse-list.php:35
+msgid ""
+"Replaced with the current tag/tags applied to the current post (comma "
+"separated)"
+msgstr ""
+
+#: app/views/template-parse-list.php:39
+msgid "Replaced with the post categories (comma separated)"
+msgstr ""
+
+#: app/views/template-parse-list.php:43
+msgid ""
+"Replaced with the post/page modified time - change the <b>d/m/Y</b> to the "
+"<a href=\"%s\" target=\"_blank\">format</a> you wish the date to appear in."
+msgstr ""
+
+#: app/views/template-parse-list.php:47
+msgid "Replaced with the post/page ID"
+msgstr ""
+
+#: app/views/template-parse-list.php:50
+msgid "Author Information"
+msgstr ""
+
+#: app/views/template-parse-list.php:54 app/views/template-parse-list.php:58
+#: app/views/template-parse-list.php:62 app/views/template-parse-list.php:66
+msgid "Replaced with the post/page author's"
+msgstr ""
+
+#: app/views/template-parse-list.php:54
+msgid "nicename"
+msgstr ""
+
+#: app/views/template-parse-list.php:58
+msgid "first name"
+msgstr ""
+
+#: app/views/template-parse-list.php:62
+msgid "surname"
+msgstr ""
+
+#: app/views/template-parse-list.php:66
+msgid "user id"
+msgstr ""
+
+#: app/views/template-parse-list.php:69
+msgid "Date &amp; Time"
+msgstr ""
+
+#: app/views/template-parse-list.php:73
+msgid ""
+"Replaced with the current date/time in the format specified. Change <b>d/m/"
+"Y</b> to your desired date/time <a href=\"%s\" target=\"_blank\">format</a>."
+msgstr ""
+
+#: app/views/template-parse-list.php:77
+msgid "Search Information"
+msgstr ""
+
+#: app/views/template-parse-list.php:81
+msgid "Replaced with the current search phrase"
+msgstr ""

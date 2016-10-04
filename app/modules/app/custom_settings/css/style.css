@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Custom Settings Module */
+
+
+/*** Settings Manage ******************/
+
+#kontrol #categories-settings-config .settings-categories-list {
+	position: relative;
+	margin-top: 10px;
+}
+
+#kontrol #categories-settings-config .settings-category-item {
+	position: relative;
+	padding: 6px 8px 6px 10px;
+	font-weight: bold;
+	height: 18px;
+}
+
+#kontrol #categories-settings-config .settings-category-item .cat-delete {
+	background: url('../../../../../images/icon-delete-duplicate.png') no-repeat 0 0;
+	cursor: pointer;		
+	width: 16px;
+	height: 16px;
+	margin-left: 6px;
+}
+
+#kontrol #categories-settings-config .settings-category-item .drag-row {
+	position: relative;
+	background: url('../../../../../images/icon-drag.png') 0 0 no-repeat;
+	left: 0;
+	top: 0;
+	width: 15px;
+	height: 15px;
+	zoom: 1;
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+	margin-right: 6px;
+	cursor: move;	
+}
+
+#kontrol .kontrol-smart-box .section .inside .col-title {
+    background: -moz-linear-gradient(-45deg, #F5F5F5 0%, #F9F9F9 100%) repeat scroll 0 0 transparent;
+    border-bottom: 1px solid #EAEAEA;
+    color: #B4453B;
+    padding: 6px 0;
+    position: relative;
+}
+
+#kontrol .kontrol-smart-box .section  {
+    box-shadow: none !important;
+}
+
+#kontrol .field-hidden {
+	zoom: 1; 
+	filter: alpha(opacity=50); 
+	opacity: 0.5;	
+}
+
+#kontrol #categories-settings-config textarea {
+	position: relative;
+	width: 100%;
+	min-height: 80px;	
+}
+
+
+
+

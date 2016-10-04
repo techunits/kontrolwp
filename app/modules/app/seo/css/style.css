@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS SEO Module */
+
+/*** Admin Editing ***************/
+
+#kontrol .section .field {
+	position: relative;
+	margin-bottom: 2px;
+}
+
+
+#kontrol .section .warning {
+	position: relative;
+	background-color: #FFC6C7;
+	padding: 4px;
+}
+
+#kontrol .section .field.tip {
+	position: relative;
+	background-color: #e6ffd3;
+	padding: 4px;
+}
+
+#kontrol .section .black {
+	color: #333;
+}
+
+#kontrol .section .red {
+	color: #C66;
+}
+
+
+#kontrol .section .field th {
+	position: relative;
+	color: #C66;
+	text-align: left;
+	padding-right: 10px;
+}
+
+#kontrol .section .field th.main-title {
+	position: relative;
+	padding-top: 5px;
+	color: #333;
+}
+
+

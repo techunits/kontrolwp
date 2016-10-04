@@ -1,0 +1,68 @@
+@charset "utf-8";
+/* Settings Page CSS Document */
+
+#kontrol-wp-page .inline {
+	display: -moz-inline-stack;
+	display: inline-block;
+	vertical-align: top;
+	zoom: 1;
+	*display: inline;	
+}
+
+/*** Settings Categories ***********/
+
+#kontrol-wp-page #settings-cats {
+	position: relative;
+	margin: 10px 0 30px 0;
+		
+}
+
+#kontrol-wp-page #settings-cats .settings-cat {
+	position: relative;
+	margin: 15px 0 15px 15px;
+	padding: 6px 10px 6px 30px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	border: 1px solid #CCC;
+	cursor: pointer;
+	color: #666;
+	font-size: 13px;
+	font-weight: bold;
+	background: url('../../../../../images/icon-category.png') no-repeat 8px 6px #fff;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+#kontrol-wp-page #settings-cats .settings-cat.current, #kontrol-wp-page #settings-cats .settings-cat:hover {
+	color: #21759B;
+	background-color: #FFFEF4;
+}
+
+#kontrol-wp-page .settings-desc {
+	position: relative;
+	background-color: #F7F7F7;
+	padding: 10px;
+	margin: 20px 0 15px 0;
+	font-size: 12px;	
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border: 1px solid #CCC;
+	line-height: 160%;
+}
+
+#kontrol-wp-page #post-body-content {
+	position: relative;
+}
+
+#kontrol-wp-page .cs-col-1 {
+	position: relative;
+	padding-right: 300px;	
+	padding-top: 0 !important;
+}
+
+#kontrol-wp-page .cs-col-2 {
+	position: absolute;
+	top: 0;
+	right: 0;
+}

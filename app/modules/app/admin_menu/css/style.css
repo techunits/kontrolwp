@@ -1,0 +1,108 @@
+@charset "utf-8";
+/* CSS Admon Menu Module */
+
+/*** Admin Editing ***************/
+
+#kontrol #admin-menu {
+	position: relative;
+}
+
+#kontrol #admin-menu-templates {
+	position: relative;
+	display: none;
+}
+
+#kontrol #admin-menu .am-seperator {
+	position: relative;
+	background-color: #f6f6f6;
+}
+
+#kontrol #admin-menu .am-icon {
+	position: relative;
+	height: 28px;
+	width: 28px;
+	background-repeat: 0 none;
+}
+
+#kontrol #admin-menu .am-icon-image {
+	position: relative;
+	padding-top: 4px;
+	padding-left: 6px;
+	height: 24px;
+	width: 22px;
+	background-repeat: 0 none;
+}
+
+#kontrol #admin-menu .am-icon-none {
+	position: relative;
+	height: 28px;
+	width: 28px;
+	border: 1px solid #f6f6f6;
+}
+
+#kontrol #admin-menu .am-submenu {
+	position: relative;
+	padding-left: 35px;	
+	display: none;
+}
+
+#kontrol #admin-menu .am-submenuoptions {
+	position: relative;
+	margin: 15px 0;
+}
+
+#kontrol #admin-menu .am-submenuoptions .section {
+	position: relative;
+	width: 70%;
+	border: 1px solid #F3F3F3;
+	box-shadow: none;
+}
+
+#kontrol #admin-menu .am-submenuoptions .section .am-options {
+	position: relative;
+	width: 40%;
+	text-align: right;
+}
+
+#kontrol #admin-menu .am-submenuoptions .section .title {
+	position: relative;
+	font-size: 13px;
+}
+
+#kontrol #admin-menu .section .am-name {
+	position: relative;
+	top: 6px;
+	width: 40%;
+}
+
+#kontrol #admin-menu .row.hidden-row {
+	zoom: 1;
+	filter: alpha(opacity=35) !important;
+	opacity: 0.35 !important;
+}
+
+#kontrol #admin-menu .row.deleted-row {
+	display: none;
+}
+
+
+/*** Admin Menu Tools *************/
+
+#kontrol #admin-menu .title-options {
+	position: relative;	
+	float: right;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#kontrol #admin-menu .title-options .admin-menu-link {
+	position: relative;
+	padding-left: 22px;
+	margin: 0 6px 0 5px;
+	background: url('../../../../../images/icon-add.png') 0 0 no-repeat;
+	font-weight: bold;
+	cursor: pointer;
+	color: #000;
+}
+
+
