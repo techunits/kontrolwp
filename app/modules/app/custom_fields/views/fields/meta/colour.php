@@ -8,17 +8,17 @@
 <script type="text/javascript">
 window.addEvent('domready', function() {
 	(function($){
-		kontrol_colour_picker_<?=$rand_func_key?>($('<?=$field_name?>'));
+		kontrol_colour_picker_<?php echo $rand_func_key?>($('<?php echo $field_name?>'));
 	})(document.id);	
 });
 
   // Colour picker settings
-  var kontrol_colour_picker_<?=$rand_func_key?> = function(field_el) {	
+  var kontrol_colour_picker_<?php echo $rand_func_key?> = function(field_el) {	
   
 		new MooRainbow(field_el, {
 				    id: field_el.get('data-picker-id'),
-			   imgPath: '<?=URL_CSS?>moorainbow/images/',
-			startColor: '<?=$start_colour?>',
+			   imgPath: '<?php echo URL_CSS?>moorainbow/images/',
+			startColor: '<?php echo $start_colour?>',
 			  onChange: function(color) {
 				field_el.getPrevious('.colour-box').setStyle('background-color', color.hex);
 				field_el.set('value', color.hex);
@@ -29,6 +29,6 @@ window.addEvent('domready', function() {
 </script>
 
 <div class="colour-box"></div>
-<input id="<?=$field_name?>" data-picker-id="<?=$rand_func_key?>-kontrol_row_id" type="text" name="_kontrol[<?=$field->field_key?>]" value="<?=$start_colour;?>" class="<?=$field_validation?> kontrol-colour-picker-field" data-repeater-func="kontrol_colour_picker_<?=$rand_func_key?>" />
+<input id="<?php echo $field_name?>" data-picker-id="<?php echo $rand_func_key?>-kontrol_row_id" type="text" name="_kontrol[<?php echo $field->field_key?>]" value="<?php echo $start_colour;?>" class="<?php echo $field_validation?> kontrol-colour-picker-field" data-repeater-func="kontrol_colour_picker_<?php echo $rand_func_key?>" />
 
   

@@ -1,4 +1,4 @@
-<div class="fields <?=$class?>">
+<div class="fields <?php echo $class?>">
 	<div>
 	  <? if(!isset($rule_set)) {
             $this->renderElement('cf-rules-option', array('data'=>NULL, 'rules'=>$rules, 'type'=>$type, 'index'=>0));   
@@ -12,9 +12,9 @@
   </div>
   <div class="field">
   		<div class="rule-match">
-             <select name="<?=$type?>[rules][cond]" class="rule-set-operator hundred">
-                   <option value="AND" <?=(isset($data->cond) && $data->cond == 'AND') ? 'selected="selected"':'' ?>><?=__('Match ALL of the above rules','kontrolwp')?></option>
-                   <option value="OR" <?=(isset($data->cond) && $data->cond == 'OR') ? 'selected="selected"':'' ?>><?=__('Match ANY of the above rules','kontrolwp')?></option>
+             <select name="<?php echo $type?>[rules][cond]" class="rule-set-operator hundred">
+                   <option value="AND" <?php echo (isset($data->cond) && $data->cond == 'AND') ? 'selected="selected"':'' ?>><?php echo __('Match ALL of the above rules','kontrolwp')?></option>
+                   <option value="OR" <?php echo (isset($data->cond) && $data->cond == 'OR') ? 'selected="selected"':'' ?>><?php echo __('Match ANY of the above rules','kontrolwp')?></option>
              </select>
         </div>
   </div>

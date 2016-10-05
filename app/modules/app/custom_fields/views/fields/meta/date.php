@@ -8,18 +8,18 @@
 <script type="text/javascript">
 window.addEvent('domready', function() {
 	(function($){
-		kontrol_date_picker_<?=$rand_func_key?>($('<?=$field_name?>'));
+		kontrol_date_picker_<?php echo $rand_func_key?>($('<?php echo $field_name?>'));
 	})(document.id);	
 });
 
   // Date settings
-  var kontrol_date_picker_<?=$rand_func_key?> = function(field_el) {	
+  var kontrol_date_picker_<?php echo $rand_func_key?> = function(field_el) {	
   
 			var date_picker_field_el = field_el;
 			var date_picker_field_value_el = field_el.getNext('input[type=hidden]');
 	
-			var date_format = '<?=empty($field->settings['date_format']) ? '%d/%m/%Y' : $field->settings['date_format']?>';
-			var date_value_format = '<?=empty($field->settings['date_value_format']) ? '%d/%m/%Y' : $field->settings['date_value_format']?>';
+			var date_format = '<?php echo empty($field->settings['date_format']) ? '%d/%m/%Y' : $field->settings['date_format']?>';
+			var date_value_format = '<?php echo empty($field->settings['date_value_format']) ? '%d/%m/%Y' : $field->settings['date_value_format']?>';
 			
 			// Remove autocomplete
 			date_picker_field_el.autocomplete = 'off';
@@ -40,24 +40,24 @@ window.addEvent('domready', function() {
 			   }
 			?>
 			
-			var picker = new Picker.Date<?=$range_class?>(date_picker_field_el, {
-							timePicker: <?=!$field->settings['date_time_picker'] ? 'false' : 'true'?>,
+			var picker = new Picker.Date<?php echo $range_class?>(date_picker_field_el, {
+							timePicker: <?php echo !$field->settings['date_time_picker'] ? 'false' : 'true'?>,
 							positionOffset: {x: 0, y: 0},
 							pickerPosition: 'bottom',
 							format: date_format,
-							pickOnly: <?=!$field->settings['date_pick_only'] ? 'false' : "'".$field->settings['date_pick_only']."'"?>,
+							pickOnly: <?php echo !$field->settings['date_pick_only'] ? 'false' : "'".$field->settings['date_pick_only']."'"?>,
 							useFadeInOut: false,
 							<? if(isset($field->settings['date_limit_specific']) && !empty($field->settings['date_limit_specific'])) { ?>
-								availableDates: <?=$field->settings['date_limit_specific']?>,
+								availableDates: <?php echo $field->settings['date_limit_specific']?>,
 							<? } ?>
 							<? if(isset($field->settings['date_limit_specific_invert']) && !empty($field->settings['date_limit_specific_invert'])) { ?>
-								invertAvailable: <?=$field->settings['date_limit_specific_invert'] ? 'true':'false'?>,
+								invertAvailable: <?php echo $field->settings['date_limit_specific_invert'] ? 'true':'false'?>,
 							<? } ?>
 							<? if(isset($field->settings['date_limit_min']) && !empty($field->settings['date_limit_min'])) { ?>
-								minDate: date_format_native('<?=$field->settings['date_limit_min']?>', '%Y, %a %b %d'),
+								minDate: date_format_native('<?php echo $field->settings['date_limit_min']?>', '%Y, %a %b %d'),
 							<? } ?>
 							<? if(isset($field->settings['date_limit_max']) && !empty($field->settings['date_limit_max'])) { ?>
-								maxDate: date_format_native('<?=$field->settings['date_limit_max']?>', '%Y, %a %b %d'),
+								maxDate: date_format_native('<?php echo $field->settings['date_limit_max']?>', '%Y, %a %b %d'),
 							<? } ?>
 							<? if(!$range_class) { ?>
 								onSelect: function(date){
@@ -87,18 +87,18 @@ window.addEvent('domready', function() {
 			<? 
 			// Some issues arose parsing %s timestamps, so do it natively
 			if(!empty($field_value) && !$range_class) { ?>
-				picker.select(date_format_native('<?=$field_value?>', date_value_format));
+				picker.select(date_format_native('<?php echo $field_value?>', date_value_format));
 			<? } ?>
 			<?
 			// Date picker using a range needs to be initalised differently
 			if(!empty($field_value) && $range_class) { ?>
-				picker.options.setStartEndDate.call(picker, date_picker_field_el, [date_format_native('<?=$range_dates[0]?>', date_value_format), date_format_native('<?=$range_dates[1]?>', date_value_format)]);
+				picker.options.setStartEndDate.call(picker, date_picker_field_el, [date_format_native('<?php echo $range_dates[0]?>', date_value_format), date_format_native('<?php echo $range_dates[1]?>', date_value_format)]);
 			<? } ?>
 			
   }
 			
 </script>
 
-<input id="<?=$field_name?>" type="text" value="" class="<?=str_replace('validate-date', '', $field_validation)?> kontrol-datepicker-field" data-repeater-func="kontrol_date_picker_<?=$rand_func_key?>" />
-<input id="<?=$field_name?>-value" type="hidden" name="_kontrol[<?=$field->field_key?>]" value="<?=!empty($field_value) ? $field_value : '';?>"  />
+<input id="<?php echo $field_name?>" type="text" value="" class="<?php echo str_replace('validate-date', '', $field_validation)?> kontrol-datepicker-field" data-repeater-func="kontrol_date_picker_<?php echo $rand_func_key?>" />
+<input id="<?php echo $field_name?>-value" type="hidden" name="_kontrol[<?php echo $field->field_key?>]" value="<?php echo !empty($field_value) ? $field_value : '';?>"  />
   

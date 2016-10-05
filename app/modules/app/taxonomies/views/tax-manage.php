@@ -7,7 +7,7 @@
 		(function($){
 						
 			$$('.delete-tax').addEvent('click', function(e) {
-				var check = confirm('<?=__('Delete this item?', 'kontrolwp')?>');
+				var check = confirm('<?php echo __('Delete this item?', 'kontrolwp')?>');
 					
 				if(!check) {
 					e.stop();	
@@ -25,7 +25,7 @@
 	<!-- Active taxs -->
     <div class="section">
         <div class="inside">
-            <div class="title"><?=__('Custom Taxonomies', 'kontrolwp')?></div>
+            <div class="title"><?php echo __('Custom Taxonomies', 'kontrolwp')?></div>
             <div class="rows sortable">
             	<?					
 						foreach($tax_custom as $data) { 
@@ -40,29 +40,29 @@
 				
 						
 				?>
-							<div class="row <?=empty($data['tax']->active) ? 'hidden-tax':''?>" id="<?=$data['tax']->tax_key?>" sortAction="<?=$controller_url?>/updatesortorder/<?=$data['tax']->id?>/">
+							<div class="row <?php echo empty($data['tax']->active) ? 'hidden-tax':''?>" id="<?php echo $data['tax']->tax_key?>" sortAction="<?php echo $controller_url?>/updatesortorder/<?php echo $data['tax']->id?>/">
                             	<div class="row-data">
                                     <div class="inline tab drag-row"></div>
                                     <div class="inline tax-name" style="width: 40%" title="Name">
-                                        <b><a href="<?=$controller_url?>/edit/<?=$data['tax']->id?>"><?=$data['tax']->name?></a></b> &nbsp;&nbsp; ( <?=$data['tax']->tax_key?> )
+                                        <b><a href="<?php echo $controller_url?>/edit/<?php echo $data['tax']->id?>"><?php echo $data['tax']->name?></a></b> &nbsp;&nbsp; ( <?php echo $data['tax']->tax_key?> )
                                     </div>
-                                    <div class="inline tax-id" style="width: 5%; text-align:center; top: 12px;" title="<?=__('Key','kontrolwp')?>"></div>
-                                    <div class="inline tax-updated" style="width: 22%; text-align:right; top: 12px;" title="<?=__('Last Updated','kontrolwp')?>"><?=date("g:i a - F j, Y", $data['tax']->updated)?></div>
-                                    <div class="inline tax-options" style="width: 25%; text-align:right; top: 10px;" title="<?=__('Options','kontrolwp')?>">
-                                        <a href="<?=$controller_url?>/edit/<?=$data['tax']->id?>"><img src="<?=URL_IMAGE?>/icon-edit.png" title="<?=__('Edit','kontrolwp')?>" alt="<?=__('Edit','kontrolwp')?>" /></a> &nbsp;
-                                        <a href="<?=$controller_url?>/visible/<?=$data['tax']->id?>/<?=empty($data['tax']->active) ? '1':'0'?>&noheader=true"><img src="<?=URL_IMAGE?>/icon-visible.png" title="<?=__('Hide','kontrolwp')?>" alt="<?=__('Hide','kontrolwp')?>" /></a> &nbsp;&nbsp;
-                                        <a href="<?=$controller_url?>/delete/<?=$data['tax']->id?>&noheader=true"  class="delete-tax"><img src="<?=URL_IMAGE?>/icon-delete.png" title="<?=__('Delete','kontrolwp')?>" alt="<?=__('Delete','kontrolwp')?>" /></a>
+                                    <div class="inline tax-id" style="width: 5%; text-align:center; top: 12px;" title="<?php echo __('Key','kontrolwp')?>"></div>
+                                    <div class="inline tax-updated" style="width: 22%; text-align:right; top: 12px;" title="<?php echo __('Last Updated','kontrolwp')?>"><?php echo date("g:i a - F j, Y", $data['tax']->updated)?></div>
+                                    <div class="inline tax-options" style="width: 25%; text-align:right; top: 10px;" title="<?php echo __('Options','kontrolwp')?>">
+                                        <a href="<?php echo $controller_url?>/edit/<?php echo $data['tax']->id?>"><img src="<?php echo URL_IMAGE?>/icon-edit.png" title="<?php echo __('Edit','kontrolwp')?>" alt="<?php echo __('Edit','kontrolwp')?>" /></a> &nbsp;
+                                        <a href="<?php echo $controller_url?>/visible/<?php echo $data['tax']->id?>/<?php echo empty($data['tax']->active) ? '1':'0'?>&noheader=true"><img src="<?php echo URL_IMAGE?>/icon-visible.png" title="<?php echo __('Hide','kontrolwp')?>" alt="<?php echo __('Hide','kontrolwp')?>" /></a> &nbsp;&nbsp;
+                                        <a href="<?php echo $controller_url?>/delete/<?php echo $data['tax']->id?>&noheader=true"  class="delete-tax"><img src="<?php echo URL_IMAGE?>/icon-delete.png" title="<?php echo __('Delete','kontrolwp')?>" alt="<?php echo __('Delete','kontrolwp')?>" /></a>
                                     </div>
                                 </div>
 								<? if(count($native_pt) > 0 || count($custom_pt) > 0) { ?>
                                 <div class="row-pts">
                                			<div class="pts-attached">
-                                        	<div style="padding-bottom: 2px"><?=__('Post Types Attached','kontrolwp')?></div>
+                                        	<div style="padding-bottom: 2px"><?php echo __('Post Types Attached','kontrolwp')?></div>
                                         	<? foreach($native_pt as $pt) { ?>
-                                            	   <div class="native pt-name inline"><?=$pt['name']?></div>                                              
+                                            	   <div class="native pt-name inline"><?php echo $pt['name']?></div>                                              
                                             <? } ?>
                                             <? foreach($custom_pt as $pt) { ?>
-                                            	   <div class="custom pt-name inline"><a href="<?=URL_WP_OPTIONS_PAGE.'&url=custom_post_types/edit/'.$pt['id']?>" target="_blank"><?=$pt['name']?></a></div>                                         
+                                            	   <div class="custom pt-name inline"><a href="<?php echo URL_WP_OPTIONS_PAGE.'&url=custom_post_types/edit/'.$pt['id']?>" target="_blank"><?php echo $pt['name']?></a></div>                                         
                                             <? } ?>
                                        </div>
                                 </div>
@@ -80,7 +80,7 @@
     <!-- Hidden taxs -->
     <div class="section">
         <div class="inside">
-            <div class="title"><?=__('Native Taxonomies','kontrolwp')?></div>
+            <div class="title"><?php echo __('Native Taxonomies','kontrolwp')?></div>
             <div class="rows">
             	
 					<? if(count($tax_native) > 0) {
@@ -110,24 +110,24 @@
 							}
 						
 				?>
-							<div class="row <?=empty($data['tax']->active) ? 'hidden-tax':''?>" id="<?=$data['tax']->tax_key?>" sortAction="<?=$controller_url?>/updatesortorder/<?=$data['tax']->id?>/">
+							<div class="row <?php echo empty($data['tax']->active) ? 'hidden-tax':''?>" id="<?php echo $data['tax']->tax_key?>" sortAction="<?php echo $controller_url?>/updatesortorder/<?php echo $data['tax']->id?>/">
                             	<div class="row-data">
                                     <div class="inline tax-name" style="width: 40%; margin-left: 36px;" title="Name">
-                                        <b><a href="<?=$controller_url?>/edit/<?=$data['tax']->id?>"><?=$data['tax']->name?></a></b> &nbsp;&nbsp; ( <?=$data['tax']->tax_key?> )
+                                        <b><a href="<?php echo $controller_url?>/edit/<?php echo $data['tax']->id?>"><?php echo $data['tax']->name?></a></b> &nbsp;&nbsp; ( <?php echo $data['tax']->tax_key?> )
                                     </div>
-                                    <div class="inline tax-id" style="width: 5%; text-align:center; top: 12px;" title="<?=__('Key','kontrolwp')?>"></div>
-                                    <div class="inline tax-updated" style="width: 22%; text-align:right; top: 12px;" title="<?=__('Last Updated','kontrolwp')?>"></div>
-                                    <div class="inline tax-options" style="width: 25%; text-align:right; top: 10px;" title="<?=__('Options','kontrolwp')?>"></div>
+                                    <div class="inline tax-id" style="width: 5%; text-align:center; top: 12px;" title="<?php echo __('Key','kontrolwp')?>"></div>
+                                    <div class="inline tax-updated" style="width: 22%; text-align:right; top: 12px;" title="<?php echo __('Last Updated','kontrolwp')?>"></div>
+                                    <div class="inline tax-options" style="width: 25%; text-align:right; top: 10px;" title="<?php echo __('Options','kontrolwp')?>"></div>
                                 </div>
 								<? if(count($native_pt) > 0 || count($custom_pt) > 0) { ?>
                                 <div class="row-pts">
                                			<div class="pts-attached">
-                                        	<div style="padding-bottom: 2px"><?=__('Post Types Attached','kontrolwp')?></div>
+                                        	<div style="padding-bottom: 2px"><?php echo __('Post Types Attached','kontrolwp')?></div>
                                         	<? foreach($native_pt as $pt) { ?>
-                                            	   <div class="native pt-name inline"><?=$pt['name']?></div>                                              
+                                            	   <div class="native pt-name inline"><?php echo $pt['name']?></div>                                              
                                             <? } ?>
                                             <? foreach($custom_pt as $pt) { ?>
-                                            	   <div class="custom pt-name inline"><a href="<?=URL_WP_OPTIONS_PAGE.'&url=custom_post_types/edit/'.$pt['id']?>" target="_blank"><?=$pt['name']?></a></div>                                         
+                                            	   <div class="custom pt-name inline"><a href="<?php echo URL_WP_OPTIONS_PAGE.'&url=custom_post_types/edit/'.$pt['id']?>" target="_blank"><?php echo $pt['name']?></a></div>                                         
                                             <? } ?>
                                        </div>
                                 </div>
@@ -155,13 +155,13 @@
     </div>
 	 <div class="section">
      	<div class="inside">
-            <div class="title"><?=__('Custom Taxonomies','kontrolwp')?></div>
+            <div class="title"><?php echo __('Custom Taxonomies','kontrolwp')?></div>
             <div class="menu-item add">
             	<? if(KONTROL_T && (4-$tax_count) <= 0) { ?>
-            	<div class="link"><a href="<?=APP_UPGRADE_URL?>" target="_blank"><?=__('Upgrade to the full edition!','kontrolwp')?></a></div>
-                <div class="desc"><?=sprintf(__("Well this is awkward. We're super sorry, but the limited edition of Kontrol only allows you %d custom taxonomies. The full version gives you unlimited + free upgrades to Kontrol and all future modules for the cost of less than your lunch. Bargain!",'kontrolwp'),4)?></div>
+            	<div class="link"><a href="<?php echo APP_UPGRADE_URL?>" target="_blank"><?php echo __('Upgrade to the full edition!','kontrolwp')?></a></div>
+                <div class="desc"><?php echo sprintf(__("Well this is awkward. We're super sorry, but the limited edition of Kontrol only allows you %d custom taxonomies. The full version gives you unlimited + free upgrades to Kontrol and all future modules for the cost of less than your lunch. Bargain!",'kontrolwp'),4)?></div>
            		 <? }else { ?>
-                <div class="link"><a href="<?=$controller_url?>/add" class="button-primary" style="font-weight: normal;"><?=__('Add new custom taxonomy','kontrolwp')?></a></div>
+                <div class="link"><a href="<?php echo $controller_url?>/add" class="button-primary" style="font-weight: normal;"><?php echo __('Add new custom taxonomy','kontrolwp')?></a></div>
                 <? } ?>
             </div>
         </div>

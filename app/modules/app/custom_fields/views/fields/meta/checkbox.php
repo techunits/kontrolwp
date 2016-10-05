@@ -14,14 +14,14 @@
 		if(is_array($field_value) && in_array($value, $field_value)) { $checked = TRUE; }
 	?>
     	<input type="checkbox" 
-        	name="_kontrol[<?=$field->field_key?>][]" 
-			<?=$index == 0 && isset($field->settings['checkbox_max_values']) && !empty($field->settings['checkbox_max_values']) ? 'data-max-val="'.$field->settings['checkbox_max_values'].'"' : ''?> 
-        	value="<?=$value?>" 
-            title="<?=$index == 0 ? __('Please select at least one checkbox.','kontrolwp'):''?>" 
-			<?=$checked ? 'checked="checked"':''?> 
-			<?=$index == 0 ? 'class="'.$field_validation.' msgPos:\''.$field->field_key.'-checkbox-advice\'"':''?> 
+        	name="_kontrol[<?php echo $field->field_key?>][]" 
+			<?php echo $index == 0 && isset($field->settings['checkbox_max_values']) && !empty($field->settings['checkbox_max_values']) ? 'data-max-val="'.$field->settings['checkbox_max_values'].'"' : ''?> 
+        	value="<?php echo $value?>" 
+            title="<?php echo $index == 0 ? __('Please select at least one checkbox.','kontrolwp'):''?>" 
+			<?php echo $checked ? 'checked="checked"':''?> 
+			<?php echo $index == 0 ? 'class="'.$field_validation.' msgPos:\''.$field->field_key.'-checkbox-advice\'"':''?> 
              /> 
-			<?=$label?> &nbsp;&nbsp;
+			<?php echo $label?> &nbsp;&nbsp;
         <? if($field->settings['checkbox_style'] == 'vertical') { ?>
        		 <div class="checkbox-div"></div>
         <? } ?>
@@ -29,6 +29,6 @@
 	$index++;
 } ?>
 
-<div id="<?=$field->field_key?>-checkbox-advice"></div>
+<div id="<?php echo $field->field_key?>-checkbox-advice"></div>
 
   

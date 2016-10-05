@@ -1,2 +1,2 @@
- <input type="text" name="_kontrol[<?=$field->field_key?>]" value="<?=!empty($field_value) ? htmlentities($field_value, ENT_QUOTES, 'UTF-8') : htmlentities($field->settings['default_value'], ENT_QUOTES, 'UTF-8')?>" class="<?=$field_validation?>" />
+ <input type="text" name="_kontrol[<?php echo $field->field_key?>]" value="<?php echo !empty($field_value) ? htmlentities($field_value, ENT_QUOTES, 'UTF-8') : htmlentities($field->settings['default_value'], ENT_QUOTES, 'UTF-8')?>" class="<?php echo $field_validation?>" />
   

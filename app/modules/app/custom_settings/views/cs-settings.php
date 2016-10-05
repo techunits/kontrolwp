@@ -3,15 +3,15 @@ global $current_user;
 get_currentuserinfo();
 ?>
 
-<div class="icon32" id="icon-options-general"><br></div><h2><?=$page_title?> - <?=$categories[$cat]['data']['label']?></h2>
+<div class="icon32" id="icon-options-general"><br></div><h2><?php echo $page_title?> - <?php echo $categories[$cat]['data']['label']?></h2>
 
 <? if(isset($categories[$cat]['data']['desc']) && !empty($categories[$cat]['data']['desc'])) { ?>
 <div class="settings-desc">
-	<?=nl2br($categories[$cat]['data']['desc'])?>
+	<?php echo nl2br($categories[$cat]['data']['desc'])?>
 </div>
 <? } ?>
 
-<form id="post" action="<?=URL_WP_SETTINGS_PAGE.'&cat='.$cat?>&noheader=true" method="POST" name="post">
+<form id="post" action="<?php echo URL_WP_SETTINGS_PAGE.'&cat='.$cat?>&noheader=true" method="POST" name="post">
 
 <div id="post-body" class="metabox-holder columns-2">
 
@@ -24,7 +24,7 @@ get_currentuserinfo();
                         <div class="postbox-container" id="postbox-container-2">
                             <div class="meta-box-sortables ui-sortable" id="normal-sortables">
                                 <div class="postbox kontrol-metabox" style="display: block;">
-                                <div title="Click to toggle" class="handlediv"><br></div><h3 class="hndle"><span><?=$group->group_name?></span></h3>
+                                <div title="Click to toggle" class="handlediv"><br></div><h3 class="hndle"><span><?php echo $group->group_name?></span></h3>
                                 <div class="inside">
                                     <?	if(isset($group->fields) && count($group->fields) > 0) {  
                                             foreach($group->fields as $field) { 
@@ -73,18 +73,18 @@ get_currentuserinfo();
        <!-- Side Col -->
        <div class="cs-col-2">
        			<div class="postbox " id="submitdiv">
-                    <div title="Click to toggle" class="handlediv"><br></div><h3 class="hndle"><span><?=__('Settings','kontrolwp')?> - <?=$categories[$cat]['data']['label']?></span></h3>
+                    <div title="Click to toggle" class="handlediv"><br></div><h3 class="hndle"><span><?php echo __('Settings','kontrolwp')?> - <?php echo $categories[$cat]['data']['label']?></span></h3>
                     <div class="inside">
                     <div id="submitpost" class="submitbox">
                     <div class="misc-pub-section curtime">
                         <span id="timestamp">
-                        <?=__('Last Updated','kontrolwp')?> <b><?=(isset($updated_times[$cat]) && !empty($updated_times[$cat])) ? date('jS, F Y', $updated_times[$cat]):__('Never','kontrolwp') ?></b></span>
+                        <?php echo __('Last Updated','kontrolwp')?> <b><?php echo (isset($updated_times[$cat]) && !empty($updated_times[$cat])) ? date('jS, F Y', $updated_times[$cat]):__('Never','kontrolwp') ?></b></span>
                     </div>
                     </div>
                     <div id="major-publishing-actions" style="margin-top: 5px;">             
                         <div id="publishing-action">
                         <span class="spinner" style="display: none;"></span>
-                                <input type="submit" value="<?=__('Save Settings','kontrolwp')?>" accesskey="p" id="publish" class="button button-primary button-large" name="save">
+                                <input type="submit" value="<?php echo __('Save Settings','kontrolwp')?>" accesskey="p" id="publish" class="button button-primary button-large" name="save">
                         </div>
                     <div class="clear"></div>
                     </div>
@@ -97,5 +97,5 @@ get_currentuserinfo();
 
 
 <input type="hidden" name="save_fields" value="TRUE" />
-<input type="hidden" name="current_cat" value="<?=$cat?>" />
+<input type="hidden" name="current_cat" value="<?php echo $cat?>" />
 </form>

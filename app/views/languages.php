@@ -9,8 +9,8 @@
 				<div class="inside">
                 	<div class="title">Language Support</div>
                     <div class="menu-item lang">
-                      <div class="link"><a href="<?=APP_PLUGIN_LANG_URL?>" target="_blank">Get Kontrol in your language</a></div>
-                      <div class="desc">Kontrol doesn't currently support your language in full. If you would be interested in translating Kontrol to your language from English, we'll throw a bunch of free copies of Kontrol your way in return and give you credit! <a href="<?=APP_PLUGIN_LANG_URL?>" target="_blank">View our site for more information</a>.</div>
+                      <div class="link"><a href="<?php echo APP_PLUGIN_LANG_URL?>" target="_blank">Get Kontrol in your language</a></div>
+                      <div class="desc">Kontrol doesn't currently support your language in full. If you would be interested in translating Kontrol to your language from English, we'll throw a bunch of free copies of Kontrol your way in return and give you credit! <a href="<?php echo APP_PLUGIN_LANG_URL?>" target="_blank">View our site for more information</a>.</div>
                   </div>
                </div>
            </div>

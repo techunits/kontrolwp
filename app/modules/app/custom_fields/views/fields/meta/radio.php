@@ -16,12 +16,12 @@
 		if($value == $field_value) { $checked = TRUE; }
 	?>
     	<input type="radio" 
-        	name="_kontrol[<?=$field->field_key?>]" 
-			value="<?=$value?>" 
-			<?=$checked ? 'checked="checked"':''?> 
-			<?=$index == 0 ? 'class="'.$field_validation.' msgPos:\''.$field->field_key.'-radio-advice\'"':''?> 
+        	name="_kontrol[<?php echo $field->field_key?>]" 
+			value="<?php echo $value?>" 
+			<?php echo $checked ? 'checked="checked"':''?> 
+			<?php echo $index == 0 ? 'class="'.$field_validation.' msgPos:\''.$field->field_key.'-radio-advice\'"':''?> 
              /> 
-			<?=$label?> &nbsp;&nbsp;
+			<?php echo $label?> &nbsp;&nbsp;
         <? if($field->settings['radio_style'] == 'vertical') { ?>
        		 <div class="radio-div"></div>
        <? } ?>
@@ -29,6 +29,6 @@
 	$index++;
 } ?>
 
-<div id="<?=$field->field_key?>-radio-advice"></div>
+<div id="<?php echo $field->field_key?>-radio-advice"></div>
 
   

@@ -11,7 +11,7 @@
 	
  ?>
  
- <select <?=!$multi_select ? 'name="_kontrol['.$field->field_key.']"':''?> class="<?=$field_validation?>" <?=$multi_select ? 'multiple="multiple" data-smart-box="true" data-max-val="'.$field->settings['select_max_values'].'"':''?>>
+ <select <?php echo !$multi_select ? 'name="_kontrol['.$field->field_key.']"':''?> class="<?php echo $field_validation?>" <?php echo $multi_select ? 'multiple="multiple" data-smart-box="true" data-max-val="'.$field->settings['select_max_values'].'"':''?>>
  	<? foreach($field->settings['select_options'] as $option) { 
 			$selected = FALSE;
 			$parts = split(':', $option);
@@ -27,9 +27,9 @@
 			if($field->settings['select_null'] == TRUE && $index == 0) {
 				
 	?>
-    			<option value="" <?=$selected ? 'selected="selected"':''?>><?=__('Select')?></option>
+    			<option value="" <?php echo $selected ? 'selected="selected"':''?>><?php echo __('Select')?></option>
     <? 		} ?>
-    	<option value="<?=$value?>" <?=$selected ? 'selected="selected"':''?>><?=$label?></option>
+    	<option value="<?php echo $value?>" <?php echo $selected ? 'selected="selected"':''?>><?php echo $label?></option>
     <? $index++;
 	} ?>
  </select>
@@ -38,7 +38,7 @@
   <? if($multi_select) { ?>
   
   	<? // In here so that the values can be reset if nothing is selected ?> 
- 	<input type="hidden" name="_kontrol[<?=$field->field_key?>][]" value="" />
+ 	<input type="hidden" name="_kontrol[<?php echo $field->field_key?>][]" value="" />
     
 	<div class="kontrol-smart-box" data-hide-when-empty="true" data-disable-row-delete="true">
       <div class="section">
@@ -47,8 +47,8 @@
                	  <div class="row new-row">
                       <div class="inline tab drag-row"></div>
                       <div class="content inline">[[LABEL]]</div>
-                      <div class="delete-row" title="<?=__('Delete Row', 'kontrolwp')?>"></div>  
-                      <input type="hidden" name="_kontrol[<?=$field->field_key?>][]" value="[[VALUE]]" />
+                      <div class="delete-row" title="<?php echo __('Delete Row', 'kontrolwp')?>"></div>  
+                      <input type="hidden" name="_kontrol[<?php echo $field->field_key?>][]" value="[[VALUE]]" />
                    </div>
                	  <? foreach($select_vals as $value) { 
 						
@@ -57,9 +57,9 @@
 				  ?>
                           <div class="row">
                               <div class="inline tab drag-row"></div>
-                              <div class="content inline"><?=$data['label']?></div>
-                              <div class="delete-row" title="<?=__('Delete Row', 'kontrolwp')?>"></div>  
-                              <input type="hidden" name="_kontrol[<?=$field->field_key?>][]" value="<?=$data['value']?>" />
+                              <div class="content inline"><?php echo $data['label']?></div>
+                              <div class="delete-row" title="<?php echo __('Delete Row', 'kontrolwp')?>"></div>  
+                              <input type="hidden" name="_kontrol[<?php echo $field->field_key?>][]" value="<?php echo $data['value']?>" />
                            </div>
                    <? 	}
 				   } ?>

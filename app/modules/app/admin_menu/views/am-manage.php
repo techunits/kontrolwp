@@ -9,8 +9,8 @@
 
 	window.addEvent('domready', function() {		
 			
-			var kontrol_upload_size_limit = <?=Kontrol_Tools::return_post_max('bytes')?>;
-			var kontrol_app_path = '<?=URL_PLUGIN?>';
+			var kontrol_upload_size_limit = <?php echo Kontrol_Tools::return_post_max('bytes')?>;
+			var kontrol_app_path = '<?php echo URL_PLUGIN?>';
 			// Validation.
   			fields_validator = new Form.Validator.Inline('am-save');
 			
@@ -36,15 +36,15 @@
 </div>
 
 
-<form id="am-save" action="<?=$controller_url?>/save/&noheader=true" method="POST">
+<form id="am-save" action="<?php echo $controller_url?>/save/&noheader=true" method="POST">
 
     <!-- Main Col -->
     <div id="admin-menu" class="main-col inline">
         <div class="section">
                 <div class="inside">
-                    <div class="title"><?=__('Admin Menu', 'kontrolwp')?>
+                    <div class="title"><?php echo __('Admin Menu', 'kontrolwp')?>
                     	<div class="title-options">
-                           <div class="admin-menu-link admin-menu-add-seperator inline"><?=__('Insert New Seperator','kontrolwp')?></div> &nbsp;&nbsp; <div class="admin-menu-link admin-menu-add-row inline"><?=__('Insert New Row','kontrolwp')?></div>
+                           <div class="admin-menu-link admin-menu-add-seperator inline"><?php echo __('Insert New Seperator','kontrolwp')?></div> &nbsp;&nbsp; <div class="admin-menu-link admin-menu-add-row inline"><?php echo __('Insert New Row','kontrolwp')?></div>
                         </div>
                     </div>
                     <div class="rows sortable">
@@ -77,7 +77,7 @@
         </div>
         <div class="section">
             <div class="inside">
-                <div class="title"><?=__('Save')?> <?=__('Admin Menu','kontrolwp')?></div>
+                <div class="title"><?php echo __('Save')?> <?php echo __('Admin Menu','kontrolwp')?></div>
                 <div class="menu-item alert-icon">
                     <input id="group-save-button" type="submit" value="Save Menu" class="button-primary" />
                 </div>
@@ -85,10 +85,10 @@
         </div>
         <div id="admin-menu-tools" class="section">
             <div class="inside">
-                <div class="title"><?=__('Menu Tools','kontrolwp')?></div>
+                <div class="title"><?php echo __('Menu Tools','kontrolwp')?></div>
                 <div class="menu-item alert">
-                    <div id="reset-menu-link" class="link" style="cursor: pointer"><?=__('Reset menu to defaults','kontrolwp')?></div>
-                    <div class="desc"><?=__('Will reset the menu to the default WP menu','kontrolwp')?>.</div>
+                    <div id="reset-menu-link" class="link" style="cursor: pointer"><?php echo __('Reset menu to defaults','kontrolwp')?></div>
+                    <div class="desc"><?php echo __('Will reset the menu to the default WP menu','kontrolwp')?>.</div>
                 </div>
             </div>
         </div>

@@ -21,7 +21,7 @@
 
 ?>
        <div class="menu-item love">
-          <div class="link"><a href="<?=APP_UPGRADE_URL?>" target="_blank"><?=__('Get the full version now','kontrolwp')?></a></div>
-          <div class="desc"><?=$reasons[$rand_key];?> <?=__('Click above to upgrade today and get the most out of Kontrol','kontrolwp')?>.</div>
+          <div class="link"><a href="<?php echo APP_UPGRADE_URL?>" target="_blank"><?php echo __('Get the full version now','kontrolwp')?></a></div>
+          <div class="desc"><?php echo $reasons[$rand_key];?> <?php echo __('Click above to upgrade today and get the most out of Kontrol','kontrolwp')?>.</div>
       </div>
 <? } ?>

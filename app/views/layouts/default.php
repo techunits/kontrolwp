@@ -23,8 +23,8 @@
 		<? if($app_alert_msg) { ?>
 			new kontrol_notification({
 					'duration': 2000,
-					'msg_title': "<?=$app_alert_msg[0]?>",
-					'msg_text': "<?=$app_alert_msg[1]?>"
+					'msg_title': "<?php echo $app_alert_msg[0]?>",
+					'msg_text': "<?php echo $app_alert_msg[1]?>"
 					});
 		<? } ?>
 	});
@@ -34,14 +34,14 @@
 <!-- Module CSS -->
 <? if(isset($css_files) && is_array($css_files)) { 
 	foreach($css_files as $css) { ?>
-		<link rel="stylesheet" type="text/css" href="<?=$css?>" />
+		<link rel="stylesheet" type="text/css" href="<?php echo $css?>" />
 <? 		}
 	} ?>
     
 <!-- Module JS -->
 <? if(isset($js_files) && is_array($js_files)) { 
 	foreach($js_files as $js) { ?>
-		<script type='text/javascript' src='<?=$js?>'></script>
+		<script type='text/javascript' src='<?php echo $js?>'></script>
 <? 		}
 	} ?>
 
@@ -52,7 +52,7 @@
     	<div class="orange">
         	<div class="logo"></div>
             <? if(KONTROL_T) { ?>
-            	<div class="upgrade"><a href="<?=APP_UPGRADE_URL?>" target="_blank"><img src="<?=URL_IMAGE?>/upgrade.png" /></a></div>
+            	<div class="upgrade"><a href="<?php echo APP_UPGRADE_URL?>" target="_blank"><img src="<?php echo URL_IMAGE?>/upgrade.png" /></a></div>
             <? } ?>
         </div>
         <!-- Nav -->
@@ -73,23 +73,23 @@
 							$module['name'] = __('Custom Taxonomies', 'kontrolwp');
 							break;
 						case 'seo':
-							$module['name'] = __('SEO', 'kontrolwp');
-							break;
+							//	$module['name'] = __('SEO', 'kontrolwp');
+						break;
 						case 'admin_menu':
-							$module['name'] = __('Admin Menu Editor', 'kontrolwp');
-							break;
+							//	$module['name'] = __('Admin Menu Editor', 'kontrolwp');
+						break;
 					}
 			?>
-        		<div class="item inline <?=($module['controller_file'] == $app_current_controller) ? 'in':''?>"><a href="<?=URL_WP_OPTIONS_PAGE?>&url=<?=$module['controller_file']?>"><?=$module['name']?></a></div>
+        		<div class="item inline <?php echo ($module['controller_file'] == $app_current_controller) ? 'in':''?>"><a href="<?php echo URL_WP_OPTIONS_PAGE?>&url=<?php echo $module['controller_file']?>"><?php echo $module['name']?></a></div>
             <? } ?>
             <div class="nav-kontrol-links">
                  <? if(KONTROL_T) { ?>
-                 	<div class="item inline"><a href="<?=URL_WP_OPTIONS_PAGE?>&url=register"><?=__('Enter Upgrade Key', 'kontrolwp')?></a></div>
+                 	<!--div class="item inline"><a href="<?php echo URL_WP_OPTIONS_PAGE?>&url=register"><?php echo __('Enter Upgrade Key', 'kontrolwp')?></a></div-->
 				<? } ?>
-                <div class="item inline"><a href="<?=APP_PLUGIN_URL?>" target="_blank"><?=__('Guide', 'kontrolwp')?></a></div>
-                <div class="item inline"><a href="<?=APP_URL?>" target="_blank">Kontrol <?=APP_VER?></a></div>
+                <div class="item inline"><a href="<?php echo APP_PLUGIN_URL?>" target="_blank"><?php echo __('Guide', 'kontrolwp')?></a></div>
+                <div class="item inline"><a href="<?php echo APP_URL?>" target="_blank">Kontrol <?php echo APP_VER?></a></div>
                 <? if(!empty($flag_url)) { ?>
-                	<div class="item inline"><img src="<?=$flag_url?>" title="<?=WPLANG?>" /></div>
+                	<div class="item inline"><img src="<?php echo $flag_url?>" title="<?php echo WPLANG?>" /></div>
                 <? } ?>
             </div>
         </div>
@@ -97,7 +97,7 @@
     <!-- Main Content Area -->
     <div class="content">
     	<div class="cols">
-        	<?=$layoutContent?>
+        	<?php echo $layoutContent?>
     </div>
 </div>
     

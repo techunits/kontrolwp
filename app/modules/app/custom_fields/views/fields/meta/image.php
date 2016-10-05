@@ -25,9 +25,9 @@
 
 <div class="kontrol-file-upload single-image" 
 		data-fileUploadType="image" 
-        data-fileReturnInputName="_kontrol[<?=$field->field_key?>]" 
+        data-fileReturnInputName="_kontrol[<?php echo $field->field_key?>]" 
         data-fileReturn="attachment_id" 
-        data-fileGetData='<?=http_build_query(array(
+        data-fileGetData='<?php echo http_build_query(array(
 							'user_id'=>$current_user->ID, 
 							'post_id'=>$post_id, 
 							'data'=>$field->settings
@@ -35,16 +35,16 @@
         data-fileListMax="1" 
         data-multiple="false" 
         data-upload-effects="true" 
-        data-maxSize="<?=$field->settings['image_file_size_bytes']?>" 
-        data-fileTypes="{'<?=$field->settings['image_file_types_allowed_label']?>':'<?=$field->settings['image_file_types_allowed']?>'}"
+        data-maxSize="<?php echo $field->settings['image_file_size_bytes']?>" 
+        data-fileTypes="{'<?php echo $field->settings['image_file_types_allowed_label']?>':'<?php echo $field->settings['image_file_types_allowed']?>'}"
         > 
-    <input type="button" class="upload-el <?=$field_validation?>" value="<?=__('Upload Image','kontrolwp')?>" style="<?=isset($image_src) ? 'display:none':''?>"  />
+    <input type="button" class="upload-el <?php echo $field_validation?>" value="<?php echo __('Upload Image','kontrolwp')?>" style="<?php echo isset($image_src) ? 'display:none':''?>"  />
     <ul class="upload-list">
      <? if(isset($image_src)) { ?>
             <li class="file remove" id="file-1">
                    <div class="remove-file"></div>
-                   <div class="file-image"><?=$image_src?></div>
-                <input type="hidden" id="_kontrol[<?=$field->field_key?>]" name="_kontrol[<?=$field->field_key?>]" value="<?=$field_value?>">
+                   <div class="file-image"><?php echo $image_src?></div>
+                <input type="hidden" id="_kontrol[<?php echo $field->field_key?>]" name="_kontrol[<?php echo $field->field_key?>]" value="<?php echo $field_value?>">
             </li>
      <? } ?>
     </ul>
