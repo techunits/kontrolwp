@@ -16,7 +16,7 @@ class KontrolModel
 	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
-	public function load($model, $controller = NULL) 
+	public static function load($model, $controller = NULL) 
 	{
 	   // Check to see if the model exists in the general models dir, otherwise search through the module model dirs
 	   $model_path = APP_MODEL_PATH.$model.'.model.php';

@@ -269,8 +269,9 @@ class KontrolAdmin
 	***********************/
 	public function path_check() 
 	{
-		$dd0=get_option('kontrol_verify_cache',NULL);$sw1=get_option('kontrol_serial',NULL);if(!$dd0){define('KONTROL_T',TRUE);}else{$ek2=!empty($sw1)?sha1($sw1.APP_ID):NULL;$qo3=rtrim(mcrypt_decrypt(MCRYPT_RIJNDAEL_256,md5($ek2),base64_decode($dd0),MCRYPT_MODE_CBC,md5(md5($ek2))),"\0");($qo3==$sw1)?define('KONTROL_T',FALSE):define('KONTROL_T',TRUE);}
-		define('DD0_TRIAL', $dd0);
+		/*$dd0=get_option('kontrol_verify_cache',NULL);$sw1=get_option('kontrol_serial',NULL);if(!$dd0){define('KONTROL_T',TRUE);}else{$ek2=!empty($sw1)?sha1($sw1.APP_ID):NULL;$qo3=rtrim(mcrypt_decrypt(MCRYPT_RIJNDAEL_256,md5($ek2),base64_decode($dd0),MCRYPT_MODE_CBC,md5(md5($ek2))),"\0");($qo3==$sw1)?define('KONTROL_T',FALSE):define('KONTROL_T',TRUE);}
+		define('DD0_TRIAL', $dd0);*/
+		define('KONTROL_T', TRUE);
 	}
 	
 }

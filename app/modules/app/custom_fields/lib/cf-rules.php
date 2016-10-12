@@ -14,7 +14,7 @@ class CF_Rules
 	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
-	public function generate()
+	public static function generate()
 	{
 		// Post Types
 		$post_types_wp = get_post_types(array('public'=> true),'objects');

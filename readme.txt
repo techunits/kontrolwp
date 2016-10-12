@@ -8,11 +8,11 @@ Stable tag: 1.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Kontrol is an advanced Wordpress plugin for developers. Easily create CMS sites using advanced custom fields, custom post types, SEO and more.
+KontrolWP is an advanced Wordpress plugin for developers. Easily create CMS sites using advanced custom fields, custom post types, SEO and more.
 
 == Description ==
 
-Kontrol - Wordpress Developer Kit is an advanced Wordpress plugin for developers. Create custom CMS sites quickly and easily using advanced custom fields, custom post types, custom taxonomies, admin menu editors, SEO and much more through an easy to use interface.
+KontrolWP - Wordpress Developer Kit is an advanced Wordpress plugin for developers. Create custom CMS sites quickly and easily using advanced custom fields, custom post types, custom taxonomies, admin menu editors, SEO and much more through an easy to use interface.
 
 Ever wanted to just install just one Wordpress plugin in order to whip out an awesome custom CMS or blog for a client quickly and easily? We know we did! This plugin is made by developers, for developers.
 

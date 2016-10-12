@@ -15,7 +15,7 @@ class Kontrol_Tools
 	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
-	function return_post_max($type = 'bytes') {
+	public static function return_post_max($type = 'bytes') {
 		
 		$val = trim(ini_get('post_max_size'));
 		
@@ -73,7 +73,7 @@ class Kontrol_Tools
 	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.1
 	***********************/
-	 public static function make_clickable_links($text) {
+	public static function make_clickable_links($text) {
 	  	return preg_replace('@(https?://([-\w\.]+[-\w])+(:\d+)?(/([\w/_\.#-]*(\?\S+)?[^\.\s])?)?)@', '<a href="$1" target="_blank">$1</a>', $text);
 	}
 	
@@ -82,7 +82,7 @@ class Kontrol_Tools
 	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.2
 	***********************/
-	 public static function absolute_upload_path($url) {
+	public static function absolute_upload_path($url) {
 		 			
 	  	if(strpos($url, '/wp-content/') !== false) {
 			$parts = explode('/wp-content/', $url);
@@ -127,7 +127,7 @@ class Kontrol_Tools
 	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
-	function page_list_array_indented($pt_filter = 'page') {	
+	public static function page_list_array_indented($pt_filter = 'page') {	
 		$pages = array();
 		$pages_wp = wp_dropdown_pages(array(
 			'echo'=>0,
@@ -151,7 +151,7 @@ class Kontrol_Tools
 	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
-	function post_category_list_array_indented($taxonomy = 'category') {	
+	public static function post_category_list_array_indented($taxonomy = 'category') {	
 		$post_cats = array();
 		$pages_wp = wp_dropdown_categories(array('echo'=>0,'hierarchical'=>1,'hide_empty'=>0,'orderby'=>'title', 'taxonomy'=>$taxonomy));
 		preg_match_all('/<option.*?value="(.*?)">(.*?)<\/option>/', $pages_wp, $out, PREG_SET_ORDER);
@@ -171,7 +171,7 @@ class Kontrol_Tools
 	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
-	function post_formats_list_array() {	
+	public static function post_formats_list_array() {	
 		$post_formats_wp = get_theme_support('post-formats');
 		$post_formats = array('0'=>'Standard');
 		if(count($post_formats_wp[0]) > 0) {
@@ -187,7 +187,7 @@ class Kontrol_Tools
 	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.0
 	***********************/
-	function user_roles_array() {	
+	public static function user_roles_array() {	
 		global $wp_roles;
 		$roles = array();
 		foreach($wp_roles->role_names as $role_val => $role_title) {

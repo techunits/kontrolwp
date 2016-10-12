@@ -87,7 +87,7 @@
                  	<!--div class="item inline"><a href="<?php echo URL_WP_OPTIONS_PAGE?>&url=register"><?php echo __('Enter Upgrade Key', 'kontrolwp')?></a></div-->
 				<? } ?>
                 <div class="item inline"><a href="<?php echo APP_PLUGIN_URL?>" target="_blank"><?php echo __('Guide', 'kontrolwp')?></a></div>
-                <div class="item inline"><a href="<?php echo APP_URL?>" target="_blank">Kontrol <?php echo APP_VER?></a></div>
+                <div class="item inline"><a href="<?php echo APP_URL?>" target="_blank"><?php echo APP_NAME ?> <?php echo APP_VER?></a></div>
                 <? if(!empty($flag_url)) { ?>
                 	<div class="item inline"><img src="<?php echo $flag_url?>" title="<?php echo WPLANG?>" /></div>
                 <? } ?>
