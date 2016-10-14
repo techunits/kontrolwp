@@ -14,7 +14,6 @@ Tags: kontrolwp, advanced custom fields, custom post types, custom taxonomies, a
 
 global $wpdb;
 
-
 // If the wordpress environment isn't loaded, load it - this is used mostly for ajax
 if(!$wpdb) {
 	require_once('../../../wp-load.php');

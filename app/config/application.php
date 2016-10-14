@@ -43,8 +43,6 @@ define('URL_IMAGE', URL_PLUGIN . 'images/');
 
 // Currently supported languages other than English, comma delimited
 define('LANG_SUPPORTED', '');
-
-
-
+define('WPLANG', get_locale());
 
 ?>
