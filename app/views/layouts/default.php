@@ -73,10 +73,10 @@
 							$module['name'] = __('Custom Taxonomies', 'kontrolwp');
 							break;
 						case 'seo':
-							//	$module['name'] = __('SEO', 'kontrolwp');
+							$module['name'] = __('SEO', 'kontrolwp');
 						break;
 						case 'admin_menu':
-							//	$module['name'] = __('Admin Menu Editor', 'kontrolwp');
+							$module['name'] = __('Admin Menu Editor', 'kontrolwp');
 						break;
 					}
 			?>

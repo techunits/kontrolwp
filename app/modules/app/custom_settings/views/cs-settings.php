@@ -1,7 +1,4 @@
-<?
-global $current_user;
-get_currentuserinfo();
-?>
+<?php $current_user = wp_get_current_user(); ?>
 
 <div class="icon32" id="icon-options-general"><br></div><h2><?php echo $page_title?> - <?php echo $categories[$cat]['data']['label']?></h2>
 

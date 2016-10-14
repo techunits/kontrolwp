@@ -1,7 +1,4 @@
-<?
- global $current_user;
- get_currentuserinfo();
-?>
+<?php $current_user = wp_get_current_user(); ?>
 
 <script type="text/javascript">
 	window.addEvent('domready', function() {
