@@ -7,7 +7,7 @@
 ***********************/
 
 
-if(!function_exists('get_setting')) {
+if(!function_exists('kwp_get_setting')) {
 	
 	/**********************
 	* Retrieve a custom setting
@@ -15,7 +15,7 @@ if(!function_exists('get_setting')) {
 	* @since 1.0.2
 	***********************/
 	
-	function get_setting($field_key = NULL) 
+	function kwp_get_setting($field_key = NULL) 
 	{
 		if(!empty($field_key)) {
 
@@ -37,13 +37,13 @@ if(!function_exists('get_setting')) {
 }
 
 
-if(!function_exists('the_setting')) {
+if(!function_exists('kwp_the_setting')) {
 	/**********************
 	* Retrieve a custom setting and echoes it
 	* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
 	* @since 1.0.2
 	***********************/
-	function the_setting($field_key = NULL) 
+	function kwp_the_setting($field_key = NULL) 
 	{
 		echo get_setting($field_key);
 	}
