@@ -55,10 +55,19 @@ class KontrolAdmin
     ***********************/
     public function set_hook_options_page() 
     {
+        add_menu_page(
+            __( 'KontrolWP', 'kontrolwp'),
+            'KontrolWP',
+            'manage_options',
+            'kontrolwp',
+            array(&$this, 'option_page_request'),
+            '',
+            100
+        );
         // Process the request when viewing the kontrol plugin page
-        $hook_suffix = add_options_page(__("Kontrol Panel",'kontrolwp'), 'Kontrol', 'manage_options', 'kontrolwp', array(&$this, 'option_page_request'));
+        //  $hook_suffix = add_options_page(__("Kontrol Panel",'kontrolwp'), 'KontrolWP', 'manage_options', 'kontrolwp', array(&$this, 'option_page_request'));
         // Load our assets for the admin options area
-        add_action('load-'.$hook_suffix , array(&$this,'option_page_load_assets'));
+        //  add_action('load-'.$hook_suffix , array(&$this,'option_page_load_assets'));
     }
         
     /**********************
