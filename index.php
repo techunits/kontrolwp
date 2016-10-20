@@ -14,12 +14,6 @@ Tags: kontrolwp, advanced custom fields, custom post types, custom taxonomies, a
 
 global $wpdb;
 
-// If the wordpress environment isn't loaded, load it - this is used mostly for ajax
-if(!$wpdb) {
-    require_once('../../../wp-load.php');
-    global $wpdb;   
-}
-
 // Check PHP short tags are enabled
 /*if(!ini_get('short_open_tag')) {
     die('Kontrol requires PHP short tags enabled, please enable these and try activating again. If you are running WAMP, the settings are located in \'PHP -> PHP Settings -> short open tag\'. Goodluck!');
