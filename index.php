@@ -3,7 +3,7 @@
 Plugin Name: KontrolWP - Kontrol Wordpress Developer Kit
 Plugin URI: http://www.kontrolwp.com
 Description: KontrolWP is an advanced Wordpress plugin for developers. Create custom CMS sites using advanced custom fields, custom post types, custom taxonomies, admin menu editors, SEO and much more through an easy to use interface. 
-Version: 2.0.3
+Version: 2.0.4
 Author: Euphern Technology Pvt. Ltd. & David Rugendyke 
 Author URI: http://www.kontrolwp.com
 License: GPLv3 http://www.gnu.org/licenses/gpl.html
