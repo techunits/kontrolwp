@@ -1,40 +1,39 @@
 <?php $current_user = wp_get_current_user(); ?>
 
 <script type="text/javascript">
-	window.addEvent('domready', function() {
-			// Various custom utilities for working with forms
-			new kontrol_auto_fill();
-			new kontrol_select_add();
-			new kontrol_form_hide_show();
-			new kontrol_select_custom();
-			new kontrol_collapse_show();
-			
-			// Makes safe characters possible on fields with 'safe-chars' class
-			restrict_safe_characters();
-			
-			new kontrol_file_upload({
-					'file_size_max': <?php echo Kontrol_Tools::return_post_max('bytes')?>,
-					'app_path': '<?php echo URL_PLUGIN?>'
-				});		
-			
-			 // Validation.
-  			new Form.Validator.Inline('post-type-add');
-			
-			 <? if($action == 'edit') { ?>
-			 	// Show the 'update-key-posts' suggestion field if they change the post key ID
-				var key = $('kontrol').getElement('#key');
-				var key_update_field = $('kontrol').getElement('#update-key-field');
-				var key_update_fx = new Fx.Reveal(key_update_field, {duration: 500}).dissolve();
-				key.addEvent('blur', function(e) {
-					if(this.get('value') != $('kontrol').getElement('#current-key').get('value')) {
-						key_update_fx.reveal();
-					}else{
-						key_update_fx.dissolve();
-					}
-				}); 
-			 <? } ?>
-			
-	});
+    window.addEvent('domready', function() {
+        // Various custom utilities for working with forms
+        new kontrol_auto_fill();
+        new kontrol_select_add();
+        new kontrol_form_hide_show();
+        new kontrol_select_custom();
+        new kontrol_collapse_show();
+        
+        // Makes safe characters possible on fields with 'safe-chars' class
+        restrict_safe_characters();
+        
+        new kontrol_file_upload({
+                'file_size_max': <?php echo Kontrol_Tools::return_post_max('bytes')?>,
+                'app_path': '<?php echo URL_PLUGIN?>'
+            });     
+        
+         // Validation.
+            new Form.Validator.Inline('post-type-add');
+        
+         <? if($action == 'edit') { ?>
+            // Show the 'update-key-posts' suggestion field if they change the post key ID
+            var key = $('kontrol').getElement('#key');
+            var key_update_field = $('kontrol').getElement('#update-key-field');
+            var key_update_fx = new Fx.Reveal(key_update_field, {duration: 500}).dissolve();
+            key.addEvent('blur', function(e) {
+                if(this.get('value') != $('kontrol').getElement('#current-key').get('value')) {
+                    key_update_fx.reveal();
+                }else{
+                    key_update_fx.dissolve();
+                }
+            }); 
+         <? } ?>
+    });
 </script>
 
 
@@ -43,9 +42,9 @@
 
 <!-- Main Col -->
 <div class="main-col inline">
-	<div class="half inline">
+    <div class="half inline">
         <div class="section">
-        	<div class="inside">
+            <div class="inside">
                 <div class="title icon-menu-title">
                     <?php echo __('Settings')?> <span class="tip"><?php echo __('start here to automatically populate the form','kontrolwp')?></span>
                     
@@ -90,21 +89,21 @@
              <div class="section-content collapsible-section">
                 <div class="form-style">
                     <div class="item">
-                    	<div class="kontrol-select-add">
+                        <div class="kontrol-select-add">
                             <div class="label"><?php echo __('Add Taxonomies', 'kontrolwp')?></div>
                             <div class="field">
                                 <select nameToAdd="args[taxonomies][]" class="sixty">
                                     <option value=""><b><?php echo __('Native', 'kontrolwp')?></b></option>
                                     <option value="">-------------------</option>
                                     <? foreach($tax_native as $tax) { ?>
-                                    	  <option value="<?php echo $tax->tax_key?>"><?php echo $tax->name?></option>                             
+                                          <option value="<?php echo $tax->tax_key?>"><?php echo $tax->name?></option>                             
                                     <? } ?>
                                     <option value="">-------------------</option>
                                     <option value=""><b><?php echo __('Custom', 'kontrolwp')?></b></option>
                                     <option value="">-------------------</option>
                                     <? if(!empty($tax_custom)) { ?>
-                                    	 <? foreach($tax_custom as $tax) { ?>
-                                    	<option value="<?php echo $tax->tax_key?>"><?php echo $tax->name?></option>     
+                                         <? foreach($tax_custom as $tax) { ?>
+                                        <option value="<?php echo $tax->tax_key?>"><?php echo $tax->name?></option>     
                                         <? } ?>           
                                     <? }else{ ?>
                                     <option value=""><?php echo __('No custom taxonomies found', 'kontrolwp')?></option>
@@ -112,22 +111,22 @@
                                 </select>
                             </div>
                              <div class="kontrol-select-results">
-                             	  <? if(isset($attached_taxonomies)) {
-												foreach($attached_taxonomies as $pt) { ?>
-													<div class="feature"><?php echo $pt->tax_name?> <input type="hidden" name="args[taxonomies][]" value="<?php echo $pt->tax_key?>" /></div>
-										<? }
-									    
-								  } ?>
-			
+                                  <? if(isset($attached_taxonomies)) {
+                                                foreach($attached_taxonomies as $pt) { ?>
+                                                    <div class="feature"><?php echo $pt->tax_name?> <input type="hidden" name="args[taxonomies][]" value="<?php echo $pt->tax_key?>" /></div>
+                                        <? }
+                                        
+                                  } ?>
+            
                              </div>
                         </div>
                     </div>
                
                     <div class="item">
-                    	<div class="kontrol-select-add">
+                        <div class="kontrol-select-add">
                             <div class="label"><?php echo __('Add Features', 'kontrolwp')?></div>
                             <div class="field">
-                            	<input type="hidden" name="args[supports][]" value="" />
+                                <input type="hidden" name="args[supports][]" value="" />
                                 <select nameToAdd="args[supports][]" class="sixty">
                                     <option value=""><?php echo __('Choose', 'kontrolwp')?>...</option>
                                     <option value="">-------------------</option>
@@ -146,14 +145,14 @@
                             </div>
                              <div class="kontrol-select-results">
                             <? if(isset($cpt)) {
-									if(is_array($cpt->args['supports'])) { 
-										sort($cpt->args['supports']);
-										foreach( $cpt->args['supports'] as $support) { 
-											if(!empty($support)) { ?>
-                             				<div class="feature"><?php echo ucwords(str_replace('-', ' ',$support))?> <input type="hidden" name="args[supports][]" value="<?php echo $support?>" /></div>
-                                <? 		}
-										}
-								} ?>
+                                    if(is_array($cpt->args['supports'])) { 
+                                        sort($cpt->args['supports']);
+                                        foreach( $cpt->args['supports'] as $support) { 
+                                            if(!empty($support)) { ?>
+                                            <div class="feature"><?php echo ucwords(str_replace('-', ' ',$support))?> <input type="hidden" name="args[supports][]" value="<?php echo $support?>" /></div>
+                                <?      }
+                                        }
+                                } ?>
                             <? }else{ ?>
                                     <div class="feature"><?php echo __('Title')?> <input type="hidden" name="args[supports][]" value="title" /></div>
                                     <div class="feature"><?php echo __('Editor')?> (wysiwyg)<input type="hidden" name="args[supports][]" value="editor" /></div>
@@ -169,7 +168,7 @@
        
        
        <div class="section collapsible">
-       		 <div class="inside">
+             <div class="inside">
                 <div class="title icon-menu-title">
                     <?php echo __('Advanced Settings', 'kontrolwp')?>  <div class="button-collapse toggle-collapse expand"></div> 
                     <div class="div"></div>
@@ -271,7 +270,7 @@
        </div>
             
         <div class="section collapsible">
-        	 <div class="inside">
+             <div class="inside">
                 <div class="title icon-menu-title">
                     <?php echo __('Visibility', 'kontrolwp')?> <div class="button-collapse toggle-collapse expand"></div>
                     <div class="div"></div>
@@ -313,9 +312,9 @@
                         <div class="item show_ui_field">
                             <div class="label"><?php echo __('Admin Menu Position','kontrolwp')?></div>
                             <div class="field">
-                            	<? $set_positions = array(5,10,15,20,25,60,65,70,75,80,100); ?>
+                                <? $set_positions = array(5,10,15,20,25,60,65,70,75,80,100); ?>
                                 <select name="args[menu_position]" class="custom-select sixty" >
-                                	<option value="100" <?php echo isset($cpt->args['menu_position']) && $cpt->args['menu_position'] == 100 ? 'selected="selected"':''?>>100 - <?php echo __('below second separator','kontrolwp')?></option>
+                                    <option value="100" <?php echo isset($cpt->args['menu_position']) && $cpt->args['menu_position'] == 100 ? 'selected="selected"':''?>>100 - <?php echo __('below second separator','kontrolwp')?></option>
                                     <option value="5" <?php echo isset($cpt->args['menu_position']) && $cpt->args['menu_position'] == 5 ? 'selected="selected"':''?>>5 - <?php echo __('below Posts','kontrolwp')?></option>
                                     <option value="10" <?php echo isset($cpt->args['menu_position']) && $cpt->args['menu_position'] == 10 ? 'selected="selected"':''?>>10 - <?php echo __('below Media','kontrolwp')?></option>
                                     <option value="15" <?php echo isset($cpt->args['menu_position']) && $cpt->args['menu_position'] == 15 ? 'selected="selected"':''?>>15 - <?php echo __('below Links','kontrolwp')?></option>
@@ -335,13 +334,13 @@
                             <div class="label"><?php echo __('Admin Menu Icon','kontrolwp')?></div>
                             <div class="field">
                             
-                            	<div class="kontrol-file-upload single-image" data-fileUploadType="image" data-fileReturnInputName="args[menu_icon]" data-fileReturn="image_url"  data-fileGetData='<?php echo http_build_query(array('user_id'=>$current_user->ID, 'post_id'=>0, 'data'=>array('image_preview_size'=>'thumbnail','image_dimensions_w'=>16,'image_dimensions_h'=>16,'image_dimensions'=>'enforce')))?>' data-fileListMax="1" data-multiple="false" data-maxSize="250" data-fileTypes="{'<?php echo __('Images')?> (*.jpg, *.jpeg, *.gif, *.png)':'*.jpg; *.jpeg; *.gif; *.png'}">
-                            		<input type="button" class="upload-el" value="<?php echo __('Upload Image','kontrolwp')?>" style="<?php echo isset($cpt->args['menu_icon']) && !empty($cpt->args['menu_icon']) ? 'display:none':''?>"  />
+                                <div class="kontrol-file-upload single-image" data-fileUploadType="image" data-fileReturnInputName="args[menu_icon]" data-fileReturn="image_url"  data-fileGetData='<?php echo http_build_query(array('user_id'=>$current_user->ID, 'post_id'=>0, 'data'=>array('image_preview_size'=>'thumbnail','image_dimensions_w'=>16,'image_dimensions_h'=>16,'image_dimensions'=>'enforce')))?>' data-fileListMax="1" data-multiple="false" data-maxSize="250" data-fileTypes="{'<?php echo __('Images')?> (*.jpg, *.jpeg, *.gif, *.png)':'*.jpg; *.jpeg; *.gif; *.png'}">
+                                    <input type="button" class="upload-el" value="<?php echo __('Upload Image','kontrolwp')?>" style="<?php echo isset($cpt->args['menu_icon']) && !empty($cpt->args['menu_icon']) ? 'display:none':''?>"  />
                                     <ul class="upload-list">
-                                   	 <? if(isset($cpt->args['menu_icon']) && !empty($cpt->args['menu_icon'])) { ?>
-                                    		<li class="file remove" id="file-1">
-                                            	<div class="remove-file"></div>
-                                            	<div class="file-image"><img src="<?php echo Kontrol_Tools::absolute_upload_path($cpt->args['menu_icon'])?>"></div>
+                                     <? if(isset($cpt->args['menu_icon']) && !empty($cpt->args['menu_icon'])) { ?>
+                                            <li class="file remove" id="file-1">
+                                                <div class="remove-file"></div>
+                                                <div class="file-image"><img src="<?php echo Kontrol_Tools::absolute_upload_path($cpt->args['menu_icon'])?>"></div>
                                                 <input type="hidden" name="args[menu_icon]" value="<?php echo Kontrol_Tools::absolute_upload_path($cpt->args['menu_icon'])?>"></li>
                                      <? } ?>
                                     </ul>
@@ -386,8 +385,8 @@
                                     <option value="post" <?php echo isset($cpt) && $cpt->args['capability_type'] == 'post' ? 'selected="selected"':''?>><?php echo __('Post')?></option>
                                     <option value="page" <?php echo isset($cpt) && $cpt->args['capability_type'] == 'page' ? 'selected="selected"':''?>><?php echo __('Page')?></option>
                                     <option value="<?php echo isset($cpt) && $cpt->args['capability_type'] != 'post' && $cpt->args['capability_type'] != 'page' ? $cpt->args['capability_type']:''?>" 
-									<?php echo isset($cpt) && $cpt->args['capability_type'] != 'post' && $cpt->args['capability_type'] != 'page' ? 'selected="selected"':''?> class="custom-val"  confirmText="<?php echo __('Please enter custom capability type','kontrolwp')?>:"><?php echo __('Custom','kontrolwp')?>
-									<?php echo isset($cpt) && $cpt->args['capability_type'] != 'post' && $cpt->args['capability_type'] != 'page' ? ' ['.$cpt->args['capability_type'].']':''?></option>
+                                    <?php echo isset($cpt) && $cpt->args['capability_type'] != 'post' && $cpt->args['capability_type'] != 'page' ? 'selected="selected"':''?> class="custom-val"  confirmText="<?php echo __('Please enter custom capability type','kontrolwp')?>:"><?php echo __('Custom','kontrolwp')?>
+                                    <?php echo isset($cpt) && $cpt->args['capability_type'] != 'post' && $cpt->args['capability_type'] != 'page' ? ' ['.$cpt->args['capability_type'].']':''?></option>
                                 </select>
                             </div>
                             <div class="desc"><?php echo __("Allows you to define a custom set of capabilities, which are permissions to edit, create, and read your custom post type. If you are unsure, leave this set to 'post'",'kontrolwp')?>.</div>
@@ -535,7 +534,7 @@
 
  <!-- Side Col -->
 <div class="side-col inline">
-	
+    
     
     <?php $this->renderElement('cpt-'.$action.'-side-col', array('controller_url' => $controller_url, 'pt_count' => $pt_count)); ?>
 </div>

@@ -83,12 +83,7 @@ class Kontrol_Tools
     * @since 1.0.2
     ***********************/
     public static function absolute_upload_path($url) {
-                    
-        if(strpos($url, '/wp-content/') !== false) {
-            $parts = explode('/wp-content/', $url);
-            $absolute_url = site_url().'/wp-content/'.$parts[1];
-            return $absolute_url;
-        }
+        return site_url($url);
     }
     
     /**********************

@@ -64,10 +64,19 @@ class KontrolAdmin
             '',
             100
         );
+        /*add_submenu_page( 
+            'kontrolwp',
+            __('Custom Fields', 'textdomain'),
+            __('Custom Fields', 'textdomain'),
+            'manage_options',
+            'wpcro-dashboard',
+            'wpcro_dashboard_page_callback'
+        );*/
         // Process the request when viewing the kontrol plugin page
         //  $hook_suffix = add_options_page(__("Kontrol Panel",'kontrolwp'), 'KontrolWP', 'manage_options', 'kontrolwp', array(&$this, 'option_page_request'));
         // Load our assets for the admin options area
-        //  add_action('load-'.$hook_suffix , array(&$this,'option_page_load_assets'));
+        $hook_suffix = 'toplevel_page_kontrolwp';
+        add_action('load-'.$hook_suffix , array(&$this,'option_page_load_assets'));
     }
         
     /**********************
