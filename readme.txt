@@ -1,4 +1,4 @@
-=== Kontrol Developer Kit ===
+=== KontrolWP - Kontrol Wordpress Developer Kit ===
 Contributors: Kontrolwp
 Donate link: 
 Tags: cms, custom post types, custom taxonomies, advanced custom fields, custom fields, developer kit, developer, kontrol, post, image, admin, page
@@ -12,7 +12,7 @@ KontrolWP is an advanced Wordpress plugin for developers. Easily create CMS site
 
 == Description ==
 
-KontrolWP - Wordpress Developer Kit is an advanced Wordpress plugin for developers. Create custom CMS sites quickly and easily using advanced custom fields, custom post types, custom taxonomies, admin menu editors, SEO and much more through an easy to use interface.
+KontrolWP - Kontrol Wordpress Developer Kit is an advanced Wordpress plugin for developers. Create custom CMS sites quickly and easily using advanced custom fields, custom post types, custom taxonomies, admin menu editors, SEO and much more through an easy to use interface.
 
 Ever wanted to just install just one Wordpress plugin in order to whip out an awesome custom CMS or blog for a client quickly and easily? We know we did! This plugin is made by developers, for developers.
 

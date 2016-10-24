@@ -193,8 +193,6 @@ class KontrolAdmin
         
         // Moo Rainbow
         wp_enqueue_script('kontrolmoo-moorainbow',  URL_JS.'moorainbow/mooRainbow.js',  array('kontrolmoo-core', 'kontrolmoo-more'));
-        
-        
     }
     
     /**********************
@@ -221,7 +219,6 @@ class KontrolAdmin
     ***********************/
     public function option_page_request() 
     {
-        
         // Start the framework to process our request
         include(APP_PATH . 'modules/lightvc.init.php');
                     

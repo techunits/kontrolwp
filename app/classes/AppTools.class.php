@@ -1,4 +1,5 @@
-<? 
+<?php
+
 /**********************
 * General tools
 * @author Euphern Technology Pvt. Ltd. & David Rugendyke 
@@ -16,7 +17,6 @@ class Kontrol_Tools
     * @since 1.0.0
     ***********************/
     public static function return_post_max($type = 'bytes') {
-        
         $val = trim(ini_get('post_max_size'));
         
         if($type == 'bytes') {
@@ -32,7 +32,6 @@ class Kontrol_Tools
                     $val *= 1024;
             }
         }
-            
         return $val;
     }
     
@@ -112,9 +111,7 @@ class Kontrol_Tools
     * @since 1.0.4
     ***********************/
     function array_store_as_safe_json(&$item, $key) {
-        
-         $item = htmlentities($item, ENT_QUOTES, 'UTF-8');
-        
+        $item = htmlentities($item, ENT_QUOTES, 'UTF-8');
     }
     
     /**********************

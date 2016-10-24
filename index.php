@@ -52,7 +52,6 @@ if (isset($_GET['url']) && $_GET['url'] === 'favicon.ico') {
     
     // Is this an ajax upload?
     if(isset($_REQUEST['upload']) && $_REQUEST['upload'] == 'true') {
-
             require_once(APP_PATH . 'modules/lightvc.php');
             Lvc_Config::addControllerPath(APP_PATH . 'controllers/');
             // Set the controller to upload 
@@ -62,7 +61,7 @@ if (isset($_GET['url']) && $_GET['url'] === 'favicon.ico') {
             $fc = new Lvc_FrontController();
             $fc->processRequest($request);
         
-    }else{
+    } else {
     
         // Initialise all the modules - set their hooks and more
         require_once(APP_PATH . 'classes/ModuleInit.class.php');
@@ -88,7 +87,6 @@ if (isset($_GET['url']) && $_GET['url'] === 'favicon.ico') {
              *
              */
             function kontrolwp_dashboard_widget_setup() {
-
                 wp_add_dashboard_widget(
                     'kontrolwp_dashboard',
                     'KontrolWP Quick Links',
@@ -134,6 +132,29 @@ if (isset($_GET['url']) && $_GET['url'] === 'favicon.ico') {
                         </div>';
                 echo $html;
             }
+
+
+            require_once(APP_PATH . 'controllers/clone_post.php');
+            $cpc = new ClonePostController();
+            $cpc->actionClone();
+
+            /**
+             * Add the link to action list for post_row_actions
+             
+            function duplicate_post_make_duplicate_link_row($actions, $post) {
+                if(true) {
+                    $actions['clone'] = '<a href="#" title="'
+                            . esc_attr(__("Clone this item", 'duplicate-post'))
+                            . '">' .  __('Clone', 'duplicate-post') . '</a>';
+                    $actions['edit_as_new_draft'] = '<a href="#" title="'
+                            . esc_attr(__('Copy to a new draft', 'duplicate-post'))
+                            . '">' .  __('New Draft', 'duplicate-post') . '</a>';
+                }
+
+                return $actions;
+            }
+            */
+
         }
     }
 }
