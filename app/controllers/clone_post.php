@@ -1,18 +1,15 @@
 <?php
 
 /**********************
-* Registers the Kontrol Plugin
-* @author Euphern Technology Pvt. Ltd. & David Rugendyke 
-* @author_uri http://www.ironcode.com.au
-* @since 1.0.0
+* Post cloning for KontrolWP
+* @author Sougata Pal
+* @author_uri https://www.linkedin.com/in/skallpaul
+* @since 2.0.5
 ***********************/
 
+class ClonePostController {
 
-class ClonePostController 
-{
-
-    public function actionClone()
-    {
+    public function actionClone() {
         add_filter('post_row_actions', array(&$this, 'duplicatePostListFilter'), 10, 2);
         add_filter('page_row_actions', array(&$this, 'duplicatePostListFilter'), 10, 2);
         add_action('post_submitbox_misc_actions', array(&$this, 'attachPostSubmitCloneButton'), 10, 1);
@@ -74,14 +71,15 @@ class ClonePostController
                 add_post_meta($dup_post_id, $post_metakey, $post_metaval);
             }
         }
-        echo('<script>window.location.href="'.$dup_post_edit_url.'"</script>');
+
+        //  open EDIT page for the newly created CLONED post
+        wp_redirect($dup_post_edit_url);
         exit();
     }
 
     private function __duplicatePostActionURL($post) {
         return admin_url('admin.php?action=kwpclone&post_type='.$post->post_type.'&p='.$post->ID);
     }
-
 }
 
 ?>

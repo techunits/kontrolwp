@@ -82,79 +82,14 @@ if (isset($_GET['url']) && $_GET['url'] === 'favicon.ico') {
             // Set all the admin hooks
             $kontrol_admin->set_hooks();
 
-            /**
-             * Add a dashboard widget for KontrolWP Quick Links.
-             *
-             */
-            function kontrolwp_dashboard_widget_setup() {
-                wp_add_dashboard_widget(
-                    'kontrolwp_dashboard',
-                    'KontrolWP Quick Links',
-                    'kontrolwp_dashboard_widget_cb'
-                );  
-            }
-            add_action('wp_dashboard_setup', 'kontrolwp_dashboard_widget_setup');
-
-            function kontrolwp_dashboard_widget_cb() {
-                $html = '<style type="text/css">
-                            #kontrolwp_dashboard .rss-widget {border-bottom: 1px solid #eee; padding-bottom: 10px; margin-bottom: 10px;}
-                            #kontrolwp_dashboard .rss-widget:last-child {border-bottom: 0 none; padding-bottom: 0px; margin-bottom: 0px;}
-                        </style>
-                        <div class="rss-widget">
-                            <ul>
-                                <li>
-                                    <a class="rsswidget" href="https://github.com/techunits/kontrolwp/releases/tag/v'.APP_VER.'">
-                                        &raquo; Release Notes for KontrolWP: '.APP_VER.'
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="rsswidget" href="https://github.com/techunits/kontrolwp/wiki/Functional-References">
-                                        &raquo; Functional References for Developers
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="rss-widget">
-                            <ul class="subsubsub" style="float: none;">
-                                <li class="all">
-                                    <a href="'.site_url('/wp-admin/options-general.php?page=kontrolwp&url=custom_post_types').'">Post Types</a> |
-                                </li>
-                                <li class="all">
-                                    <a href="'.site_url('/wp-admin/options-general.php?page=kontrolwp&url=taxonomies').'">Taxonomies</a> |
-                                </li>
-                                <li class="all">
-                                    <a href="'.site_url('/wp-admin/options-general.php?page=kontrolwp&url=custom_fields').'">Field Groups</a> |
-                                </li>
-                                <li class="all">
-                                    <a href="'.site_url('/wp-admin/options-general.php?page=kontrolwp&url=custom_settings').'">Admin Settings</a>
-                                </li>
-                            </ul>
-                        </div>';
-                echo $html;
-            }
-
+            //  TODO: this should be fired only on Dashboard
+            require_once(APP_PATH . 'controllers/kwp_dashboard.php');
+            $kdc = new KWPDashboardController();
+            $kdc->actionQuickWidget();
 
             require_once(APP_PATH . 'controllers/clone_post.php');
             $cpc = new ClonePostController();
             $cpc->actionClone();
-
-            /**
-             * Add the link to action list for post_row_actions
-             
-            function duplicate_post_make_duplicate_link_row($actions, $post) {
-                if(true) {
-                    $actions['clone'] = '<a href="#" title="'
-                            . esc_attr(__("Clone this item", 'duplicate-post'))
-                            . '">' .  __('Clone', 'duplicate-post') . '</a>';
-                    $actions['edit_as_new_draft'] = '<a href="#" title="'
-                            . esc_attr(__('Copy to a new draft', 'duplicate-post'))
-                            . '">' .  __('New Draft', 'duplicate-post') . '</a>';
-                }
-
-                return $actions;
-            }
-            */
-
         }
     }
 }
