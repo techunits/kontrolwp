@@ -15,8 +15,19 @@ class ClonePostController
     {
         add_filter('post_row_actions', array(&$this, 'duplicatePostListFilter'), 10, 2);
         add_filter('page_row_actions', array(&$this, 'duplicatePostListFilter'), 10, 2);
+        add_action('post_submitbox_misc_actions', array(&$this, 'attachPostSubmitCloneButton'), 10, 1);
 
         add_action('admin_action_kwpclone', array(&$this, 'duplicatePostAction'), 10, 1);
+    }
+
+    public function attachPostSubmitCloneButton($post) {
+        $aurl = $this->__duplicatePostActionURL($post);
+        $html  = '<div id="major-publishing-actions" style="overflow:hidden">';
+        $html .=    '<div id="publishing-action">';
+        $html .=        '<a title="Clone" class="preview button" id="custom" href="'.$aurl.'">Clone as Draft</a>';
+        $html .=    '</div>';
+        $html .= '</div>';
+        echo $html;
     }
 
     public function duplicatePostListFilter($actions, $post) {
@@ -24,9 +35,6 @@ class ClonePostController
         $actions['clone'] = '<a href="'.$aurl.'" title="'
                 . esc_attr(__("Clone this item", 'duplicate-post'))
                 . '">' .  __('Clone', 'duplicate-post') . '</a>';
-        $actions['edit_as_new_draft'] = '<a href="#" title="'
-                . esc_attr(__('Copy to a new draft', 'duplicate-post'))
-                . '">' .  __('New Draft', 'duplicate-post') . '</a>';
 
         return $actions;
     }
@@ -42,7 +50,9 @@ class ClonePostController
 
         $user_id = get_current_user_id();
         $post_info = get_post($post_id);
-        $cloned_title = $post_info->post_title . ' - KWP Cloned at ' . time();
+
+        //  save duplicate post info
+        $cloned_title = $post_info->post_title . ' - KWP Clone ' . time().rand();
         $dup_post_id = wp_insert_post(array(
             'post_author'           =>  $user_id,
             'post_content'          =>  $post_info->post_content,
@@ -54,8 +64,17 @@ class ClonePostController
             'post_password'         =>  $post_info->post_password,
             'post_parent'           =>  $post_info->post_parent
         ));
-        $dup_post_edit_url =  get_edit_post_link($dup_post_id);
-        wp_redirect($dup_post_edit_url);
+        $dup_post_edit_url =  htmlspecialchars_decode(get_edit_post_link($dup_post_id));
+
+        //  save duplicate postmeta info
+        $post_metakey_list = get_post_custom_keys($post_id);
+        foreach($post_metakey_list as $post_metakey) {
+            if(!stristr($post_metakey, '_edit_')) {
+                $post_metaval = get_post_meta($post_id, $post_metakey, true);
+                add_post_meta($dup_post_id, $post_metakey, $post_metaval);
+            }
+        }
+        echo('<script>window.location.href="'.$dup_post_edit_url.'"</script>');
         exit();
     }
 
