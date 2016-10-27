@@ -14,7 +14,7 @@ $plugin_path = explode('/', plugin_basename(__FILE__));
 define('APP_NAME', 'KontrolWP');
 define('APP_ID', 'kontrolwp');
 define('APP_PATH_ID', $plugin_path[0]);
-define('APP_VER', '2.0.4');
+define('APP_VER', '2.0.5');
 define('APP_URL', 'http://www.kontrolwp.com');
 define('APP_PLUGIN_URL', 'http://www.kontrolwp.com/plugin/wordpress-developer-kit');
 define('APP_PLUGIN_LANG_URL', 'http://www.kontrolwp.com/plugin/wordpress-developer-kit/languages-supported');

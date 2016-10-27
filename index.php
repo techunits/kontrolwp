@@ -3,7 +3,7 @@
 Plugin Name: KontrolWP - Kontrol Wordpress Developer Kit
 Plugin URI: http://www.kontrolwp.com
 Description: KontrolWP is an advanced Wordpress plugin for developers. Create custom CMS sites using advanced custom fields, custom post types, custom taxonomies, admin menu editors, SEO and much more through an easy to use interface. 
-Version: 2.0.4
+Version: 2.0.5
 Author: Euphern Technology Pvt. Ltd. & David Rugendyke 
 Author URI: http://www.kontrolwp.com
 License: GPLv3 http://www.gnu.org/licenses/gpl.html
@@ -11,13 +11,6 @@ Requirements: PHP version 5.3 or greater, MySQL version 5.1 or greater
 Text Domain: kontrolwp
 Tags: kontrolwp, advanced custom fields, custom post types, custom taxonomies, admin menu editor 
 */
-
-global $wpdb;
-
-// Check PHP short tags are enabled
-/*if(!ini_get('short_open_tag')) {
-    die('Kontrol requires PHP short tags enabled, please enable these and try activating again. If you are running WAMP, the settings are located in \'PHP -> PHP Settings -> short open tag\'. Goodluck!');
-}*/
 
 // Remove any added slashes if "Magic Quotes" are enabled
 if (get_magic_quotes_gpc()) {
