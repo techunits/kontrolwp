@@ -4,7 +4,7 @@
 * Post cloning for KontrolWP
 * @author Sougata Pal
 * @author_uri https://www.linkedin.com/in/skallpaul
-* @since 2.0.5
+* @since 2.0.6
 ***********************/
 
 class ClonePostController {

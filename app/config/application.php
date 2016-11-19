@@ -3,7 +3,7 @@
 Plugin Name: KontrolWP
 Plugin URI: http://www.kontrolwp.com
 Description: KontrolWP - Wordpress Developer Kit is an advanced Wordpress package for managing custom post types, advanced custom fields, admin menu editing and much more through an easy to use interface. 
-Version: 2.0.2
+Version: 2.0.6
 Author: Euphern Technology Pvt. Ltd. & David Rugendyke 
 Author URI: http://URL.ironcode.com.au/
 Copyright: Euphern Technology Pvt. Ltd. & David Rugendyke 
@@ -14,7 +14,7 @@ $plugin_path = explode('/', plugin_basename(__FILE__));
 define('APP_NAME', 'KontrolWP');
 define('APP_ID', 'kontrolwp');
 define('APP_PATH_ID', $plugin_path[0]);
-define('APP_VER', '2.0.5');
+define('APP_VER', '2.0.6');
 define('APP_URL', 'http://www.kontrolwp.com');
 define('APP_PLUGIN_URL', 'http://www.kontrolwp.com/plugin/wordpress-developer-kit');
 define('APP_PLUGIN_LANG_URL', 'http://www.kontrolwp.com/plugin/wordpress-developer-kit/languages-supported');
