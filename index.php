@@ -83,12 +83,12 @@ if (isset($_GET['url']) && $_GET['url'] === 'favicon.ico') {
             require_once(APP_PATH . 'controllers/clone_post.php');
             $cpc = new ClonePostController();
             $cpc->actionClone();
-
-            require_once(APP_PATH . 'controllers/widget.php');
-            $cpc = new KWPCustomPostTypeWidgetController();
-            $cpc->actionRegisterWidget();
-
         }
+
+        //  activate KontrolWP widgets
+        require_once(APP_PATH . 'controllers/widget.php');
+        $cpc = new KWPCustomPostTypeWidgetController();
+        $cpc->actionRegisterWidget();
     }
 }
 

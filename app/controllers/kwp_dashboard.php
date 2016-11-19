@@ -61,7 +61,10 @@ class KWPDashboardController {
                             <a href="'.site_url('/wp-admin/options-general.php?page=kontrolwp&url=custom_fields').'">Advanced Custom Fields</a> |
                         </li>
                         <li class="all">
-                            <a href="'.site_url('/wp-admin/options-general.php?page=kontrolwp&url=custom_settings').'">Admin Settings</a>
+                            <a href="'.site_url('/wp-admin/options-general.php?page=kontrolwp&url=custom_settings').'">Admin Settings</a> | 
+                        </li>
+                        <li class="all">
+                            <a href="'.site_url('/wp-admin/widgets.php').'">Widgets</a>
                         </li>
                     </ul>
                 </div>';
