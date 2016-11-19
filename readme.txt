@@ -59,7 +59,11 @@ Post duplicator will allow you to Clone any existing post/page/custom post type 
 This will help content editors to create/manage artciles ever than before. As we have integrated this exciting features into KontrolWP itself so developers don't need to install or look for any other plugin for this purpose only.
 
 
-###Information, Screenshots and Support
+####Custom Post Type Widgets
+
+KontrolWP is now equipped with Custom Post Type widgets for most recent posts for Custom Post Types created by developers. This will help customers show most recent post entries to frontend sidebar. It's also highly customizable due use of "kwp" prefixxed CSS property names.
+
+###Installation, Screenshots and Support
 
 For more information, screenshots and support, please visit our website at [https://www.kontrolwp.com](https://www.kontrolwp.com)
 
@@ -79,5 +83,8 @@ If you are having trouble activating the plugin, please check if you have **PHP 
 4. KontrolWP - Admin Settings manager
 5. KontrolWP - Post Duplicator link into Post/Page/Custom Post Type list
 6. KontrolWP - Post Duplicator button into Post/Page/Custom Post Type editor
+7. KontrolWP - Manage Custom post type widgets for most recent entries
+8. KontrolWP - Custom Post Type on Frontend
+
 
 
