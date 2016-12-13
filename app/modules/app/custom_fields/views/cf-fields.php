@@ -7,12 +7,12 @@
 
          <!-- Fields -->
          <div class="field-rows rows sortable">
-            <?
+            <?php
 				
                 if(isset($field_list) && count($field_list) > 0) {
                     foreach($field_list as $field) { ?>
                         <div class="row <?php echo empty($field->active) ? 'field-hidden':''?>"><?php echo $this->renderElement('cf-field', array('field_types'=>$field_types, 'rules'=>$rules, 'data'=>$field, 'field_type'=>$field_type));?></div> 
-                    <? }
+                    <?php }
                 }
             ?>
          </div>

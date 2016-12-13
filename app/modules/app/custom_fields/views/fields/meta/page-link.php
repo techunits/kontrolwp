@@ -1,4 +1,4 @@
- <?
+ <?php
 
  $index = 0;
  $multi_select = FALSE; 
@@ -34,25 +34,25 @@
  }
  ?>
 
- <? if($field->settings['select_search_box'] == TRUE) { ?>
+ <?php if($field->settings['select_search_box'] == TRUE) { ?>
  		<div class="select-search-box">
              <input type="text" value="" />
              <div class="select-search-box-label"><?php echo __('Filter')?>...</div>
       	</div>
- <? } ?>
+ <?php } ?>
  
  <select <?php echo !$multi_select ? 'name="_kontrol['.$field->field_key.']"':''?> class="<?php echo $field_validation?>" <?php echo $multi_select ? 'multiple="multiple" data-smart-box="true" data-max-val="'.$field->settings['select_max_values'].'"':''?>>
-	<?  if($field->settings['select_null'] == TRUE && $index == 0) { ?>
+	<?php  if($field->settings['select_null'] == TRUE && $index == 0) { ?>
     			<option value=""><?php echo __('Select')?></option>
-    <? 	} ?>
- 	<?  foreach($page_list as $pt => $pt_list) { 
+    <?php 	} ?>
+ 	<?php  foreach($page_list as $pt => $pt_list) { 
 			if(count($pt_list) > 0) {
 				// Get the post type
 				$pt_ob = get_post_type_object($pt);
 				$pt_label = $pt_ob->label;
 		?>
 				<optgroup label="<?php echo $pt_label?>">
-		<?
+		<?php
 				foreach($pt_list as $page_id => $page_val) { 
 					$selected = FALSE;
 					$show = TRUE;
@@ -84,22 +84,22 @@
 						}
 						?>
 						<option value="<?php echo $page_val->ID?>" <?php echo $selected ? 'selected="selected"':''?>><?php echo $page_label?></option>
-						<?
+						<?php
 					}
 				$index++;
 				}
 			?>
             	</optgroup>
-            <?
+            <?php
 		  }
 		} 
 	?>
  </select>
  
   
-<? if($multi_select) { ?>
+<?php if($multi_select) { ?>
 
-	<? // In here so that the values can be reset if nothing is selected ?> 
+	<?php // In here so that the values can be reset if nothing is selected ?> 
  	<input type="hidden" name="_kontrol[<?php echo $field->field_key?>][]" value="" />
 
 	<div class="kontrol-smart-box" data-hide-when-empty="true" data-disable-row-delete="true">
@@ -112,7 +112,7 @@
                       <div class="delete-row" title="Delete Row"></div>  
                       <input type="hidden" name="_kontrol[<?php echo $field->field_key?>][]" value="[[VALUE]]" />
                    </div>
-               	  <? foreach($select_vals as $val) { 
+               	  <?php foreach($select_vals as $val) { 
 				  		if(isset($select_row_vals[$val]['label'])) {
 				  ?>
                           <div class="row">
@@ -121,13 +121,13 @@
                               <div class="delete-row" title="Delete Row"></div>  
                               <input type="hidden" name="_kontrol[<?php echo $field->field_key?>][]" value="<?php echo $val?>" />
                            </div>
-                   <? } 
+                   <?php } 
 				  } ?>
                </div> 
           </div>
       </div> 
    </div>   
-<? } ?>
+<?php } ?>
   
  
   

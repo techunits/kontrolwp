@@ -30,13 +30,13 @@
 
 <!-- Main Col -->
 <div class="main-col inline">
-<? if(isset($current_cpts) && count($current_cpts) > 0) { ?>
+<?php if(isset($current_cpts) && count($current_cpts) > 0) { ?>
 	<!-- Active CPTs -->
     <div class="section">
         <div class="inside">
             <div class="title"><?php echo __('Custom Post Types','kontrolwp')?></div>
             <div class="rows sortable">
-            	<?
+            	<?php
 						foreach($current_cpts as $data) { 
 						
 							$native_tax = array();
@@ -71,30 +71,30 @@
                                         <a href="<?php echo $controller_url?>/delete/<?php echo $data['cpt']->id?>&noheader=true"  class="delete-cpt"><img src="<?php echo URL_IMAGE?>/icon-delete.png" title="<?php echo __('Delete','kontrolwp')?>" alt="<?php echo __('Delete','kontrolwp')?>" /></a>
                                     </div>
                                 </div>
-                                 <? if(count($native_tax) > 0 || count($custom_tax) > 0) { ?>
+                                 <?php if(count($native_tax) > 0 || count($custom_tax) > 0) { ?>
                                 <div class="row-taxonomies">
                                			<div class="tax-attached">
                                        
                                         	<div style="padding-bottom: 2px"><?php echo __('Taxonomies Attached','kontrolwp')?></div>
-                                        	<? foreach($native_tax as $ntax) { 
+                                        	<?php foreach($native_tax as $ntax) { 
                                 					$tax_url = $ntax['name'] == 'Categories' ? "http://codex.wordpress.org/Taxonomies#Category" : $tax_url;
 													$tax_url = $ntax['name'] == 'Post Tags' ? "http://codex.wordpress.org/Taxonomies#Tag" : $tax_url;
 													$tax_url = $ntax['name'] == 'Format' ? "http://codex.wordpress.org/Post_Formats" : $tax_url;
 											?>
                                             	   <div class="native tax-name inline"><a href="<?php echo $tax_url?>" target="_blank"><?php echo $ntax['name']?></a></div>                                              
-                                            <? } ?>
-                                            <? foreach($custom_tax as $ntax) { ?>
+                                            <?php } ?>
+                                            <?php foreach($custom_tax as $ntax) { ?>
                                             	   <div class="custom tax-name inline"><a href="<?php echo URL_WP_OPTIONS_PAGE.'&url=taxonomies/edit/'.$ntax['id']?>" target="_blank"><?php echo $ntax['name']?></a></div>                                         
-                                            <? } ?>
+                                            <?php } ?>
                                         
                                        </div>
                                 </div>
-                                <? } ?>
+                                <?php } ?>
                                 <div class="row-cols" data-cpt-id="<?php echo $data['cpt']->id?>">
                                 	<div style="padding-bottom: 2px"><?php echo __('Post List Display Columns','kontrolwp')?></div>
                                     <div class="inline save-cols" title="<?php echo __('Save Display Columns','kontrolwp')?>"></div>
                                		<div class="inline row-col-container sortable">
-                                    	<? 																			
+                                    	<?php 																			
 										$count = 0;
 										foreach($col_values as $col) { 
 											$this->renderElement('cpt-column-select', array('col'=>$col, 'count'=>$count, 'pt_key'=> $data['cpt']->cpt_key)); 
@@ -104,20 +104,20 @@
                                 </div>
 								
 							</div>
-					 <? } ?>
+					 <?php } ?>
 				
             </div>
         </div>
     </div>
     
-    <? } ?>
+    <?php } ?>
     
     <!-- Native CPTs -->
     <div class="section">
         <div class="inside">
             <div class="title"><?php echo __('Native Post Types','kontrolwp')?></div>
             <div class="rows">
-            	<?
+            	<?php
 				  if(isset($native_pts) && count($native_pts) > 0) {
 
 					foreach($native_pts as $data) { 
@@ -149,30 +149,30 @@
                                     <div class="inline cpt-updated" style="width: 25%; text-align:right; top: 12px;" title="<?php echo __('Last Updated','kontrolwp')?>">&nbsp;</div>
                                     <div class="inline cpt-options" style="width: 22%; text-align:right; top: 12px;" title="<?php echo __('Options','kontrolwp')?>">&nbsp;</div>
 								</div>
-                                <? if(count($native_tax) > 0 || count($custom_tax) > 0) { ?>
+                                <?php if(count($native_tax) > 0 || count($custom_tax) > 0) { ?>
                                 <div class="row-taxonomies">
                                			<div class="tax-attached">
                                        
                                         	<div style="padding-bottom: 2px"><?php echo __('Taxonomies Attached','kontrolwp')?></div>
-                                        	<? foreach($native_tax as $ntax) { 
+                                        	<?php foreach($native_tax as $ntax) { 
 													$tax_url = $ntax['name'] == __('Categories','kontrolwp') ? "http://codex.wordpress.org/Taxonomies#Category" : $tax_url;
 													$tax_url = $ntax['name'] == __('Tags','kontrolwp') ? "http://codex.wordpress.org/Taxonomies#Tag" : $tax_url;
 													$tax_url = $ntax['name'] == __('Format','kontrolwp') ? "http://codex.wordpress.org/Post_Formats" : $tax_url;
 											?>
                                             	   <div class="native tax-name inline"><a href="<?php echo $tax_url?>" target="_blank"><?php echo $ntax['name']?></a></div>                                         
-                                            <? } ?>
-                                            <? foreach($custom_tax as $ntax) { ?>
+                                            <?php } ?>
+                                            <?php foreach($custom_tax as $ntax) { ?>
                                             	   <div class="custom tax-name inline"><a href="<?php echo URL_WP_OPTIONS_PAGE.'&url=taxonomies/edit/'.$ntax['id']?>" target="_blank"><?php echo $ntax['name']?></a></div>                                         
-                                            <? } ?>
+                                            <?php } ?>
                                         
                                        </div>
                                 </div>
-                                <? } ?>
+                                <?php } ?>
                                 <div class="row-cols" data-cpt-id="<?php echo $data['cpt']->id?>">
                                 	<div style="padding-bottom: 2px"><?php echo __('Post List Display Columns','kontrolwp')?></div>
                                     <div class="inline save-cols" title="<?php echo __('Save Display Columns','kontrolwp')?>"></div>
                                		<div class="inline row-col-container sortable">
-                                    	<? 
+                                    	<?php 
 										$count = 0;
 										foreach($col_values as $col) { 
 											$this->renderElement('cpt-column-select', array('col'=>$col, 'count'=>$count, 'pt_key'=> $data['cpt']->cpt_key)); 
@@ -181,7 +181,7 @@
                                     </div>
                                 </div>
 							</div>
-                   <? } 
+                   <?php } 
 				 } ?>
 				
             </div>
@@ -203,12 +203,12 @@
      	<div class="inside">
             <div class="title"><?php echo __('Custom Post Types','kontrolwp')?></div>
             <div class="menu-item add">
-            <? if(KONTROL_T && (2-$pt_count) <= 0) { ?>
+            <?php if(KONTROL_T && (2-$pt_count) <= 0) { ?>
             	<div class="link"><a href="<?php echo APP_UPGRADE_URL?>" target="_blank"><?php echo __('Upgrade to the full edition!','kontrolwp')?></a></div>
                 <div class="desc"><?php echo sprintf(__("Well this is awkward. We're super sorry, but the limited edition of Kontrol only allows you %d custom post types. The full version gives you unlimited + free upgrades to Kontrol and all future modules for the cost of less than your lunch. Bargain!",'kontrolwp'),2)?></div>
-            <? }else { ?>
+            <?php }else { ?>
            		<div class="link"><a href="<?php echo $controller_url?>/add" class="button-primary" style="font-weight: normal;"><?php echo __('Add new custom post type','kontrolwp')?></a></div>
-            <? } ?>
+            <?php } ?>
             </div>
         </div>
     </div>

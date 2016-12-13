@@ -69,7 +69,7 @@
             </div>
         </div>
         
-        <? if($type == 'cf') { ?>
+        <?php if($type == 'cf') { ?>
         <div class="section cf-group">
         	<div class="inside">
                 <div class="title icon-menu-title">
@@ -82,7 +82,7 @@
                         <div class="item" id="group-post-types">
                         	  <div class="label large-bot-margin"><?php echo __('Show group in these post types','kontrolwp')?></div>
                               <div class="fields">
-                              	<? if(isset($post_type_groups)) {
+                              	<?php if(isset($post_type_groups)) {
 									$index = 0; 
 									foreach($post_type_groups as $pt_group) { ?>
                                        <div class="field group-post-type">
@@ -90,15 +90,15 @@
                                                  <div class="post_type">
                                                  	
                                                     <select style="min-width: 220px" name="group-post-types[]">
-                                                         <? foreach($post_types as $value => $label) { ?>
+                                                         <?php foreach($post_types as $value => $label) { ?>
                                                               <option value="<?php echo esc_attr($value)?>" <?php echo (isset($pt_group->post_type_key) && $pt_group->post_type_key == esc_attr($value)) ? 'selected="selected"':'' ?>><?php echo $label?></option>
-                                                         <? } ?>
+                                                         <?php } ?>
                                                     </select>
                                            		</div>
                                       	   </div>
                                      	<div class="inline duplicate-parent  <?php echo !empty($index) ? 'delete' : ''?>"></div>
                                  	 </div>
-                                <? $index++;
+                                <?php $index++;
 								   } 
 								} ?>
                              </div>
@@ -121,7 +121,7 @@
                         <div class="item hide" id="group-default-options">
              				 <div class="label large-bot-margin"><?php echo __('Custom field group default rules','kontrolwp')?> </div>
                              <div class="fieldfield-rules"> <!-- Rules -->
-                             	<?  
+                             	<?php  
 									// Remove the post type rules from the group since it's set above
 									$post_type_el = $rules['Wordpress'][0];
 									$group_rules = $rules;
@@ -140,8 +140,8 @@
                 </div>
             </div>
         </div>
-        <? } ?>
-         <? if($type == 'cs') { ?>
+        <?php } ?>
+         <?php if($type == 'cs') { ?>
         <!-- Group Settings -->
         <div class="section cs-group">
         	<div class="inside">
@@ -155,19 +155,19 @@
                         <div class="item" id="group-settings">
                         	  <div class="label large-bot-margin"><?php echo __('Show group in this settings category','kontrolwp')?>.</div>
                               <div class="fields">
-                              	<? if(isset($group_settings_cats_list)) { ?>
+                              	<?php if(isset($group_settings_cats_list)) { ?>
 					                   <div class="field group-post-type">
                                              <div class="inline twenty">
                                                  <div class="group_settings">
                                                     <select style="min-width: 220px" name="group-settings-cat">
-                                                         <? foreach($group_settings_cats_list as $value => $data) { ?>
+                                                         <?php foreach($group_settings_cats_list as $value => $data) { ?>
                                                               <option value="<?php echo esc_attr($value)?>" <?php echo (isset($post_type_groups[0]->post_type_key) && $post_type_groups[0]->post_type_key == esc_attr($value)) ? 'selected="selected"':'' ?>><?php echo $data['label']?></option>
-                                                         <? } ?>
+                                                         <?php } ?>
                                                     </select>
                                            		</div>
                                       	   </div>
                                  	 </div>
-                                <?
+                                <?php
 								} ?>
                              </div>
                             <div class="desc"><?php echo __('This custom field group will appear in the selected category on the custom settings page','kontrolwp')?>.</div>
@@ -177,13 +177,13 @@
                 </div>
             </div>
         </div>
-        <? } ?>
+        <?php } ?>
         <!-- Fields -->
-        <?
+        <?php
         $field_list = isset($cf_group) ? $cf_group->fields : NULL; 
 		$this->renderElement('cf-fields', array('title'=>__('Group Custom Fields','kontrolwp'), 'field_list'=>$field_list,'field_types'=>$field_types, 'rules'=>$rules, 'field_type'=>$type)); 
 		?>
-        <? if($type == 'cf') { ?>
+        <?php if($type == 'cf') { ?>
         <!-- Group Options -->
         <div class="section cf-group">
         	<div class="inside">
@@ -216,7 +216,7 @@
                 </div>
             </div>
         </div>
-        <? } ?>
+        <?php } ?>
         
  </div>
 

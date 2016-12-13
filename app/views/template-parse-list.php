@@ -72,7 +72,7 @@
         <th>[[current_date_time(d/m/Y)]]</th>
         <td><?php echo sprintf(__('Replaced with the current date/time in the format specified. Change <b>d/m/Y</b> to your desired date/time <a href="%s" target="_blank">format</a>.','kontrolwp'), 'http://php.net/manual/en/function.date.php')?></td>
     </tr>
-    <? if(isset($type) && $type == 'frontend') { ?>
+    <?php if(isset($type) && $type == 'frontend') { ?>
         <tr>
             <th class="main-title" colspan="2"><?php echo __("Search Information",'kontrolwp')?></th>
          </tr>
@@ -80,6 +80,6 @@
             <th>[[search_phrase]]</th>
             <td><?php echo __("Replaced with the current search phrase",'kontrolwp')?></td>
         </tr>
-   <? } ?>
+   <?php } ?>
 </tbody>
 </table>

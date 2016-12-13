@@ -8,7 +8,7 @@
     </div>
 </div>
 
-<? if(KONTROL_T) { ?>
+<?php if(KONTROL_T) { ?>
 	<div class="section">
         <div class="inside">
             <div class="title"><?php echo __('Upgrade to Awesome!','kontrolwp')?></div>
@@ -19,6 +19,6 @@
             </div>
         </div>
     </div>
-<? } ?>
+<?php } ?>
 
 <?php $this->renderElement('languages'); ?>

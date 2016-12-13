@@ -1,4 +1,4 @@
-<?
+<?php
 
 /**********************
 * Manipulates images and applies certains effects - Based on Simple Image by Simon Jarvis

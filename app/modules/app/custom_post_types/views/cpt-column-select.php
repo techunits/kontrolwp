@@ -1,4 +1,4 @@
-<? 
+<?php 
 
 	$taxonomies = get_object_taxonomies($pt_key, 'objects'); 
 	
@@ -19,12 +19,12 @@
                 <option value="">-----------------------</option>																				 
                 <option value="<?php echo (isset($col['type']) && strpos($col['type'], 'kontrol_cf:') !== FALSE) ? $col['type']:'' ?>" <?php echo (isset($col['type']) && strpos($col['type'], 'kontrol_cf:') !== FALSE) ? 'selected="selected"':'' ?> class="custom-val" customValFormat="kontrol_cf:%s" customLabelFormat="<?php echo __('Kontrol Custom Field','kontrolwp')?> (%s)" confirmText="<?php echo __('Enter the Kontrol custom field key for the field you want shown in this column','kontrolwp')?>.">Kontrol <?php echo __('Custom Field','kontrolwp')?> <?php echo (isset($col['type']) && strpos($col['type'], 'kontrol_cf:') !== FALSE) ? '('.substr($col['type'], 11, strlen($col['type'])).')':'' ?></option>
                
-                <? if(count($taxonomies) > 0) { ?>
+                <?php if(count($taxonomies) > 0) { ?>
                 	 <option value="">-----------------------</option>
-                     <? foreach($taxonomies as $tax) { ?>
+                     <?php foreach($taxonomies as $tax) { ?>
                      		<option value="taxonomy:<?php echo $tax->name?>" <?php echo (isset($col['type']) && strpos($col['type'], 'taxonomy:') !== FALSE && $col['type'] == 'taxonomy:'.$tax->name) ? 'selected="selected"':'' ?>><?php echo __('Taxonomy','kontrolwp')?> - <?php echo $tax->label?></option>
-                     <? } ?>
-                <? } ?>	
+                     <?php } ?>
+                <?php } ?>	
                  <option value="">-----------------------</option>
                 <option value="permalink" <?php echo (isset($col['type']) && $col['type'] == 'permalink') ? 'selected="selected"':'' ?>><?php echo __('Post Permalink','kontrolwp')?> (URL)</option>
                 <option value="author" <?php echo (isset($col['type']) && $col['type'] == 'author') ? 'selected="selected"':'' ?>><?php echo __('Post Author','kontrolwp')?></option>

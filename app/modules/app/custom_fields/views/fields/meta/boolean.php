@@ -1,4 +1,4 @@
-<?
+<?php
 	$field_value = !empty($field_value) || !isset($field->settings['default_value']) ? $field_value : $field->settings['default_value'];
 ?>
 

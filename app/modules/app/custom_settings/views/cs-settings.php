@@ -2,11 +2,11 @@
 
 <div class="icon32" id="icon-options-general"><br></div><h2><?php echo $page_title?> - <?php echo $categories[$cat]['data']['label']?></h2>
 
-<? if(isset($categories[$cat]['data']['desc']) && !empty($categories[$cat]['data']['desc'])) { ?>
+<?php if(isset($categories[$cat]['data']['desc']) && !empty($categories[$cat]['data']['desc'])) { ?>
 <div class="settings-desc">
 	<?php echo nl2br($categories[$cat]['data']['desc'])?>
 </div>
-<? } ?>
+<?php } ?>
 
 <form id="post" action="<?php echo URL_WP_SETTINGS_PAGE.'&cat='.$cat?>&noheader=true" method="POST" name="post">
 
@@ -14,16 +14,16 @@
 
 <div id="post-body-content">
 	<div id="poststuff" class="cs-col-1">
- 	<?  if(isset($categories[$cat]['groups']) && is_array($categories[$cat]['groups'])) {  ?>
+ 	<?php  if(isset($categories[$cat]['groups']) && is_array($categories[$cat]['groups'])) {  ?>
         <div class="settings-fields">
-            <?	if(isset($categories[$cat]['groups']) && count($categories[$cat]['groups']) > 0) { 
+            <?php	if(isset($categories[$cat]['groups']) && count($categories[$cat]['groups']) > 0) { 
                     foreach($categories[$cat]['groups'] as $group) { ?>
                         <div class="postbox-container" id="postbox-container-2">
                             <div class="meta-box-sortables ui-sortable" id="normal-sortables">
                                 <div class="postbox kontrol-metabox" style="display: block;">
                                 <div title="Click to toggle" class="handlediv"><br></div><h3 class="hndle"><span><?php echo $group->group_name?></span></h3>
                                 <div class="inside">
-                                    <?	if(isset($group->fields) && count($group->fields) > 0) {  
+                                    <?php	if(isset($group->fields) && count($group->fields) > 0) {  
                                             foreach($group->fields as $field) { 
 											
 												$sub_fields = NULL;
@@ -58,10 +58,10 @@
                                 </div>
                              </div>
                         </div>
-                   <? } ?>
-            <? } ?>
+                   <?php } ?>
+            <?php } ?>
            </div>
-           <?
+           <?php
            } ?>
        
        </div>

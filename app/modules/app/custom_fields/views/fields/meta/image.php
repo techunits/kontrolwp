@@ -1,4 +1,4 @@
-<?
+<?php
 	
 	// Get the image
 	if(!empty($field_value)) {
@@ -40,12 +40,12 @@
         > 
     <input type="button" class="upload-el <?php echo $field_validation?>" value="<?php echo __('Upload Image','kontrolwp')?>" style="<?php echo isset($image_src) ? 'display:none':''?>"  />
     <ul class="upload-list">
-     <? if(isset($image_src)) { ?>
+     <?php if(isset($image_src)) { ?>
             <li class="file remove" id="file-1">
                    <div class="remove-file"></div>
                    <div class="file-image"><?php echo $image_src?></div>
                 <input type="hidden" id="_kontrol[<?php echo $field->field_key?>]" name="_kontrol[<?php echo $field->field_key?>]" value="<?php echo $field_value?>">
             </li>
-     <? } ?>
+     <?php } ?>
     </ul>
 </div>

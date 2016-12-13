@@ -1,6 +1,6 @@
 <script type="text/javascript">
 
-	<? if(KONTROL_T) { ?>
+	<?php if(KONTROL_T) { ?>
 	
 	window.addEvent('domready', function() {
 		
@@ -41,7 +41,7 @@
 			  });
 		   })(document.id);
 		});
-	<? } ?>
+	<?php } ?>
 </script>
 
 <div class="main-col inline" style="width: 100%">
@@ -56,7 +56,7 @@
                     <div class="form-style">
                         <div class="item">
                             <div class="label"><?php echo __('License Key', 'kontrolwp')?><span class="req-ast">*</span></div>
-                             <? if(KONTROL_T) { ?>
+                             <?php if(KONTROL_T) { ?>
                                 <div class="field"><input type="text" id="key" name="key" value="" maxlength="200" class="required ninety safe-chars" /></div>
                                 <div class="desc"><?php echo sprintf(__('Enter your license key here to upgrade. An Internet connection is required. If you don\'t have a license key, <a href="%s" target="_blank">grab one from here</a>, it\'s super cheap and quick!', 'kontrolwp'), APP_UPGRADE_URL)?></div>
                                 <br />
@@ -66,9 +66,9 @@
                                     <div id="reg-error" class="inline" style="padding-top: 10px; color: #F00;"><?php echo (!in_array('curl', get_loaded_extensions())) ? __("Error: You don't appear to have the CURL module in your PHP installation - You'll need that to register Kontrol. Contact your server administrator to get the module installed.", 'kontrolwp'):""?></div>
                                 </div>
                                 <div id="reg-success"></div>
-                             <? }else{ ?>
+                             <?php }else{ ?>
                              	<div class="field"><?php echo __("You've already registered", 'kontrolwp')?> Kontrol!</div>
-                             <? } ?>
+                             <?php } ?>
                         </div>
                     </div>
                 </div>

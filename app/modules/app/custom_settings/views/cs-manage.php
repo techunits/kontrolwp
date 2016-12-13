@@ -31,7 +31,7 @@
                 <div class="title"><?php echo __('Custom Settings Groups','kontrolwp')?></div>
             </div>
      </div>
-	<? 
+	<?php 
 	$group_count = 0;
 	
 	if(isset($post_types) && count($post_types) > 0) {
@@ -45,7 +45,7 @@
             <div class="inside">
                 <div class="title"><?php echo $post_types[$pt_key]['label']?></div>
                 <div class="rows sortable">
-                    <? foreach($groups[$pt_key] as $group) { ?>
+                    <?php foreach($groups[$pt_key] as $group) { ?>
                     	<div id="<?php echo $group->id?>" data-id="<?php echo $group->id?>" data-group-id="<?php echo $group->group_id?>" sortAction="<?php echo $controller_url?>/updateGroupOrder/<?php echo $group->id?>/" class="row <?php echo empty($group->active) ? 'field-hidden':''?>">
                             <div class="inline tab drag-row"></div>
                             <div title="Name" style="width: 25%;  top: 4px;" class="inline cpt-name">
@@ -59,15 +59,15 @@
                                 
                             </div>
                     	</div>
-                    <? } ?>
+                    <?php } ?>
                 </div>
             </div>
         </div>
-    <? 		}
+    <?php 		}
 		}
 	} ?>
     
-   <? if($group_count == 0) { ?>
+   <?php if($group_count == 0) { ?>
    
   		<div class="section">
             <div class="inside">
@@ -87,7 +87,7 @@
                  </div>
             </div>
         </div>
-   <? } ?>
+   <?php } ?>
    
     
    </div>
@@ -125,12 +125,12 @@
                                     <div class="kontrol-file-upload single-image" data-fileUploadType="image" data-fileReturnInputName="settings[menu_icon]" data-fileReturn="image_url" data-fileGetData='<?php echo http_build_query(array('user_id'=>$current_user->ID, 'post_id'=>0, 'data'=>array('image_preview_size'=>'thumbnail','image_dimensions_w'=>16,'image_dimensions_h'=>16,'image_dimensions'=>'enforce')))?>' data-fileListMax="1" data-multiple="false" data-maxSize="250" data-fileTypes="{'<?php echo __('Images')?> (*.jpg, *.jpeg, *.gif, *.png)':'*.jpg; *.jpeg; *.gif; *.png'}">
                                         <input type="button" class="upload-el" value="<?php echo __('Upload Image','kontrolwp')?>" style="<?php echo isset($cs_settings['menu_icon']) && !empty($cs_settings['menu_icon']) ? 'display:none':''?>"  />
                                         <ul class="upload-list">
-                                         <? if(isset($cs_settings['menu_icon']) && !empty($cs_settings['menu_icon'])) { ?>
+                                         <?php if(isset($cs_settings['menu_icon']) && !empty($cs_settings['menu_icon'])) { ?>
                                                 <li class="file remove" id="file-1" style="margin-bottom: 0; padding-bottom: 0">
                                                     <div class="remove-file"></div>
                                                     <div class="file-image"><img src="<?php echo $cs_settings['menu_icon']?>"></div>
                                                     <input type="hidden" name="settings[menu_icon]" value="<?php echo $cs_settings['menu_icon']?>"></li>
-                                         <? } ?>
+                                         <?php } ?>
                                         </ul>
                                         
                                     </div>
@@ -163,8 +163,8 @@
                                                  	<div style="width: 60%; padding-left: 1%;" class="field inline"><textarea name="settings[categories][desc][]"></textarea></div>
                                             		<div title="Delete Row" class="delete-row"></div>
                                            </div>
-                                           <? if(isset($post_types) && count($post_types) > 0) { ?>
-                                           <?		foreach($post_types as $cat_key => $cat_data) { ?>
+                                           <?php if(isset($post_types) && count($post_types) > 0) { ?>
+                                           <?php		foreach($post_types as $cat_key => $cat_data) { ?>
                                            <div class="row" data-row-del-msg-check="Are you sure you wish to delete this custom setting and all it's groups?">
                                                     <div class="inline tab drag-row"></div>
                                                 	<div style="width: 25%; padding-left: 1%;" class="field inline"><input type="text" class="required ninety" name="settings[categories][label][]" value="<?php echo $cat_data['label']?>" /></div>	   
@@ -172,8 +172,8 @@
                                             		<div title="Delete Row" class="delete-row"></div>
                                                     <input type="hidden" class="row-pt-key" name="settings[categories][key][]" value="<?php echo $cat_key?>" />
                                            </div>
-											<? } ?>
-                                        <? } ?>
+											<?php } ?>
+                                        <?php } ?>
                                     </div>
                                     <div class="add-row" style="display: block;"><a><b>+ <?php echo __('Add Category','kontrolwp')?></b></a></div>
                                 </div>
@@ -206,12 +206,12 @@
      	<div class="inside">
             <div class="title"><?php echo __('Field Groups','kontrolwp')?></div>
             <div class="menu-item add">
-            	<? if(KONTROL_T && (10-$field_count) <= 0) { ?>
+            	<?php if(KONTROL_T && (10-$field_count) <= 0) { ?>
                 	<div class="link"><a href="<?php echo APP_UPGRADE_URL?>" target="_blank"><?php echo __('Upgrade to the full edition!','kontrolwp')?></a></div>
                     <div class="desc"><?php echo sprintf(__("Well this is awkward. We're super sorry, but the limited edition of Kontrol only allows you %d advanced custom fields. The full version gives you unlimited + free upgrades to Kontrol and all future modules for the cost of less than your lunch. Bargain!",'kontrolwp'), 10)?></div>
-                <? }else{ ?>
+                <?php }else{ ?>
                     <div class="link"><a href="<?php echo $controller_url?>/add" class="button-primary" style="font-weight: normal;"><?php echo __('Add new field group','kontrolwp')?></a></div>
-                <? } ?>
+                <?php } ?>
             </div>
         </div>
     </div>

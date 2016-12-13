@@ -1,5 +1,5 @@
  
- <? 
+ <?php 
  $index = 0;
  foreach($field->settings['radio_options'] as $checkbox) { 
  		$validators = split(' ', $field_validation);
@@ -22,10 +22,10 @@
 			<?php echo $index == 0 ? 'class="'.$field_validation.' msgPos:\''.$field->field_key.'-radio-advice\'"':''?> 
              /> 
 			<?php echo $label?> &nbsp;&nbsp;
-        <? if($field->settings['radio_style'] == 'vertical') { ?>
+        <?php if($field->settings['radio_style'] == 'vertical') { ?>
        		 <div class="radio-div"></div>
-       <? } ?>
-    <?
+       <?php } ?>
+    <?php
 	$index++;
 } ?>
 

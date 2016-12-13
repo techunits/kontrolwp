@@ -15,7 +15,7 @@
 			 // Validation.
   			new Form.Validator.Inline('post-type-add');
 			
-			 <? if($action == 'edit') { ?>
+			 <?php if($action == 'edit') { ?>
 			 	// Show the 'update-key-posts' suggestion field if they change the post key ID
 				var key = $('kontrol').getElement('#key');
 				var key_update_field = $('kontrol').getElement('#update-key-field');
@@ -29,7 +29,7 @@
 				});
 				
 			 
-			 <? } ?>
+			 <?php } ?>
 			 
 			
 	});
@@ -56,12 +56,12 @@
                             <input type="hidden" id="taxonomies" value='<?php echo json_encode(str_replace(isset($tax) ? $tax->tax_key:'','',get_taxonomies()))?>' />
                             <div class="desc"><?php echo __('Max. 20 characters, cannot contain capital letters or spaces', 'kontrolwp')?>.</div>
                         </div>
-                        <? if($action == 'edit') { ?>
+                        <?php if($action == 'edit') { ?>
                         <div id="update-key-field" class="item" style="display: none">
                             <div class="label"><input type="checkbox" id="current-key" name="current-key" value="<?php echo isset($tax) ? $tax->tax_key:''?>" checked="checked" /> <?php echo __('Update attached posts and terms to match new taxonomy ID?','kontrolwp')?></div>
                             <div class="desc"><?php echo __('If this taxonomy already terms and posts attached to it and you change the taxonomy ID, those terms and related post information will be lost. Check the box above to make sure that terms and posts attached to the taxonomy get updated to match the new ID','kontrolwp')?>.</div>
                         </div>
-                        <? } ?>
+                        <?php } ?>
                         <div class="item">
                             <div class="label"><?php echo __('Name (plural)', 'kontrolwp')?> <span class="req-ast">*</span></div>
                             <div class="field"><input type="text" id="tax-name" name="args[labels][name]" value="<?php echo isset($tax) ? $tax->args['labels']['name']:''?>" class="required ninety" /></div>
@@ -88,26 +88,26 @@
                                 <select nameToAdd="args[post_types][]" class="sixty">
                                     <option value=""><b><?php echo __('Native', 'kontrolwp')?></b></option>
                                     <option value="">-------------------</option>
-                                    <? foreach($pt_native as $pt) { ?>
+                                    <?php foreach($pt_native as $pt) { ?>
                                     	  <option value="<?php echo $pt->cpt_key?>"><?php echo $pt->name?></option>                             
-                                    <? } ?>
+                                    <?php } ?>
                                     <option value="">-------------------</option>
                                     <option value=""><b><?php echo __('Custom', 'kontrolwp')?></b></option>
                                     <option value="">-------------------</option>
-                                    <? if(!empty($pt_custom)) { ?>
-                                    	 <? foreach($pt_custom as $pt) { ?>
+                                    <?php if(!empty($pt_custom)) { ?>
+                                    	 <?php foreach($pt_custom as $pt) { ?>
                                     	<option value="<?php echo $pt->cpt_key?>"><?php echo $pt->name?></option>     
-                                        <? } ?>           
-                                    <? }else{ ?>
+                                        <?php } ?>           
+                                    <?php }else{ ?>
                                     <option value=""><?php echo __('No custom post types found', 'kontrolwp')?></option>
-                                    <? } ?>
+                                    <?php } ?>
                                 </select>
                             </div>
                              <div class="kontrol-select-results">
-                             	  <? if(isset($attached_post_types)) {
+                             	  <?php if(isset($attached_post_types)) {
 												foreach($attached_post_types as $pt) { ?>
 													<div class="feature"><?php echo $pt->cpt_name?> <input type="hidden" name="args[post_types][]" value="<?php echo $pt->cpt_key?>" /></div>
-										<? }
+										<?php }
 									    
 								  } ?>
 			

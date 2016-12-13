@@ -1,5 +1,5 @@
  
- <? 
+ <?php 
  $index = 0;
  foreach($field->settings['checkbox_options'] as $checkbox) { 
  		$validators = split(' ', $field_validation);
@@ -22,10 +22,10 @@
 			<?php echo $index == 0 ? 'class="'.$field_validation.' msgPos:\''.$field->field_key.'-checkbox-advice\'"':''?> 
              /> 
 			<?php echo $label?> &nbsp;&nbsp;
-        <? if($field->settings['checkbox_style'] == 'vertical') { ?>
+        <?php if($field->settings['checkbox_style'] == 'vertical') { ?>
        		 <div class="checkbox-div"></div>
-        <? } ?>
-    <?
+        <?php } ?>
+    <?php
 	$index++;
 } ?>
 

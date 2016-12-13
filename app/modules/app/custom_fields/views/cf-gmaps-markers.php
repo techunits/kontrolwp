@@ -1,4 +1,4 @@
-<? $copy_key = isset($index) && !empty($index) && $index > 1 ? $index : '_ADD_RAND_KEY_'; ?>
+<?php $copy_key = isset($index) && !empty($index) && $index > 1 ? $index : '_ADD_RAND_KEY_'; ?>
 
 
 <!-- Image Copies -->

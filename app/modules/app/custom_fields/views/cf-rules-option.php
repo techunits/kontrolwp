@@ -1,4 +1,4 @@
-<?
+<?php
 	$value_key = NULL;
 ?>
 
@@ -6,13 +6,13 @@
 		
         <div class="inline twenty rule-select">
             <select name="<?php echo $type?>[rules][param][]" class="main-rules-select custom-select" style="min-width: 200px">
-               <? $cur_opt_group = NULL;
+               <?php $cur_opt_group = NULL;
 			      $pre_opt_group = NULL;
 			   ?>
                
-               <? foreach($rules as $group => $rule) { ?>
+               <?php foreach($rules as $group => $rule) { ?>
                		<optgroup label="<?php echo $group?>">
-               <? 
+               <?php 
 			   		foreach($rule as $rule_data) {
 							// $data->param is the current selected rule key
 							$custom_default_val = NULL;
@@ -37,13 +37,13 @@
 							
 							echo $data->param;
 						?>
-                        	<option value="<?php echo $rule_value?>" data-show-values="<?php echo $rule_data['key']?>" <?php echo ($rule_data['key'] == $value_key) ? 'selected="selected"':'' ?> <? if(isset($rule_data['custom_select'])) { ?> class="custom-val" confirmDefaultVal="<?php echo $custom_default_val?>" customValFormat="<?php echo $rule_data['custom_select']['customValFormat']?>"  customLabelFormat="<?php echo $rule_data['custom_select']['customLabelFormat']?>" confirmText="<?php echo $rule_data['custom_select']['confirmText']?>" <? } ?>><?php echo $rule_data['label']?>&nbsp;</option>
-                        <? 
+                        	<option value="<?php echo $rule_value?>" data-show-values="<?php echo $rule_data['key']?>" <?php echo ($rule_data['key'] == $value_key) ? 'selected="selected"':'' ?> <?php if(isset($rule_data['custom_select'])) { ?> class="custom-val" confirmDefaultVal="<?php echo $custom_default_val?>" customValFormat="<?php echo $rule_data['custom_select']['customValFormat']?>"  customLabelFormat="<?php echo $rule_data['custom_select']['customLabelFormat']?>" confirmText="<?php echo $rule_data['custom_select']['confirmText']?>" <?php } ?>><?php echo $rule_data['label']?>&nbsp;</option>
+                        <?php 
 					}
 			   
 			  	?>
                		</optgroup>
-               <? }?>
+               <?php }?>
                   
            </select>
                
@@ -60,7 +60,7 @@
            </select>
        </div>
         <div class="inline twenty">
-            <? 
+            <?php 
             $count = 0;
 			foreach($rules as $group => $group_rules) { 
 				foreach($group_rules as $rule) {
@@ -84,27 +84,27 @@
 					
 				?>
 				  <div class="rule-val <?php echo str_replace(':','_',$rule_key)?> <?php echo $show == FALSE ? 'hide':''?>">
-					 <? if(isset($rule['data_type']) && $rule['data_type'] == 'select') { ?>
+					 <?php if(isset($rule['data_type']) && $rule['data_type'] == 'select') { ?>
 							  <select name="<?php echo $type?>[rules][value][]" <?php echo $show == FALSE ? 'disabled="disabled"':''?> style="min-width: 220px;" >
-							  <? foreach($rule['data'] as $value => $label) { ?>
-								  <? if(isset($label['values']) && is_array($label['values'])) { ?>
+							  <?php foreach($rule['data'] as $value => $label) { ?>
+								  <?php if(isset($label['values']) && is_array($label['values'])) { ?>
 									<optgroup label="<?php echo $value?>">
-										<? foreach($label['values'] as $subvalue => $sublabel) { ?>
+										<?php foreach($label['values'] as $subvalue => $sublabel) { ?>
 											 <option value="<?php echo esc_attr($subvalue)?>" <?php echo (isset($data->value) && $data->value == esc_attr($subvalue)) ? 'selected="selected"':'' ?>>&nbsp;&nbsp;<?php echo $sublabel?></option>
-										<? } ?>
+										<?php } ?>
 									</optgroup>
-								  <? }else{ ?>
+								  <?php }else{ ?>
 								  <option value="<?php echo esc_attr($value)?>" <?php echo (isset($data->value) && $data->value == esc_attr($value)) ? 'selected="selected"':'' ?>><?php echo $label?></option>
-								  <? } ?>
-							  <? } ?>
+								  <?php } ?>
+							  <?php } ?>
 							  </select>
-						<? } ?>
-						<? if(isset($rule['data_type']) && $rule['data_type'] == 'text') { 		
+						<?php } ?>
+						<?php if(isset($rule['data_type']) && $rule['data_type'] == 'text') { 		
 						?>
 							<input type="text" name="<?php echo $type?>[rules][value][]" value="<?php echo (isset($data->value) && strlen($data->value) > 0 && $show == TRUE) ? esc_attr($data->value) : ''?>" class="required" placeholder="<?php echo __('Enter field value','kontrolwp')?>" style="min-width: 220px;" />
-						<? } ?>
+						<?php } ?>
 					  </div>
-				<? $count++;
+				<?php $count++;
 				}
 			} ?>
     

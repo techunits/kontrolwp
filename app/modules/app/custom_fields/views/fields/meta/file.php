@@ -1,4 +1,4 @@
-<?	
+<?php	
 	// Get the image
 	if(!empty($field_value)) {
 		$file_link = wp_get_attachment_link($field_value);
@@ -23,12 +23,12 @@
         >
     <input type="button" class="upload-el <?php echo $field_validation?>" value="<?php echo __('Upload File','kontrolwp')?>" style="<?php echo isset($file_link) ? 'display:none':''?>"  />
     <ul class="upload-list">
-     <? if(isset($file_link)) { ?>
+     <?php if(isset($file_link)) { ?>
             <li class="file remove" id="file-1">
                    <div class="remove-file"></div>
                    <div class="file-image"><?php echo $file_link?></div>
                 <input type="hidden" id="_kontrol[<?php echo $field->field_key?>]" name="_kontrol[<?php echo $field->field_key?>]" value="<?php echo $field_value?>">
             </li>
-     <? } ?>
+     <?php } ?>
     </ul>
 </div>

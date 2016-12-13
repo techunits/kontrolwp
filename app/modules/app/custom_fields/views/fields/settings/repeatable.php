@@ -2,7 +2,7 @@
 	<!-- Sub Fields -->
     <div class="repeatable-fields">
          <!-- Fields -->
-        <?
+        <?php
         $field_list = isset($field_data->fields) ? $field_data->fields : NULL; 
 		$this->renderElement('cf-fields', array('title'=>'Repeatable Fields', 'field_list'=>$field_list, 'field_types'=>$field_types, 'rules'=>$rules, 'field_type'=>$field_type)); 
 		?>

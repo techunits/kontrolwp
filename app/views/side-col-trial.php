@@ -1,4 +1,4 @@
-<? if(KONTROL_T) { 
+<?php if(KONTROL_T) { 
 
 	$reasons = array();
 	$reasons[] = __("This plugin was created with a huge amount of love and against all the rules of science, it actually loves you back!",'kontrolwp');
@@ -24,4 +24,4 @@
           <div class="link"><a href="<?php echo APP_UPGRADE_URL?>" target="_blank"><?php echo __('Get the full version now','kontrolwp')?></a></div>
           <div class="desc"><?php echo $reasons[$rand_key];?> <?php echo __('Click above to upgrade today and get the most out of Kontrol','kontrolwp')?>.</div>
       </div>
-<? } ?>
+<?php } ?>

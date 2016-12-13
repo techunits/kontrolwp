@@ -37,12 +37,12 @@
             <div class="kontrol-file-upload single-image" data-fileUploadType="image" data-fileReturnInputName="field[<?php echo $fkey?>][settings][gmaps][icon]" data-fileReturn="image_url"  data-fileGetData='<?php echo http_build_query(array('user_id'=>$current_user->ID, 'post_id'=>0, 'data'=>array('image_preview_size'=>'full')))?>' data-fileListMax="1" data-multiple="false" data-maxSize="850" data-fileTypes="{'<?php echo __('Images')?> (*.png)':'*.png'}">                            
                 <input type="button" class="upload-el" value="<?php echo __('Upload Image','kontrolwp')?>" style="<?php echo isset($data['gmaps']['icon']) && !empty($data['gmaps']['icon']) ? 'display:none':''?>"  />
                 <ul class="upload-list">
-                 <? if(isset($data['gmaps']['icon']) && !empty($data['gmaps']['icon'])) { ?>
+                 <?php if(isset($data['gmaps']['icon']) && !empty($data['gmaps']['icon'])) { ?>
                         <li class="file remove" id="file-1">
                             <div class="remove-file"></div>
                             <div class="file-image"><img src="<?php echo Kontrol_Tools::absolute_upload_path($data['gmaps']['icon'])?>"></div>
                             <input type="hidden" name="field[<?php echo $fkey?>][settings][gmaps][icon]" value="<?php echo Kontrol_Tools::absolute_upload_path($data['gmaps']['icon'])?>"></li>
-                 <? } ?>
+                 <?php } ?>
                 </ul>
                 
             </div>
@@ -65,16 +65,16 @@
     
     <div class="map-user-select">
  		<div class="image-copies subgroup">
-			<? if(isset($data['gmaps']['set_locations']) && is_array($data['gmaps']['set_locations']) && count($data['gmaps']['set_locations']) > 0) { 
+			<?php if(isset($data['gmaps']['set_locations']) && is_array($data['gmaps']['set_locations']) && count($data['gmaps']['set_locations']) > 0) { 
                     $index = 1;
                     foreach($data['gmaps']['set_locations'] as $location) {
             ?>
                        <?php echo $this->renderElement('cf-gmaps-markers', array('fkey'=>$fkey, 'data'=>$location, 'type'=>$type, 'index'=> $index));?>
-            <?      	$index++;
+            <?php      	$index++;
                     }
             }else{ ?>
                 <?php echo $this->renderElement('cf-gmaps-markers', array('fkey'=>$fkey, 'data'=>NULL, 'type'=>$type, 'index'=> 1));?>
-            <? } ?>
+            <?php } ?>
         </div>
         
          <div class="item">

@@ -21,13 +21,13 @@
 
 <!-- Main Col -->
 <div class="main-col inline">
-<? if(count($tax_custom) > 0) { ?>
+<?php if(count($tax_custom) > 0) { ?>
 	<!-- Active taxs -->
     <div class="section">
         <div class="inside">
             <div class="title"><?php echo __('Custom Taxonomies', 'kontrolwp')?></div>
             <div class="rows sortable">
-            	<?					
+            	<?php					
 						foreach($tax_custom as $data) { 
 						
 							$native_pt = array();
@@ -54,36 +54,36 @@
                                         <a href="<?php echo $controller_url?>/delete/<?php echo $data['tax']->id?>&noheader=true"  class="delete-tax"><img src="<?php echo URL_IMAGE?>/icon-delete.png" title="<?php echo __('Delete','kontrolwp')?>" alt="<?php echo __('Delete','kontrolwp')?>" /></a>
                                     </div>
                                 </div>
-								<? if(count($native_pt) > 0 || count($custom_pt) > 0) { ?>
+								<?php if(count($native_pt) > 0 || count($custom_pt) > 0) { ?>
                                 <div class="row-pts">
                                			<div class="pts-attached">
                                         	<div style="padding-bottom: 2px"><?php echo __('Post Types Attached','kontrolwp')?></div>
-                                        	<? foreach($native_pt as $pt) { ?>
+                                        	<?php foreach($native_pt as $pt) { ?>
                                             	   <div class="native pt-name inline"><?php echo $pt['name']?></div>                                              
-                                            <? } ?>
-                                            <? foreach($custom_pt as $pt) { ?>
+                                            <?php } ?>
+                                            <?php foreach($custom_pt as $pt) { ?>
                                             	   <div class="custom pt-name inline"><a href="<?php echo URL_WP_OPTIONS_PAGE.'&url=custom_post_types/edit/'.$pt['id']?>" target="_blank"><?php echo $pt['name']?></a></div>                                         
-                                            <? } ?>
+                                            <?php } ?>
                                        </div>
                                 </div>
-                                <? } ?>
+                                <?php } ?>
 							</div>
-					 <? } ?>
+					 <?php } ?>
 				
             </div>
         </div>
     </div>
     
-    <? } ?>
+    <?php } ?>
     
-    <? if(count($tax_native) > 0) { ?>
+    <?php if(count($tax_native) > 0) { ?>
     <!-- Hidden taxs -->
     <div class="section">
         <div class="inside">
             <div class="title"><?php echo __('Native Taxonomies','kontrolwp')?></div>
             <div class="rows">
             	
-					<? if(count($tax_native) > 0) {
+					<?php if(count($tax_native) > 0) {
 						foreach($tax_native as $data) { 
 						
 							$native_pt = array();
@@ -119,29 +119,29 @@
                                     <div class="inline tax-updated" style="width: 22%; text-align:right; top: 12px;" title="<?php echo __('Last Updated','kontrolwp')?>"></div>
                                     <div class="inline tax-options" style="width: 25%; text-align:right; top: 10px;" title="<?php echo __('Options','kontrolwp')?>"></div>
                                 </div>
-								<? if(count($native_pt) > 0 || count($custom_pt) > 0) { ?>
+								<?php if(count($native_pt) > 0 || count($custom_pt) > 0) { ?>
                                 <div class="row-pts">
                                			<div class="pts-attached">
                                         	<div style="padding-bottom: 2px"><?php echo __('Post Types Attached','kontrolwp')?></div>
-                                        	<? foreach($native_pt as $pt) { ?>
+                                        	<?php foreach($native_pt as $pt) { ?>
                                             	   <div class="native pt-name inline"><?php echo $pt['name']?></div>                                              
-                                            <? } ?>
-                                            <? foreach($custom_pt as $pt) { ?>
+                                            <?php } ?>
+                                            <?php foreach($custom_pt as $pt) { ?>
                                             	   <div class="custom pt-name inline"><a href="<?php echo URL_WP_OPTIONS_PAGE.'&url=custom_post_types/edit/'.$pt['id']?>" target="_blank"><?php echo $pt['name']?></a></div>                                         
-                                            <? } ?>
+                                            <?php } ?>
                                        </div>
                                 </div>
-                                <? } ?>
+                                <?php } ?>
 							</div>
-					 <? } 
+					 <?php } 
 				}else{ ?>
 						<div class="row"><b>No native taxonomies found... that's actually really strange... what did you do??</b></div>					
-				<? }?>	
+				<?php }?>	
 				
             </div>
         </div>
     </div>
-    <? } ?>
+    <?php } ?>
     
 </div>
           
@@ -157,12 +157,12 @@
      	<div class="inside">
             <div class="title"><?php echo __('Custom Taxonomies','kontrolwp')?></div>
             <div class="menu-item add">
-            	<? if(KONTROL_T && (4-$tax_count) <= 0) { ?>
+            	<?php if(KONTROL_T && (4-$tax_count) <= 0) { ?>
             	<div class="link"><a href="<?php echo APP_UPGRADE_URL?>" target="_blank"><?php echo __('Upgrade to the full edition!','kontrolwp')?></a></div>
                 <div class="desc"><?php echo sprintf(__("Well this is awkward. We're super sorry, but the limited edition of Kontrol only allows you %d custom taxonomies. The full version gives you unlimited + free upgrades to Kontrol and all future modules for the cost of less than your lunch. Bargain!",'kontrolwp'),4)?></div>
-           		 <? }else { ?>
+           		 <?php }else { ?>
                 <div class="link"><a href="<?php echo $controller_url?>/add" class="button-primary" style="font-weight: normal;"><?php echo __('Add new custom taxonomy','kontrolwp')?></a></div>
-                <? } ?>
+                <?php } ?>
             </div>
         </div>
     </div>

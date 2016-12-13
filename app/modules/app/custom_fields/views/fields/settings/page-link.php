@@ -1,4 +1,4 @@
-<? // Get the post types and taxonomies
+<?php // Get the post types and taxonomies
 	$post_types = array();
 	$taxonomies = array();
 
@@ -19,7 +19,7 @@
         <div class="label"><?php echo __('Post Type Filter','kontrolwp')?></div>
         <div>
         	<select name="field[<?php echo $fkey?>][settings][pl_pt_filter][]" class="sixty" multiple="multiple" style="height: 120px">
-              	<? foreach($post_types as $pt_val => $pt_key) { 
+              	<?php foreach($post_types as $pt_val => $pt_key) { 
 						
 						$selected = FALSE;
 					if(isset($data['pl_pt_filter']) && is_array($data['pl_pt_filter']) && in_array($pt_val, $data['pl_pt_filter'])) { 
@@ -27,7 +27,7 @@
 					}
 				?>
                 	<option value="<?php echo $pt_val?>" <?php echo $selected ? 'selected="selected"':''?>><?php echo $pt_key?></option>
-                <? }?>
+                <?php }?>
 			</select>
         </div>
         <div class="desc"><?php echo __('Filter the page links by selected post types. If none are selected it will show for all','kontrolwp')?>.</div>
@@ -37,11 +37,11 @@
         <div class="label"><?php echo __('Taxonomy Filter','kontrolwp')?></div>
         <div>
         	<select name="field[<?php echo $fkey?>][settings][pl_tax_filter][]" class="sixty" multiple="multiple" style="height: 120px">
-              	<? foreach($taxonomies as $tax_label => $tax_val) { 
+              	<?php foreach($taxonomies as $tax_label => $tax_val) { 
 					
 				     if(isset($tax_val['values']) && is_array($tax_val['values'])) { ?>
                       	<optgroup label="<?php echo $tax_label?>">
-                        	<? foreach($tax_val['values'] as $subvalue => $sublabel) { 
+                        	<?php foreach($tax_val['values'] as $subvalue => $sublabel) { 
 								$selected = FALSE;
 								$value = $tax_val['id'].'_'.$subvalue;
 								if(isset($data['pl_tax_filter']) && is_array($data['pl_tax_filter']) && in_array($value, $data['pl_tax_filter'])) { 
@@ -49,9 +49,9 @@
 								}
 							?>
                             	 <option value="<?php echo esc_attr($value)?>" <?php echo $selected ? 'selected="selected"':''?>>&nbsp;&nbsp;<?php echo $sublabel?></option>
-                            <? } ?>
+                            <?php } ?>
                         </optgroup>
-                      <? } 
+                      <?php } 
 					} ?>
 			</select>
         </div>

@@ -1,4 +1,4 @@
-<? 
+<?php 
 	// Generate some unique class names for when this is used in a repeatable
 	$rand_func_key = rand(0, 99999); 
 	$field_name = 'colour-'.$field->field_key.'-'.$rand_func_key;

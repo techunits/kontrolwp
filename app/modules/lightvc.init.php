@@ -1,4 +1,4 @@
-<?
+<?php
 /**********************
 * Initialises the start of the Kontrol WP Framework - only included when the framework is needed
 * Plugin URI: http://www.kontrolwp.com

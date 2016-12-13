@@ -2,20 +2,20 @@
 	<div class="item">
         <div class="label"><?php echo __('Checkbox Options','kontrolwp')?><span class="req-ast">*</span></div>
         <div>
-        	<? if(isset($data['checkbox_options']) && count($data['checkbox_options']) > 0) { 
+        	<?php if(isset($data['checkbox_options']) && count($data['checkbox_options']) > 0) { 
 		           for($i=0; $i < count($data['checkbox_options']); $i++) {
 			?>
             <div class="field">
                 <input type="text" name="field[<?php echo $fkey?>][settings][checkbox_options][]" value="<?php echo $data['checkbox_options'][$i]?>" class="thirty required" />
                 <div class="inline duplicate-parent  <?php echo ($i > 0) ? 'delete' : ''?>"></div> 
             </div>
-            <? }
+            <?php }
              }else{ ?>
               <div class="field">
                 <input type="text" name="field[<?php echo $fkey?>][settings][checkbox_options][]" value="" class="thirty required" />
                 <div class="inline duplicate-parent"></div> 
               </div>
-               <? } ?>
+               <?php } ?>
         </div>
         <div class="desc"><?php echo __('Checkboxes','kontrolwp')?> <?php echo __('are entered in the following format - <b>value : label</b>. You can leave out specifying a value by just entering text into the box. The text will become the value and label in this case','kontrolwp')?>.</div>
     </div>

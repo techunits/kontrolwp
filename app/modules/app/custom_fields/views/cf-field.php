@@ -13,7 +13,7 @@
         <img class="delete-field" alt="<?php echo __('Delete','kontrolwp')?>" title="<?php echo __('Delete','kontrolwp')?>" src="<?php echo URL_IMAGE?>icon-delete.png" style="cursor: pointer">
     </div>
     
-    <? $fkey = isset($data) ? $data->id : 'key_id'; ?>
+    <?php $fkey = isset($data) ? $data->id : 'key_id'; ?>
     
     <div class="row-form section-content">
         <input type="hidden" name="field[<?php echo $fkey?>][id]" class="field-id" value="<?php echo isset($data) ? $data->id : '0';?>" />
@@ -50,7 +50,7 @@
                 <div class="label"><?php echo __('Field Validation','kontrolwp')?><span class="req-ast">*</span></div>
                 <!-- Validation -->
                 <div>
-                    <? if(isset($data) && count($data->validation) > 1) { 
+                    <?php if(isset($data) && count($data->validation) > 1) { 
                         for($i=1; $i < count($data->validation); $i++) {
                             $this->renderElement('cf-validation', array('data'=>$data->validation[$i], 'index'=>$i, 'fkey'=>$fkey)); 
                         }
@@ -65,7 +65,7 @@
                 <div class="label field-type"><?php echo __('Field Type','kontrolwp')?><span class="req-ast">*</span></div>
                 <div class="field">
                       <select name="field[<?php echo $fkey?>][type]" class="field-type-dd sixty">
-                        <? foreach($field_types as $type) { 
+                        <?php foreach($field_types as $type) { 
      
 								$default_select = NULL;
 								if(!isset($data) && $type->cf_key == 'text') {
@@ -88,14 +88,14 @@
 							$i18n = __('Wysiwyg Editor','kontrolwp');
                         ?>
                             <option class="<?php echo ($type->cf_key == 'repeatable') ? 'repeatable-remove':''?>" value="<?php echo $type->cf_key?>" <?php echo ((isset($data->field_type->cf_key) && $data->field_type->cf_key == $type->cf_key) || $default_select == TRUE) ? 'selected="selected"':'' ?>><?php echo __($type->name,'kontrolwp')?></option>
-                        <? } ?>
+                        <?php } ?>
                       </select>
                 </div>
                 <div class="desc"><?php echo __('The type of field that will be shown. Some fields have special properties that can be customised when selected from the dropdown','kontrolwp')?>.</div>
             </div>
             
             <div class="settings">
-                 <? 		 
+                 <?php 		 
                     $field_types_repeatable = $field_types;
                     foreach($field_types as $type) { 
                         $settings_data = isset($data) ? $data->settings : array();
@@ -147,7 +147,7 @@
                 </div>
             </div>
             
-             <? if($field_type == 'cf') { ?>
+             <?php if($field_type == 'cf') { ?>
              <!-- Field Rules -->
                  <div class="item field-rules repeatable-remove cf-group">
                     <div class="label"><?php echo __('Rules','kontrolwp')?></div>
@@ -157,14 +157,14 @@
                             <option value="custom" <?php echo (isset($data->rule_type) && $data->rule_type == 'custom') ? 'selected="selected"':'' ?>><?php echo __('Custom Rules','kontrolwp')?></option>
                         </select>
                     </div>
-                    <? if(isset($data) && count($data->rules) > 0) { 
+                    <?php if(isset($data) && count($data->rules) > 0) { 
                         $this->renderElement('cf-rules', array('rule_set'=>$data->rules, 'rules'=>$rules, 'type'=>'field['.$fkey.']', 'class'=>'')); 
                     }else{
                         $this->renderElement('cf-rules', array('rule_set'=>NULL, 'rules'=>$rules, 'type'=>'field['.$fkey.']', 'class'=>'hide')); 
                     } ?>   
                     <div class="desc"><?php echo __('You can set individual rules for fields or just use the default which is the groups rules. These rules determine when the field will appear','kontrolwp')?>.</div>
                 </div>
-             <? } ?>
+             <?php } ?>
                 
             <div class="item">
                 <input type="button" value="<?php echo __('Save Custom Field','kontrolwp')?>" class="save-field button-primary" /> &nbsp;&nbsp; <div class="ajax-loader inline hide"></div>

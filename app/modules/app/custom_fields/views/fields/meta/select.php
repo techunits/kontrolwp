@@ -1,4 +1,4 @@
- <?
+ <?php
  $index = 0;
  $multi_select = FALSE; 
  // Get the values
@@ -12,7 +12,7 @@
  ?>
  
  <select <?php echo !$multi_select ? 'name="_kontrol['.$field->field_key.']"':''?> class="<?php echo $field_validation?>" <?php echo $multi_select ? 'multiple="multiple" data-smart-box="true" data-max-val="'.$field->settings['select_max_values'].'"':''?>>
- 	<? foreach($field->settings['select_options'] as $option) { 
+ 	<?php foreach($field->settings['select_options'] as $option) { 
 			$selected = FALSE;
 			$parts = split(':', $option);
 			$value = $parts[0];
@@ -28,16 +28,16 @@
 				
 	?>
     			<option value="" <?php echo $selected ? 'selected="selected"':''?>><?php echo __('Select')?></option>
-    <? 		} ?>
+    <?php 		} ?>
     	<option value="<?php echo $value?>" <?php echo $selected ? 'selected="selected"':''?>><?php echo $label?></option>
-    <? $index++;
+    <?php $index++;
 	} ?>
  </select>
  
 
-  <? if($multi_select) { ?>
+  <?php if($multi_select) { ?>
   
-  	<? // In here so that the values can be reset if nothing is selected ?> 
+  	<?php // In here so that the values can be reset if nothing is selected ?> 
  	<input type="hidden" name="_kontrol[<?php echo $field->field_key?>][]" value="" />
     
 	<div class="kontrol-smart-box" data-hide-when-empty="true" data-disable-row-delete="true">
@@ -50,7 +50,7 @@
                       <div class="delete-row" title="<?php echo __('Delete Row', 'kontrolwp')?>"></div>  
                       <input type="hidden" name="_kontrol[<?php echo $field->field_key?>][]" value="[[VALUE]]" />
                    </div>
-               	  <? foreach($select_vals as $value) { 
+               	  <?php foreach($select_vals as $value) { 
 						
 						$data = isset($select_row_vals[$value]) ? $select_row_vals[$value] : '';
 						if(!empty($data)) { 
@@ -61,10 +61,10 @@
                               <div class="delete-row" title="<?php echo __('Delete Row', 'kontrolwp')?>"></div>  
                               <input type="hidden" name="_kontrol[<?php echo $field->field_key?>][]" value="<?php echo $data['value']?>" />
                            </div>
-                   <? 	}
+                   <?php 	}
 				   } ?>
                </div> 
           </div>
       </div> 
    </div>   
-<? } ?>
+<?php } ?>

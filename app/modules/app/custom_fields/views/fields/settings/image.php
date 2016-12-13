@@ -73,16 +73,16 @@
     </div>
     
     <div class="image-copies">
-    	<? if(isset($data['image_copy']) && is_array($data['image_copy']) && count($data['image_copy']) > 0) { 
+    	<?php if(isset($data['image_copy']) && is_array($data['image_copy']) && count($data['image_copy']) > 0) { 
 				$index = 1;
 				foreach($data['image_copy'] as $copy) {
 		?>
         			<?php echo $this->renderElement('cf-image-copy', array('fkey'=>$fkey, 'data'=>$copy, 'type'=>$type, 'index'=> $index));?>
-        <?      	$index++;
+        <?php      	$index++;
 				}
 		}else{ ?>
         	<?php echo $this->renderElement('cf-image-copy', array('fkey'=>$fkey, 'data'=>NULL, 'type'=>$type, 'index'=> 1));?>
-        <? } ?>
+        <?php } ?>
     </div>
     
     

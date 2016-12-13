@@ -1,4 +1,4 @@
-<? $copy_key = isset($index) && !empty($index) && $index > 1 ? $index : '_ADD_RAND_KEY_'; ?>
+<?php $copy_key = isset($index) && !empty($index) && $index > 1 ? $index : '_ADD_RAND_KEY_'; ?>
 
 <!-- Image Copies -->
 <div class="image-copy">
@@ -14,7 +14,7 @@
     </div>
    
     <div class="image-copy-settings">
-        <?  $this->renderElement('cf-image-effects', array('fkey'=>$fkey, 'data'=>$data, 'type'=>$type, 'copy'=>'[image_copy]['.$copy_key.']'));?>
+        <?php  $this->renderElement('cf-image-effects', array('fkey'=>$fkey, 'data'=>$data, 'type'=>$type, 'copy'=>'[image_copy]['.$copy_key.']'));?>
     </div>
     
 </div>

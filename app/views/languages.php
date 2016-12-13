@@ -1,4 +1,4 @@
-<? 
+<?php 
 	// See if their language is currently supported (doesn't include English), show the translation option if it isn't
 	if(strpos(WPLANG, 'en_') !== true && strlen(WPLANG) > 0) {
 		// Current langs supported
@@ -14,7 +14,7 @@
                   </div>
                </div>
            </div>
-		<? }
+		<?php }
 	}
 
 ?>

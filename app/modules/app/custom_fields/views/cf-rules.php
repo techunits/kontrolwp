@@ -1,6 +1,6 @@
 <div class="fields <?php echo $class?>">
 	<div>
-	  <? if(!isset($rule_set)) {
+	  <?php if(!isset($rule_set)) {
             $this->renderElement('cf-rules-option', array('data'=>NULL, 'rules'=>$rules, 'type'=>$type, 'index'=>0));   
       }else{ 
 	  		$count = 0;

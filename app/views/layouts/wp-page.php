@@ -1,16 +1,16 @@
 
 <!-- Module CSS -->
-<? if(isset($css_files) && is_array($css_files)) { 
+<?php if(isset($css_files) && is_array($css_files)) { 
 	foreach($css_files as $css) { ?>
 		<link rel="stylesheet" type="text/css" href="<?php echo $css?>" />
-<? 		}
+<?php 		}
 	} ?>
     
 <!-- Module JS -->
-<? if(isset($js_files) && is_array($js_files)) { 
+<?php if(isset($js_files) && is_array($js_files)) { 
 	foreach($js_files as $js) { ?>
 		<script type='text/javascript' src='<?php echo $js?>'></script>
-<? 		}
+<?php 		}
 	} ?>
 
 <!-- WP styled page -->

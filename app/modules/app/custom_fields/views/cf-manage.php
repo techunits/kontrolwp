@@ -24,7 +24,7 @@
                 <div class="title"><?php echo __('Custom Fields Groups','kontrolwp')?></div>
             </div>
      </div>
-	<? if(isset($post_types) && count($post_types) > 0) { 
+	<?php if(isset($post_types) && count($post_types) > 0) { 
 		
 		foreach($post_types as $pt_key => $pt) { 
 			if(isset($groups[$pt_key])) {
@@ -33,7 +33,7 @@
             <div class="inside">
                 <div class="title"><?php echo $post_types[$pt_key]?></div>
                 <div class="rows sortable">
-                    <? foreach($groups[$pt_key] as $group) { ?>
+                    <?php foreach($groups[$pt_key] as $group) { ?>
                     	<div id="<?php echo $group->id?>" data-id="<?php echo $group->id?>" data-group-id="<?php echo $group->group_id?>" sortAction="<?php echo $controller_url?>/updateGroupOrder/<?php echo $group->id?>/" class="row <?php echo empty($group->active) ? 'field-hidden':''?>">
                             <div class="inline tab drag-row"></div>
                             <div title="<?php echo __('Name','kontrolwp')?>" style="width: 25%;  top: 4px;" class="inline cpt-name">
@@ -48,11 +48,11 @@
                                 <img class="delete-field" alt="<?php echo __('Delete','kontrolwp')?>" title="<?php echo __('Delete','kontrolwp')?>" src="<?php echo URL_IMAGE?>icon-delete.png" style="cursor: pointer">
                             </div>
                     	</div>
-                    <? } ?>
+                    <?php } ?>
                 </div>
             </div>
         </div>
-    <? 		}
+    <?php 		}
 		}
 	} ?>
    
@@ -72,12 +72,12 @@
      	<div class="inside">
             <div class="title"><?php echo __('Field Groups','kontrolwp')?></div>
             <div class="menu-item add">
-            	<? if(KONTROL_T && (10-$field_count) <= 0) { ?>
+            	<?php if(KONTROL_T && (10-$field_count) <= 0) { ?>
                 	<div class="link"><a href="<?php echo APP_UPGRADE_URL?>" target="_blank"><?php echo __('Upgrade to the full edition!','kontrolwp')?></a></div>
                     <div class="desc"><?php echo sprintf(__("Well this is awkward. We're super sorry, but the limited edition of Kontrol only allows you %d advanced custom fields. The full version gives you unlimited + free upgrades to Kontrol and all future modules for the cost of less than your lunch. Bargain!",'kontrolwp'), 10)?></div>
-                <? }else{ ?>
+                <?php }else{ ?>
                     <div class="link"><a href="<?php echo $controller_url?>/add" class="button-primary" style="font-weight: normal;"><?php echo __('Add new field group','kontrolwp')?></a></div>
-                <? } ?>
+                <?php } ?>
             </div>
         </div>
     </div>

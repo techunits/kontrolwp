@@ -7,9 +7,9 @@
                     <option value="false" data-hide-classes="image-resize-type,image-sizes,image-dimensions-group" <?php echo isset($data['image_dimensions']) && $data['image_dimensions'] == false ? 'selected="selected"':''?>><?php echo __('Natural','kontrolwp')?></option>
                     <option value="resize" data-show-classes="image-resize-type,image-resize-sharpen-type,image-sizes,image-dimensions-group" data-hide-classes="image-crop-settings"  <?php echo isset($data['image_dimensions']) && $data['image_dimensions'] == 'resize' ? 'selected="selected"':''?>><?php echo __('Resize','kontrolwp')?></option>
                     <option value="crop" data-show-classes="image-crop-settings,image-resize-sharpen-type,image-sizes,image-dimensions-group" data-hide-classes="image-resize-type"  <?php echo isset($data['image_dimensions']) && $data['image_dimensions'] == 'crop' ? 'selected="selected"':''?>><?php echo __('Crop','kontrolwp')?></option>
-                    <? if(empty($copy)) { ?> 
+                    <?php if(empty($copy)) { ?> 
                     	<option value="enforce" data-show-classes="image-sizes,image-dimensions-group"  data-hide-classes="image-resize-type,image-resize-sharpen-type,image-crop-settings" <?php echo isset($data['image_dimensions']) && $data['image_dimensions'] == 'enforce' ? 'selected="selected"':''?>><?php echo __('Enforce','kontrolwp')?></option> 
-					<? } ?>
+					<?php } ?>
                 </select>
                 <div class="inline kontrol-tip" title="Image Dimensions"  data-width="550" data-text="<?php echo htmlentities(__('<b>Natural</b> - leaves the image dimensions as they are.<p><b>Resize Image</b> - will resize the image when uploaded.</p><p><b>Crop</b> - will cut / resize / zoom the image to fit.</p><p><b>Enforce</b> - requires the user to upload an image already at a specific width and height.</p>','kontrolwp'), ENT_QUOTES, 'UTF-8')?>"></div>
             </div>
@@ -85,7 +85,7 @@
                  <div class="item image-resize-sharpen-type">
                     <div class="label"><?php echo __('Sharpen Resized / Cropped Image','kontrolwp')?><span class="req-ast">*</span></div> 
                     <div class="field">
-                        <? $sharpen_resized_val = isset($data['image_dimensions_resize_type_sharpen']) && is_numeric($data['image_dimensions_resize_type_sharpen']) ? $data['image_dimensions_resize_type_sharpen'] : '20'?>
+                        <?php $sharpen_resized_val = isset($data['image_dimensions_resize_type_sharpen']) && is_numeric($data['image_dimensions_resize_type_sharpen']) ? $data['image_dimensions_resize_type_sharpen'] : '20'?>
                         <select name="field[<?php echo $fkey?>][settings]<?php echo $copy?>[image_dimensions_resize_type_sharpen]" class="hundred custom-select">
                             <option value="false" <?php echo isset($data['image_dimensions_resize_type_sharpen']) && $data['image_dimensions_resize_type_sharpen'] == false ? 'selected="selected"':''?>><?php echo __('No')?></option>
                             <option value="<?php echo $sharpen_resized_val?>" class="custom-val" customValFormat="%s" customLabelFormat="<?php echo __('Resized Image Sharpened','kontrolwp')?> (%s)" confirmDefaultVal="<?php echo $sharpen_resized_val?>" confirmText="<?php echo __('Enter the amount to sharpen the image (lower = sharper): eg. 20 = medium sharpening','kontrolwp')?>" <?php echo isset($data['image_dimensions_resize_type_sharpen']) && is_numeric($data['image_dimensions_resize_type_sharpen']) ? 'selected="selected"':''?>><?php echo __('Resized Image Sharpened','kontrolwp')?> (<?php echo $sharpen_resized_val?>)</option>
@@ -112,7 +112,7 @@
             <div class="item">
                 <div class="label"><?php echo __('Sharpen','kontrolwp')?><span class="req-ast">*</span></div> 
                 <div class="field">
-                    <? $sharpen_val = isset($data['image_effects_sharpen']) && is_numeric($data['image_effects_sharpen']) ? $data['image_effects_sharpen'] : '20'?>
+                    <?php $sharpen_val = isset($data['image_effects_sharpen']) && is_numeric($data['image_effects_sharpen']) ? $data['image_effects_sharpen'] : '20'?>
                     <select name="field[<?php echo $fkey?>][settings]<?php echo $copy?>[image_effects_sharpen]" class="hundred custom-select">
                         <option value="false" <?php echo isset($data['image_effects_sharpen']) && $data['image_effects_sharpen'] == false ? 'selected="selected"':''?>><?php echo __('No')?></option>
                         <option value="<?php echo $sharpen_val?>" class="custom-val" customValFormat="%s" customLabelFormat="<?php echo __('Sharpened','kontrolwp')?> (%s)" confirmDefaultVal="<?php echo $sharpen_val?>" confirmText="<?php echo __('Enter the amount to sharpen the image (lower = sharper): eg. 20 = medium sharpening','kontrolwp')?>" <?php echo isset($data['image_effects_sharpen']) && is_numeric($data['image_effects_sharpen']) ? 'selected="selected"':''?>><?php echo __('Sharpened','kontrolwp')?> (<?php echo $sharpen_val?>)</option>
@@ -133,7 +133,7 @@
             <div class="item">
                 <div class="label"><?php echo __('Brightness','kontrolwp')?><span class="req-ast">*</span></div> 
                 <div class="field">
-                    <? $brightness_val = isset($data['image_effects_brightness']) && is_numeric($data['image_effects_brightness']) ? $data['image_effects_brightness'] : '20'?>
+                    <?php $brightness_val = isset($data['image_effects_brightness']) && is_numeric($data['image_effects_brightness']) ? $data['image_effects_brightness'] : '20'?>
                     <select name="field[<?php echo $fkey?>][settings]<?php echo $copy?>[image_effects_brightness]" class="hundred custom-select">
                         <option value="false" <?php echo isset($data['image_effects_brightness']) && $data['image_effects_brightness'] == false ? 'selected="selected"':''?>><?php echo __('No')?></option>
                         <option value="<?php echo $brightness_val?>" class="custom-val" customValFormat="%s" customLabelFormat="<?php echo __('Brightness','kontrolwp')?> (%s)" confirmDefaultVal="<?php echo $brightness_val?>" confirmText="<?php echo __('Enter the amount to brighten the image (lower = brighter): eg. 20','kontrolwp')?>" <?php echo isset($data['image_effects_brightness']) && is_numeric($data['image_effects_brightness']) ? 'selected="selected"':''?>><?php echo __('Brightness','kontrolwp')?> (<?php echo $brightness_val?>)</option>
@@ -144,7 +144,7 @@
             <div class="item">
                 <div class="label"><?php echo __('Blur','kontrolwp')?><span class="req-ast">*</span></div> 
                 <div class="field">
-                    <? $blur_val = isset($data['image_effects_blur']) && is_numeric($data['image_effects_blur']) ? $data['image_effects_blur'] : '5'?>
+                    <?php $blur_val = isset($data['image_effects_blur']) && is_numeric($data['image_effects_blur']) ? $data['image_effects_blur'] : '5'?>
                     <select name="field[<?php echo $fkey?>][settings]<?php echo $copy?>[image_effects_blur]" class="hundred custom-select">
                         <option value="false" <?php echo isset($data['image_effects_blur']) && $data['image_effects_blur'] == false ? 'selected="selected"':''?>><?php echo __('No')?></option>
                         <option value="<?php echo $blur_val?>" class="custom-val" customValFormat="%s" customLabelFormat="<?php echo __('Blur Level','kontrolwp')?> (%s)" confirmDefaultVal="<?php echo $blur_val?>" confirmText="<?php echo __('Enter the amount to blur the image (higher = more): eg. 5','kontrolwp')?>" <?php echo isset($data['image_effects_blur']) && is_numeric($data['image_effects_blur']) ? 'selected="selected"':''?>><?php echo __('Blur Level','kontrolwp')?> (<?php echo $blur_val?>)</option>
@@ -155,7 +155,7 @@
              <div class="item">
                 <div class="label"><?php echo __('Gaussian Blur','kontrolwp')?><span class="req-ast">*</span></div> 
                 <div class="field">
-                    <? $gblur_val = isset($data['image_effects_gblur']) && is_numeric($data['image_effects_gblur']) ? $data['image_effects_gblur'] : '5'?>
+                    <?php $gblur_val = isset($data['image_effects_gblur']) && is_numeric($data['image_effects_gblur']) ? $data['image_effects_gblur'] : '5'?>
                     <select name="field[<?php echo $fkey?>][settings]<?php echo $copy?>[image_effects_gblur]" class="hundred custom-select">
                         <option value="false" <?php echo isset($data['image_effects_gblur']) && $data['image_effects_gblur'] == false ? 'selected="selected"':''?>><?php echo __('No')?></option>
                         <option value="<?php echo $gblur_val?>" class="custom-val" customValFormat="%s" customLabelFormat="<?php echo __('Blur Level','kontrolwp')?> (%s)" confirmDefaultVal="<?php echo $gblur_val?>" confirmText="<?php echo __('Enter the amount to blur the image (higher = more): eg. 5','kontrolwp')?>" <?php echo isset($data['image_effects_gblur']) && is_numeric($data['image_effects_gblur']) ? 'selected="selected"':''?>><?php echo __('Blur Level','kontrolwp')?> (<?php echo $gblur_val?>)</option>
@@ -166,7 +166,7 @@
             <div class="item">
                 <div class="label"><?php echo __('Smooth','kontrolwp')?><span class="req-ast">*</span></div> 
                 <div class="field">
-                    <? $smooth_val = isset($data['image_effects_smooth']) && is_numeric($data['image_effects_smooth']) ? $data['image_effects_smooth'] : '5'?>
+                    <?php $smooth_val = isset($data['image_effects_smooth']) && is_numeric($data['image_effects_smooth']) ? $data['image_effects_smooth'] : '5'?>
                     <select name="field[<?php echo $fkey?>][settings]<?php echo $copy?>[image_effects_smooth]" class="hundred custom-select">
                         <option value="false" <?php echo isset($data['image_effects_smooth']) && $data['image_effects_smooth'] == false ? 'selected="selected"':''?>><?php echo __('No')?></option>
                         <option value="<?php echo $smooth_val?>" class="custom-val" customValFormat="%s" customLabelFormat="<?php echo __('Smooth Level','kontrolwp')?> (%s)" confirmDefaultVal="<?php echo $smooth_val?>" confirmText="<?php echo __('Enter the amount to smooth the image (higher = more): eg. 5','kontrolwp')?>" <?php echo isset($data['image_effects_smooth']) && is_numeric($data['image_effects_smooth']) ? 'selected="selected"':''?>><?php echo __('Smooth Level','kontrolwp')?> (<?php echo $smooth_val?>)</option>
@@ -177,7 +177,7 @@
              <div class="item">
                 <div class="label"><?php echo __('Pixelate','kontrolwp')?><span class="req-ast">*</span></div> 
                 <div class="field">
-                    <? $pixel_val = isset($data['image_effects_pixelate']) && is_numeric($data['image_effects_pixelate']) ? $data['image_effects_pixelate'] : '3'?>
+                    <?php $pixel_val = isset($data['image_effects_pixelate']) && is_numeric($data['image_effects_pixelate']) ? $data['image_effects_pixelate'] : '3'?>
                     <select name="field[<?php echo $fkey?>][settings]<?php echo $copy?>[image_effects_pixelate]" class="hundred custom-select">
                         <option value="false" <?php echo isset($data['image_effects_pixelate']) && $data['image_effects_pixelate'] == false ? 'selected="selected"':''?>><?php echo __('No')?></option>
                         <option value="<?php echo $pixel_val?>" class="custom-val" customValFormat="%s" customLabelFormat="<?php echo __('Pixelate Level','kontrolwp')?> (%s)" confirmDefaultVal="<?php echo $pixel_val?>" confirmText="<?php echo __('Enter the amount to smooth the image (higher = more): eg. 5','kontrolwp')?>" <?php echo isset($data['image_effects_pixelate']) && is_numeric($data['image_effects_pixelate']) ? 'selected="selected"':''?>><?php echo __('Pixelate Level','kontrolwp')?> (<?php echo $pixel_val?>)</option>

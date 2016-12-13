@@ -3,7 +3,7 @@
 Plugin Name: KontrolWP - Kontrol Wordpress Developer Kit
 Plugin URI: http://www.kontrolwp.com
 Description: KontrolWP is an advanced Wordpress plugin for developers. Create custom CMS sites using advanced custom fields, custom post types, custom taxonomies, admin menu editors, SEO and much more through an easy to use interface. 
-Version: 2.0.6
+Version: 2.0.7
 Author: Euphern Technology Pvt. Ltd. & David Rugendyke 
 Author URI: http://www.kontrolwp.com
 License: GPLv3 http://www.gnu.org/licenses/gpl.html
@@ -80,10 +80,11 @@ if (isset($_GET['url']) && $_GET['url'] === 'favicon.ico') {
             $kdc = new KWPDashboardController();
             $kdc->actionQuickWidget();
 
-            require_once(APP_PATH . 'controllers/clone_post.php');
-            $cpc = new ClonePostController();
-            $cpc->actionClone();
+            
         }
+        require_once(APP_PATH . 'controllers/clone_post.php');
+        $cpc = new ClonePostController();
+        $cpc->actionClone();
 
         //  activate KontrolWP widgets
         require_once(APP_PATH . 'controllers/widget.php');

@@ -20,7 +20,7 @@
          // Validation.
             new Form.Validator.Inline('post-type-add');
         
-         <? if($action == 'edit') { ?>
+         <?php if($action == 'edit') { ?>
             // Show the 'update-key-posts' suggestion field if they change the post key ID
             var key = $('kontrol').getElement('#key');
             var key_update_field = $('kontrol').getElement('#update-key-field');
@@ -32,7 +32,7 @@
                     key_update_fx.dissolve();
                 }
             }); 
-         <? } ?>
+         <?php } ?>
     });
 </script>
 
@@ -58,12 +58,12 @@
                             <input type="hidden" id="cpts" value='<?php echo json_encode(str_replace(isset($cpt) ? $cpt->cpt_key:'','',get_post_types()))?>' />
                             <div class="desc"><?php echo __('Max. 20 characters, cannot contain capital letters or spaces', 'kontrolwp')?>.</div>
                         </div>
-                        <? if($action == 'edit') { ?>
+                        <?php if($action == 'edit') { ?>
                         <div id="update-key-field" class="item" style="display: none">
                             <div class="label"><input type="checkbox" id="current-key" name="current-key" value="<?php echo isset($cpt) ? $cpt->cpt_key:''?>" checked="checked" /> <?php echo __('Update current posts attached to post type?', 'kontrolwp')?></div>
                             <div class="desc"><?php echo __('If this post type already has posts attached to it and you change the post type ID they will be lost, check the box above to make sure those posts get updated to match the new ID', 'kontrolwp')?>.</div>
                         </div>
-                        <? } ?>
+                        <?php } ?>
                         <div class="item">
                             <div class="label"><?php echo __('Name (plural)', 'kontrolwp')?> <span class="req-ast">*</span></div>
                             <div class="field"><input type="text" id="post-name" name="args[labels][name]" value="<?php echo isset($cpt) ? $cpt->args['labels']['name']:''?>" class="required ninety" /></div>
@@ -95,26 +95,26 @@
                                 <select nameToAdd="args[taxonomies][]" class="sixty">
                                     <option value=""><b><?php echo __('Native', 'kontrolwp')?></b></option>
                                     <option value="">-------------------</option>
-                                    <? foreach($tax_native as $tax) { ?>
+                                    <?php foreach($tax_native as $tax) { ?>
                                           <option value="<?php echo $tax->tax_key?>"><?php echo $tax->name?></option>                             
-                                    <? } ?>
+                                    <?php } ?>
                                     <option value="">-------------------</option>
                                     <option value=""><b><?php echo __('Custom', 'kontrolwp')?></b></option>
                                     <option value="">-------------------</option>
-                                    <? if(!empty($tax_custom)) { ?>
-                                         <? foreach($tax_custom as $tax) { ?>
+                                    <?php if(!empty($tax_custom)) { ?>
+                                         <?php foreach($tax_custom as $tax) { ?>
                                         <option value="<?php echo $tax->tax_key?>"><?php echo $tax->name?></option>     
-                                        <? } ?>           
-                                    <? }else{ ?>
+                                        <?php } ?>           
+                                    <?php }else{ ?>
                                     <option value=""><?php echo __('No custom taxonomies found', 'kontrolwp')?></option>
-                                    <? } ?>
+                                    <?php } ?>
                                 </select>
                             </div>
                              <div class="kontrol-select-results">
-                                  <? if(isset($attached_taxonomies)) {
+                                  <?php if(isset($attached_taxonomies)) {
                                                 foreach($attached_taxonomies as $pt) { ?>
                                                     <div class="feature"><?php echo $pt->tax_name?> <input type="hidden" name="args[taxonomies][]" value="<?php echo $pt->tax_key?>" /></div>
-                                        <? }
+                                        <?php }
                                         
                                   } ?>
             
@@ -144,19 +144,19 @@
                                 </select>
                             </div>
                              <div class="kontrol-select-results">
-                            <? if(isset($cpt)) {
+                            <?php if(isset($cpt)) {
                                     if(is_array($cpt->args['supports'])) { 
                                         sort($cpt->args['supports']);
                                         foreach( $cpt->args['supports'] as $support) { 
                                             if(!empty($support)) { ?>
                                             <div class="feature"><?php echo ucwords(str_replace('-', ' ',$support))?> <input type="hidden" name="args[supports][]" value="<?php echo $support?>" /></div>
-                                <?      }
+                                <?php      }
                                         }
                                 } ?>
-                            <? }else{ ?>
+                            <?php }else{ ?>
                                     <div class="feature"><?php echo __('Title')?> <input type="hidden" name="args[supports][]" value="title" /></div>
                                     <div class="feature"><?php echo __('Editor')?> (wysiwyg)<input type="hidden" name="args[supports][]" value="editor" /></div>
-                            <? } ?>
+                            <?php } ?>
                             </div>
                         </div>
                  
@@ -312,7 +312,7 @@
                         <div class="item show_ui_field">
                             <div class="label"><?php echo __('Admin Menu Position','kontrolwp')?></div>
                             <div class="field">
-                                <? $set_positions = array(5,10,15,20,25,60,65,70,75,80,100); ?>
+                                <?php $set_positions = array(5,10,15,20,25,60,65,70,75,80,100); ?>
                                 <select name="args[menu_position]" class="custom-select sixty" >
                                     <option value="100" <?php echo isset($cpt->args['menu_position']) && $cpt->args['menu_position'] == 100 ? 'selected="selected"':''?>>100 - <?php echo __('below second separator','kontrolwp')?></option>
                                     <option value="5" <?php echo isset($cpt->args['menu_position']) && $cpt->args['menu_position'] == 5 ? 'selected="selected"':''?>>5 - <?php echo __('below Posts','kontrolwp')?></option>
@@ -337,12 +337,12 @@
                                 <div class="kontrol-file-upload single-image" data-fileUploadType="image" data-fileReturnInputName="args[menu_icon]" data-fileReturn="image_url"  data-fileGetData='<?php echo http_build_query(array('user_id'=>$current_user->ID, 'post_id'=>0, 'data'=>array('image_preview_size'=>'thumbnail','image_dimensions_w'=>16,'image_dimensions_h'=>16,'image_dimensions'=>'enforce')))?>' data-fileListMax="1" data-multiple="false" data-maxSize="250" data-fileTypes="{'<?php echo __('Images')?> (*.jpg, *.jpeg, *.gif, *.png)':'*.jpg; *.jpeg; *.gif; *.png'}">
                                     <input type="button" class="upload-el" value="<?php echo __('Upload Image','kontrolwp')?>" style="<?php echo isset($cpt->args['menu_icon']) && !empty($cpt->args['menu_icon']) ? 'display:none':''?>"  />
                                     <ul class="upload-list">
-                                     <? if(isset($cpt->args['menu_icon']) && !empty($cpt->args['menu_icon'])) { ?>
+                                     <?php if(isset($cpt->args['menu_icon']) && !empty($cpt->args['menu_icon'])) { ?>
                                             <li class="file remove" id="file-1">
                                                 <div class="remove-file"></div>
                                                 <div class="file-image"><img src="<?php echo Kontrol_Tools::absolute_upload_path($cpt->args['menu_icon'])?>"></div>
                                                 <input type="hidden" name="args[menu_icon]" value="<?php echo Kontrol_Tools::absolute_upload_path($cpt->args['menu_icon'])?>"></li>
-                                     <? } ?>
+                                     <?php } ?>
                                     </ul>
                                     
                                 </div>
