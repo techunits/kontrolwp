@@ -85,6 +85,7 @@ If you are having trouble activating the plugin, please check if you have **PHP 
 6. KontrolWP - Post Duplicator button into Post/Page/Custom Post Type editor
 7. KontrolWP - Manage Custom post type widgets for most recent entries
 8. KontrolWP - Custom Post Type on Frontend
+9. KontrolWP - Post Duplicator button into Post/Page/Custom Post Type view page
 
 
 

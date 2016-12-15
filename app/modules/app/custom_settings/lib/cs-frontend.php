@@ -45,7 +45,7 @@ if(!function_exists('kwp_the_setting')) {
 	***********************/
 	function kwp_the_setting($field_key = NULL) 
 	{
-		echo get_setting($field_key);
+		echo kwp_get_setting($field_key);
 	}
 	
 }
